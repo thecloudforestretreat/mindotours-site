@@ -252,6 +252,7 @@ a{
   line-height:1.7;
 }
 
+/* Keep this card consistent with mindobirdwatching */
 .secureCard{
   margin-top:14px;
   border:1px solid var(--line);
@@ -259,19 +260,17 @@ a{
   background:rgba(255,255,255,.55);
   box-shadow:var(--shadow);
   padding:14px;
-}
-
-.secureCardTop{
-  display:grid;
-  grid-template-columns:120px 1fr;
+  display:flex;
   gap:14px;
-  align-items:start;
+  align-items:center;
+  width:100%;
 }
 
 .secureImg{
-  width:120px;
-  height:120px;
-  border-radius:18px;
+  width:210px;
+  height:210px;
+  flex:0 0 auto;
+  border-radius:22px;
   background:rgba(255,255,255,.55);
   display:flex;
   align-items:center;
@@ -283,7 +282,8 @@ a{
 .secureImg img{
   width:100%;
   height:100%;
-  object-fit:cover;
+  object-fit:contain;
+  display:block;
 }
 
 .secureCopy{
@@ -296,7 +296,7 @@ a{
   letter-spacing:-0.01em;
   color:var(--ink);
   font-size:15px;
-  line-height:1.25;
+  line-height:1.2;
 }
 
 .secureText{
@@ -732,13 +732,13 @@ a{
     height:220px;
   }
 
-  .secureCardTop{
-    grid-template-columns:1fr;
+  .secureCard{
+    align-items:flex-start;
   }
 
   .secureImg{
-    width:100%;
-    height:180px;
+    width:152px;
+    height:152px;
   }
 
   .wxGrid{
