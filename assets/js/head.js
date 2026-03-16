@@ -1,1 +1,1 @@
-
+console.log("Head loaded");
