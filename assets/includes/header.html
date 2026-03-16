@@ -1,27 +1,42 @@
-<header>
+<header class="topbar" data-site-header>
+  <a class="brand" href="/" aria-label="Mindo Tours home">
+    <img src="/assets/logo/mindo_tours_logo_512.png" alt="Mindo Tours logo" class="brandMark">
+    <span class="brandName">Mindo Tours</span>
+  </a>
 
-<div class="logo">
+  <div class="rightActions">
+    <div class="lang" aria-label="Language switcher">
+      <a href="/" class="langLink is-active" lang="en">EN</a>
+      <a href="/es/" class="langLink" lang="es">ES</a>
+    </div>
 
-<img src="/assets/images/logo.png" height="36">
+    <button class="navToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
 
-<span>Mindo Tours</span>
-
-</div>
-
-<nav>
-
-<a href="/">Home</a>
-<a href="/tours/">Tours</a>
-<a href="/about/">About</a>
-<a href="/contact/">Contact</a>
-
-</nav>
-
-<div class="lang">
-
-<a href="/">EN</a>
-<a href="/es/">ES</a>
-
-</div>
-
+  <nav class="nav desktopNav" aria-label="Primary">
+    <a href="/">Home</a>
+    <a href="/tours/">Tours</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+    <a href="https://mindobirdwatching.com/contact/" target="_blank" rel="noopener" class="navCta">Book A Tour</a>
+  </nav>
 </header>
+
+<div class="mobileMenu" id="mobileMenu" hidden>
+  <nav class="mobileNav" aria-label="Mobile primary">
+    <a href="/">Home</a>
+    <a href="/tours/">Tours</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+    <a href="https://mindobirdwatching.com/contact/" target="_blank" rel="noopener" class="navCta">Book A Tour</a>
+  </nav>
+
+  <div class="mobileLang" aria-label="Mobile language switcher">
+    <a href="/" class="langLink is-active" lang="en">EN</a>
+    <a href="/es/" class="langLink" lang="es">ES</a>
+  </div>
+</div>
