@@ -1,54 +1,261 @@
-// Global Head Loader
-// Google Analytics + basic conversion tracking
-// Works for ALL pages and BOTH sites
+<!DOCTYPE html>
+<html lang="en">
 
-(function () {
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  const GA_ID = "G-1ZYLW22XWP";
+  <title>Mindo Tours Ecuador | Waterfalls, Chocolate, Zipline and Cloud Forest Experiences</title>
+  <meta name="description" content="Plan your trip to Mindo Ecuador with waterfall tours, chocolate experiences, zipline adventures, cloud forest trails, and local nature activities in the Chocó Andino region.">
 
-  const gaScript = document.createElement("script");
-  gaScript.async = true;
-  gaScript.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
-  document.head.appendChild(gaScript);
+  <link rel="canonical" href="https://mindotours.com/">
+  <link rel="alternate" hreflang="en" href="https://mindotours.com/">
+  <link rel="alternate" hreflang="es" href="https://mindotours.com/es/">
+  <link rel="alternate" hreflang="x-default" href="https://mindotours.com/">
 
-  const gaConfig = document.createElement("script");
-  gaConfig.innerHTML = `
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    window.gtag = gtag;
-    gtag('js', new Date());
-    gtag('config', '${GA_ID}');
-  `;
-  document.head.appendChild(gaConfig);
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mindo Tours">
+  <meta property="og:title" content="Mindo Tours Ecuador | Waterfalls, Chocolate, Zipline and Cloud Forest Experiences">
+  <meta property="og:description" content="Discover what to do in Mindo Ecuador, from waterfalls and chocolate tours to ziplining and cloud forest nature experiences.">
+  <meta property="og:url" content="https://mindotours.com/">
+  <meta property="og:image" content="https://mindotours.com/assets/images/pages/placeholders/placeholder-hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mindo Tours featured image">
 
-  window.addEventListener("DOMContentLoaded", function () {
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mindo Tours Ecuador">
+  <meta name="twitter:description" content="Explore waterfalls, chocolate tours, cloud forest walks, and adventure experiences in Mindo Ecuador.">
+  <meta name="twitter:image" content="https://mindotours.com/assets/images/pages/placeholders/placeholder-hero.jpg">
 
-    function trackClick(selector, eventName) {
-      document.querySelectorAll(selector).forEach(function (el) {
-        el.addEventListener("click", function () {
-          if (typeof gtag === "function") {
-            gtag("event", eventName, {
-              page_location: window.location.href
-            });
-          }
-        });
-      });
-    }
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-    trackClick(".btn-book", "book_tour_click");
-    trackClick(".btn-tour", "view_tours_click");
-    trackClick(".btn-contact", "contact_click");
+  <meta name="theme-color" content="#0D5925">
 
-    document.querySelectorAll("a[href*='mindobirdwatching.com']").forEach(function (link) {
-      link.addEventListener("click", function () {
-        if (typeof gtag === "function") {
-          gtag("event", "funnel_to_mbw", {
-            destination: link.href
-          });
-        }
-      });
-    });
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
 
-  });
+  <script src="/assets/js/head.js" defer></script>
+</head>
 
-})();
+<body>
+  <div class="container">
+    <div id="siteHeader"></div>
+
+    <section class="mobileHero" aria-label="Mobile hero image">
+      <div class="mobileHeroFrame">
+        <img src="/assets/images/pages/placeholders/placeholder-hero.jpg" alt="Mindo cloud forest landscape" loading="eager" decoding="async">
+      </div>
+    </section>
+
+    <main class="page card" aria-label="Mindo Tours home">
+      <div class="aboveFold">
+        <section class="hero" aria-label="Intro">
+          <div>
+            <h1>Discover tours and experiences in Mindo, Ecuador</h1>
+            <p>
+              Mindo is one of Ecuador’s most beautiful cloud forest destinations. Explore waterfalls,
+              chocolate tours, butterfly gardens, zipline adventures, and nature trails in the heart
+              of the Chocó Andino biosphere reserve.
+            </p>
+
+            <div class="heroCtas" aria-label="Primary actions">
+              <a class="btn primary btn-contact" href="https://mindobirdwatching.com/contact/" target="_blank" rel="noopener">Contact Us</a>
+              <a class="btn secondary btn-tour" href="/tours/">View Tours</a>
+              <a class="btn ghost" href="https://mindobirdwatching.com/" target="_blank" rel="noopener">Birdwatching Tours</a>
+            </div>
+
+            <div class="ctaBand" aria-label="Birdwatching funnel">
+              <p>
+                Looking for specialized birdwatching tours in Mindo? Visit our dedicated birdwatching platform
+                for expert guided experiences, local knowledge, and tailored wildlife outings.
+              </p>
+              <a class="btn ghost" href="https://mindobirdwatching.com/" target="_blank" rel="noopener">Visit Mindo Bird Watching</a>
+            </div>
+          </div>
+
+          <aside class="heroAside" aria-label="Highlights">
+            <h2>Why guests choose Mindo</h2>
+            <ul class="heroList">
+              <li>Easy access from Quito for day trips and weekend escapes</li>
+              <li>Cloud forest biodiversity, waterfalls, and local nature experiences</li>
+              <li>Popular activities for couples, families, photographers, and birders</li>
+              <li>Flexible planning with tours, local tips, and seasonal guidance</li>
+            </ul>
+
+            <div class="secureCard" aria-label="Travel confidence">
+              <div class="secureImg" aria-hidden="true">
+                <img src="/assets/images/pages/placeholders/placeholder-gallery.jpg" alt="Mindo Tours logo or trust badge placeholder">
+              </div>
+              <div class="secureCopy">
+                <p class="secureKicker">Simple planning for your Mindo trip</p>
+                <p class="secureText">
+                  Use this site as your starting point to explore the best things to do in Mindo,
+                  compare experiences, and connect with local guidance before you travel.
+                </p>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="wx wxSkeleton" aria-label="Weather">
+          <div class="wxGrid" id="wxGrid" aria-label="Current + 7-day forecast">
+            <div class="wxDay">
+              <div class="wxDayTop">
+                <span class="wxDow">--</span>
+                <span class="wxIcon" aria-hidden="true">🌥️</span>
+              </div>
+              <div class="wxTempsRow">
+                <div class="wxTempsLines">
+                  <div class="wxLine">-- C / -- F</div>
+                  <div class="wxLine">-- C / -- F</div>
+                </div>
+              </div>
+              <div class="wxRain"><span aria-hidden="true">💧</span><span>-- mm</span></div>
+            </div>
+            <div class="wxDay"></div>
+            <div class="wxDay"></div>
+            <div class="wxDay"></div>
+            <div class="wxDay"></div>
+            <div class="wxDay"></div>
+            <div class="wxDay"></div>
+            <div class="wxDay"></div>
+          </div>
+
+          <p class="wxNote" id="wxNote" hidden></p>
+        </section>
+      </div>
+
+      <section class="section" aria-label="Featured experiences">
+        <div class="sectionHead">
+          <h2>Popular experiences in Mindo</h2>
+          <p class="hint"></p>
+        </div>
+
+        <div class="mediaGrid">
+          <div class="mediaCol" aria-label="Featured images left">
+            <article class="mediaCard">
+              <div class="mediaFrame">
+                <img src="/assets/images/pages/placeholders/placeholder-waterfall.jpg" alt="Mindo waterfall experience">
+              </div>
+              <div class="mediaBar">
+                <p class="mediaTitle">Waterfall Tours</p>
+                <span class="badge">Nature</span>
+              </div>
+            </article>
+
+            <article class="mediaCard">
+              <div class="mediaFrame">
+                <img src="/assets/images/pages/placeholders/placeholder-tour.jpg" alt="Mindo chocolate experience">
+              </div>
+              <div class="mediaBar">
+                <p class="mediaTitle">Chocolate Tours</p>
+                <span class="badge">Local</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="mediaCol" aria-label="Featured image right">
+            <article class="mediaCard">
+              <div class="mediaFrame">
+                <img src="/assets/images/pages/placeholders/placeholder-gallery.jpg" alt="Zipline and adventure in Mindo Ecuador">
+              </div>
+              <div class="mediaBar">
+                <p class="mediaTitle">Zipline Adventures</p>
+                <span class="badge">Adventure</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Quick site exploration">
+        <div class="sectionHead">
+          <h2>Explore the site</h2>
+          <p class="hint"></p>
+        </div>
+
+        <div class="tiles">
+          <a class="tile" href="/tours/">
+            <h3>Tours</h3>
+            <p>Browse popular Mindo experiences including nature outings, local activities, and custom trip ideas.</p>
+            <p class="sub">Compare experiences and start planning</p>
+          </a>
+
+          <a class="tile" href="/about/">
+            <h3>About Mindo</h3>
+            <p>Learn why Mindo is one of Ecuador’s most loved cloud forest destinations for nature and soft adventure.</p>
+            <p class="sub">Helpful context before you travel</p>
+          </a>
+
+          <a class="tile" href="/contact/">
+            <h3>Contact</h3>
+            <p>Ask questions, check availability, or get pointed toward the right local experience for your trip.</p>
+            <p class="sub">Fastest way to get personalized guidance</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" aria-label="What to do in Mindo">
+        <div class="sectionHead">
+          <h2>What to do in Mindo</h2>
+          <p class="hint"></p>
+        </div>
+
+        <div class="tiles">
+          <a class="tile" href="/tours/">
+            <h3>Waterfalls</h3>
+            <p>Visit well-known waterfall routes and enjoy one of the most popular outdoor activities in Mindo.</p>
+          </a>
+
+          <a class="tile" href="/tours/">
+            <h3>Chocolate tours</h3>
+            <p>Explore local cacao and chocolate experiences that are among the most visited attractions in town.</p>
+          </a>
+
+          <a class="tile" href="/tours/">
+            <h3>Cloud forest trails</h3>
+            <p>Walk through lush tropical forest landscapes with chances to see birds, butterflies, and native flora.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Mindo cloud forest gallery">
+        <div class="sectionHead">
+          <h2>Mindo cloud forest</h2>
+          <p class="hint"></p>
+        </div>
+
+        <div class="photoRail">
+          <figure class="photo">
+            <img src="/assets/images/pages/placeholders/placeholder-gallery.jpg" alt="Cloud forest landscapes in Mindo">
+            <figcaption class="photoCap">Cloud forest landscapes</figcaption>
+          </figure>
+
+          <figure class="photo">
+            <img src="/assets/images/pages/placeholders/placeholder-tour.jpg" alt="Wildlife encounters in Mindo">
+            <figcaption class="photoCap">Wildlife encounters</figcaption>
+          </figure>
+
+          <figure class="photo">
+            <img src="/assets/images/pages/placeholders/placeholder-waterfall.jpg" alt="Waterfalls and rivers in Mindo">
+            <figcaption class="photoCap">Waterfalls and rivers</figcaption>
+          </figure>
+
+          <figure class="photo">
+            <img src="/assets/images/pages/placeholders/placeholder-hero.jpg" alt="Nature and biodiversity in Mindo">
+            <figcaption class="photoCap">Nature and biodiversity</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <div id="siteFooter"></div>
+  </div>
+
+  <script src="/assets/js/includes.js" defer></script>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>
