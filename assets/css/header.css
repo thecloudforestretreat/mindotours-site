@@ -1,4 +1,4 @@
-.topbar{
+.siteHeader{
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -6,7 +6,7 @@
   padding:14px 16px;
   border:1px solid var(--line);
   border-radius:22px;
-  background:rgba(255,255,255,.7);
+  background:rgba(255,255,255,.70);
   box-shadow:var(--shadow);
 }
 
@@ -109,7 +109,7 @@
   margin-top:10px;
   border:1px solid var(--line);
   border-radius:22px;
-  background:rgba(255,255,255,.9);
+  background:rgba(255,255,255,.90);
   box-shadow:var(--shadow);
   padding:14px;
 }
