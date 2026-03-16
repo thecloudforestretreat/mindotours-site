@@ -1,33 +1,27 @@
-<header class="siteHeader" data-site-header>
+<header class="siteHeader">
   <a class="brand" href="/" aria-label="Mindo Tours home">
-    <img src="/assets/logo/mindo_tours_logo_512.png" alt="Mindo Tours logo" class="brandMark">
-    <span class="brandName">Mindo Tours</span>
+    <img src="/apple-touch-icon.png" alt="Mindo Tours logo">
+    <strong>Mindo Tours</strong>
   </a>
 
-  <div class="rightActions">
-    <div class="lang" aria-label="Language switcher">
-      <a href="/" class="langLink is-active" lang="en">EN</a>
-      <a href="/es/" class="langLink" lang="es">ES</a>
-    </div>
-
-    <button class="navToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+  <div class="lang" aria-label="Language switcher">
+    <a href="/" class="is-active" lang="en">EN</a>
+    <a href="/es/" lang="es">ES</a>
   </div>
 
-  <nav class="nav desktopNav" aria-label="Primary">
+  <nav class="nav" aria-label="Primary">
     <a href="/">Home</a>
     <a href="/tours/">Tours</a>
     <a href="/about/">About</a>
     <a href="/contact/">Contact</a>
     <a href="https://mindobirdwatching.com/contact/" target="_blank" rel="noopener" class="navCta">Book A Tour</a>
   </nav>
+
+  <button class="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">☰</button>
 </header>
 
 <div class="mobileMenu" id="mobileMenu" hidden>
-  <nav class="mobileNav" aria-label="Mobile primary">
+  <nav aria-label="Mobile primary">
     <a href="/">Home</a>
     <a href="/tours/">Tours</a>
     <a href="/about/">About</a>
@@ -36,7 +30,7 @@
   </nav>
 
   <div class="mobileLang" aria-label="Mobile language switcher">
-    <a href="/" class="langLink is-active" lang="en">EN</a>
-    <a href="/es/" class="langLink" lang="es">ES</a>
+    <a href="/" class="is-active" lang="en">EN</a>
+    <a href="/es/" lang="es">ES</a>
   </div>
 </div>
