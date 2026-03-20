@@ -1,3 +1,97 @@
-MISMA ESTRUCTURA QUE INGLES
-SIN ESPACIOS VACIOS
-MISMA ALINEACION
+PLANTILLA DE PAGINA EN ESPANOL
+
+MISMA ESTRUCTURA EXACTA QUE INGLES.
+
+HEAD
+- titulo
+- meta description
+- robots
+- author
+- keywords
+- canonical
+- hreflang (en / es / x-default)
+- OG tags
+- Twitter tags
+- favicon
+- theme-color
+- JSON-LD
+- estilos
+- head.js
+
+BODY
+- .container
+- #siteHeader
+
+MAIN
+- .page.card
+
+HERO
+- .hero
+  - .heroLeft
+    - h1
+    - 2-3 parrafos introductorios
+    - .ctaStack
+      - .ctaRow
+        - boton primario
+        - boton secundario
+      - .ghostRow
+        - links ghost
+    - micro-bloque de soporte si hace falta para equilibrar altura
+  - .heroRight
+    - carrusel
+    - panel de confianza
+    - tarjeta de soporte
+
+MODULOS DE SECCION
+
+1. GRID SECTION
+- .section
+- .sectionHead
+- .grid2 o .grid3
+- todas las cards de igual altura
+- CTA pegado abajo
+
+ESTRUCTURA DE CARD
+- .benefitCard / .tourCard / .infoCard
+  - .cardMedia
+  - .cardBody
+    - h3
+    - parrafo(s)
+    - nota de soporte opcional
+    - .cardActions
+
+2. SPLIT FEATURE SECTION
+- .section
+- .featureCard o .sectionSplit
+  - .featureMedia o .sectionSplitMedia
+  - .featureBody o .sectionSplitBody
+    - .sectionCopy
+    - .sectionSupport (OBLIGATORIO si existe riesgo de espacio vacio)
+    - .featureActions o .sectionActions
+
+3. CTA STRIP
+- .section
+- .ctaStrip
+  - parrafo
+  - .actions
+    - primario
+    - secundario
+    - ghost opcional
+
+REGLAS OBLIGATORIAS
+- NO espacios vacios visibles en desktop
+- Toda seccion split debe quedar visualmente balanceada
+- Si el cuerpo de texto queda corto, agregar .sectionSupport antes del CTA
+- NO CTAs flotando
+- Los botones deben alinearse entre filas cuando sea posible
+- Cards de igual altura obligatorias
+- Espanol natural de Sudamerica
+- Misma estructura y misma alineacion que ingles
+
+FOOTER
+- #siteFooter
+
+SCRIPTS
+- includes.js
+- site.js
+- logica de carrusel si hace falta
