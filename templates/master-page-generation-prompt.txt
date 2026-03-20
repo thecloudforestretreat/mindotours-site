@@ -1,74 +1,147 @@
 You are building a production-ready, SEO-optimized webpage for mindotours.com using a strict, reusable design system.
 
 GOAL:
-Create a fully consistent, conversion-optimized page that captures broad Mindo travel intent and funnels users toward booking.
+Create a fully consistent, conversion-optimized page that captures broad Mindo travel intent (birdwatching, waterfalls, chocolate, general activities) and funnels users toward booking.
 
 SYSTEM RULES (MANDATORY):
 
 1. LAYOUT STRUCTURE
-- Full HTML document
-- Full <head> SEO setup
-- Use header/footer includes
+- Full HTML document (complete file, no partials)
+- Include full <head> with SEO, OG, Twitter, hreflang, canonical, favicon, theme color, JSON-LD
+- Use:
+  - #siteHeader include
+  - #siteFooter include
+  - includes.js and site.js
 - Main wrapper: .page.card
 
-2. HERO STRUCTURE
+2. HERO STRUCTURE (REQUIRED)
 LEFT:
 - h1
-- paragraphs
-- CTA block
+- 2-3 strong paragraphs (SEO-rich, natural tone)
+- CTA block:
+  [Primary] [Secondary]
+  ghost links below
+
 RIGHT:
-- carousel
-- trust panel
-- support card
+- Carousel (5 images)
+- Trust panel
+- Support card
 
-3. CTA SYSTEM
-Primary = booking
-Secondary = explore
-Ghost = internal
-Always:
-[Primary] [Secondary]
+3. CTA SYSTEM (STRICT)
+- Primary (yellow): booking / conversion
+- Secondary (green): explore / info
+- Ghost: internal navigation
+- Layout ALWAYS:
+  [Primary] [Secondary]
+- Hero CTA block must sit directly below hero copy, never floating with large empty space below
+- Final CTA strip must keep buttons aligned in one clean row on desktop and stack cleanly on mobile
 
-4. CARD SYSTEM
-- Equal height
-- CTA pinned bottom
-- Must include image
+4. CARD SYSTEM (STRICT)
+- ALL cards equal height
+- CTA pinned bottom using margin-top:auto
+- Each card MUST include:
+  - image
+  - title
+  - description
+  - CTA
+- Card titles should start at consistent vertical positions
+- CTA rows in the same grid must sit on the same baseline whenever possible
 
 5. GRID SYSTEM
 Desktop:
-2-col / 3-col
+- 2 columns for main sections
+- 3 columns for info grids
 Mobile:
-1-col
+- 1 column stack
 
-6. SPACING
-32px sections
-16px cards
-16px gap
+6. SPACING SYSTEM
+- Section spacing: 32px
+- Card padding: 16px
+- Grid gap: 16px
+- NO random spacing
+- No decorative empty space
 
 7. IMAGE RULES
-All sections + cards have images
+- Hero uses carousel
+- Every major section includes images
+- Every card includes an image
+- Feature blocks use image + text split
+- Add more images when needed to maintain density, rhythm, and visual balance
 
-8. HEIGHT BALANCE RULE (CRITICAL)
-- NO empty space
-- Columns must feel equal
-- Add support content if needed
+8. PAGE FLOW (USE PRESET TO DETERMINE MODULES)
+Approved modules:
+- Hero
+- Benefits (3 cards)
+- Main cards (2)
+- Feature split (image + text)
+- Experience grid (3)
+- Planning section
+- Value section
+- CTA strip
 
-9. CONTENT FILL RULE
-Use:
-- checklist
-- trust block
-- tips
-- links
-NEVER leave blank space
+9. MOBILE OPTIMIZATION
+- All grids collapse cleanly
+- No overflow issues
+- Buttons remain aligned and readable
+- Do not let CTAs wrap awkwardly when avoidable
+- Preserve visual hierarchy and rhythm on small screens
 
-10. FEATURE RULE
-Split sections must include support content before CTA
+10. LANGUAGE
+- Structure MUST match EN/ES versions exactly
+- Only text changes
+- Spanish must be natural South American Spanish
+- hreflang must swap correctly between EN and ES versions
 
-11. ALIGNMENT RULE
-- Buttons aligned
-- Cards aligned
-- No floating elements
+11. HEIGHT BALANCE RULES (CRITICAL)
+- No visible empty space blocks on desktop
+- In any 2-column section, both columns must feel visually balanced
+- If one column has less content, you MUST add supporting content to fill the space
+- Hero left and hero right must feel equal in visual weight
+- Mixed image/text sections must not create obvious dead zones
+- Section tops and bottoms should read as one clean horizontal band
 
-OUTPUT:
-FULL FILE
-NO missing sections
-NO empty space
+12. CONTENT FILL RULE (CRITICAL)
+- Every major visible block must feel intentionally filled
+- Avoid layouts where more than 20 percent of a card or split-column body appears visually empty
+- If content is too short for the chosen layout, add useful support content rather than leaving the space empty
+- Approved support fillers:
+  - short checklist
+  - mini guide
+  - mini FAQ
+  - trust note
+  - planning tip
+  - family-friendly note
+  - internal link block
+  - secondary paragraph
+  - "good for" micro-panel
+
+13. FEATURE SECTION RULE (CRITICAL)
+- Feature split sections MUST include:
+  1. main copy
+  2. support content block
+  3. CTA row at the bottom
+- CTA must NEVER sit under a large empty space
+- If the copy is still too short after normal writing, add a support sub-block before the CTA row
+
+14. CTA ALIGNMENT RULES (CRITICAL)
+- No floating CTAs
+- No CTA rows appearing halfway up a card or split section
+- Hero CTA block must sit immediately after hero copy
+- Card CTAs must be pinned bottom
+- Feature section CTA row must appear after support content, not directly under short copy
+- Buttons across paired cards must align horizontally on desktop whenever possible
+
+15. MODULE FALLBACK RULE
+- If a chosen layout creates visible empty space, do NOT keep the empty space
+- Instead:
+  1. add approved support content, or
+  2. switch to a denser module while preserving the approved design system
+- No visible empty space is allowed in major desktop sections
+
+OUTPUT REQUIREMENTS:
+- FULL COMPLETE FILE
+- No explanations
+- No partial code
+- No missing sections
+- Clean, consistent, aligned layout
+- No empty space issues
