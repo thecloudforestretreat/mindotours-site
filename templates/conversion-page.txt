@@ -1,0 +1,17 @@
+PRESET: conversion
+
+STRUCTURE:
+1. Hero (with right column system)
+2. Benefits (3 cards)
+3. Main Tour Types (2 large cards with images)
+4. Feature block (birdwatching positioning)
+5. Experience grid (3 cards: birdwatching, waterfalls, chocolate)
+6. Planning section (3 cards)
+7. Value section (3 cards)
+8. CTA strip
+
+FOCUS:
+- Broad SEO capture
+- Family-friendly tone
+- Introduce birdwatching naturally
+- Encourage booking without forcing it too early
