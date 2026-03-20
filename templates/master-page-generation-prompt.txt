@@ -1,100 +1,74 @@
 You are building a production-ready, SEO-optimized webpage for mindotours.com using a strict, reusable design system.
 
 GOAL:
-Create a fully consistent, conversion-optimized page that captures broad Mindo travel intent (birdwatching, waterfalls, chocolate, general activities) and funnels users toward booking.
+Create a fully consistent, conversion-optimized page that captures broad Mindo travel intent and funnels users toward booking.
 
 SYSTEM RULES (MANDATORY):
 
 1. LAYOUT STRUCTURE
-- Full HTML document (complete file, no partials)
-- Include full <head> with SEO, OG, Twitter, hreflang, canonical, favicon, theme color, JSON-LD
-- Use:
-  - #siteHeader include
-  - #siteFooter include
-  - includes.js and site.js
+- Full HTML document
+- Full <head> SEO setup
+- Use header/footer includes
 - Main wrapper: .page.card
 
-2. HERO STRUCTURE (REQUIRED)
+2. HERO STRUCTURE
 LEFT:
 - h1
-- 2–3 strong paragraphs (SEO-rich, natural tone)
-- CTA block:
-  [Primary] [Secondary]
-  ghost links below
-
+- paragraphs
+- CTA block
 RIGHT:
-- Carousel (5 images)
-- Trust panel
-- Support card
+- carousel
+- trust panel
+- support card
 
-3. CTA SYSTEM (STRICT)
-- Primary (yellow): booking / conversion
-- Secondary (green): explore / info
-- Ghost: internal navigation
-- Layout ALWAYS:
-  [Primary] [Secondary]
+3. CTA SYSTEM
+Primary = booking
+Secondary = explore
+Ghost = internal
+Always:
+[Primary] [Secondary]
 
-4. CARD SYSTEM (STRICT)
-- ALL cards equal height
-- CTA pinned bottom using margin-top:auto
-- Each card MUST include:
-  - image
-  - title
-  - description
-  - CTA
+4. CARD SYSTEM
+- Equal height
+- CTA pinned bottom
+- Must include image
 
 5. GRID SYSTEM
 Desktop:
-- 2 columns for main sections
-- 3 columns for info grids
+2-col / 3-col
 Mobile:
-- 1 column stack
+1-col
 
-6. SPACING SYSTEM
-- Section spacing: 32px
-- Card padding: 16px
-- Grid gap: 16px
-- NO random spacing
+6. SPACING
+32px sections
+16px cards
+16px gap
 
 7. IMAGE RULES
-- Hero uses carousel
-- Every major section includes images
-- Every card includes an image
-- Feature blocks use image + text split
+All sections + cards have images
 
-8. PAGE FLOW (use preset to determine modules)
-- Use only approved modules:
-  Hero
-  Benefits (3 cards)
-  Main cards (2)
-  Feature split (image + text)
-  Experience grid (3)
-  Planning section
-  Value section
-  CTA strip
+8. HEIGHT BALANCE RULE (CRITICAL)
+- NO empty space
+- Columns must feel equal
+- Add support content if needed
 
-9. MOBILE OPTIMIZATION
-- All grids collapse cleanly
-- No overflow issues
-- Buttons remain aligned and readable
+9. CONTENT FILL RULE
+Use:
+- checklist
+- trust block
+- tips
+- links
+NEVER leave blank space
 
-10. LANGUAGE
-- Structure MUST match EN/ES versions exactly
-- Only text changes
+10. FEATURE RULE
+Split sections must include support content before CTA
 
-HEIGHT BALANCE RULES (MANDATORY):
-- No visible empty space blocks on desktop.
-- In any 2-column section, both columns must feel visually balanced.
-- If one column has less content, add a supporting text block, FAQ micro-block, checklist, mini CTA, or secondary info card to fill the space.
-- Do not leave blank vertical areas under CTA groups.
-- Hero left and hero right must feel equal in visual weight.
-- Feature split sections must either:
-  1. use enough text to match image height, or
-  2. add a supporting sub-block under the text before the CTA row.
+11. ALIGNMENT RULE
+- Buttons aligned
+- Cards aligned
+- No floating elements
 
-OUTPUT REQUIREMENTS:
-- FULL COMPLETE FILE
-- No explanations
-- No partial code
-- No missing sections
-- Clean, consistent, aligned layout
+OUTPUT:
+FULL FILE
+NO missing sections
+NO empty space
