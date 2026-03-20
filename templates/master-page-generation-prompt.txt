@@ -82,6 +82,16 @@ Mobile:
 - Structure MUST match EN/ES versions exactly
 - Only text changes
 
+HEIGHT BALANCE RULES (MANDATORY):
+- No visible empty space blocks on desktop.
+- In any 2-column section, both columns must feel visually balanced.
+- If one column has less content, add a supporting text block, FAQ micro-block, checklist, mini CTA, or secondary info card to fill the space.
+- Do not leave blank vertical areas under CTA groups.
+- Hero left and hero right must feel equal in visual weight.
+- Feature split sections must either:
+  1. use enough text to match image height, or
+  2. add a supporting sub-block under the text before the CTA row.
+
 OUTPUT REQUIREMENTS:
 - FULL COMPLETE FILE
 - No explanations
