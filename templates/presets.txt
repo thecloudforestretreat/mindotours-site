@@ -1,0 +1,68 @@
+Conversion Preset
+
+SECTION ORDER:
+
+1. Benefits (3 cards)
+2. Main Tour Types (2 cards)
+3. Feature (birdwatching positioning)
+4. Experience Grid (3 cards)
+5. Planning Section (3 cards)
+6. Value Section (3 cards)
+7. CTA Strip
+
+Informational Preset
+
+SECTION ORDER:
+
+1. Intro expansion
+2. Category sections (repeatable)
+3. Image grids
+4. Educational sections
+5. Internal links
+6. CTA
+
+Production Preset
+
+Hero
+Gallery
+Details
+Inclusions
+Who it's for
+CTA
+
+REQUIRED INPUT BLOCK
+
+PAGE:
+URL:
+
+LANGUAGE:
+EN or ES
+
+PRESET:
+conversion / informational / product
+
+PRIMARY SEO KEYWORD:
+
+SECONDARY KEYWORDS:
+(list 5–10)
+
+SEARCH INTENT:
+(informational / commercial / hybrid)
+
+AUDIENCE:
+(tourists, families, birders, etc.)
+
+PAGE GOAL:
+(booking / education / funnel)
+
+MAIN SECTIONS CONTENT:
+(short bullets per section)
+
+CTA TARGET:
+(where buttons should go)
+
+INTERNAL LINKS:
+(list pages to link)
+
+IMAGE DIRECTION:
+(what each section should visually show)
