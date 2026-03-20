@@ -1,34 +1,90 @@
-Conversion Preset
+PRESETS
+
+1. CONVERSION PRESET
 
 SECTION ORDER:
+1. Hero (with right column system)
+2. Benefits (3 cards)
+3. Main Tour Types (2 large cards with images)
+4. Feature block (birdwatching positioning)
+5. Experience grid (3 cards: birdwatching, waterfalls, chocolate)
+6. Planning section (3 cards)
+7. Value section (3 cards)
+8. CTA strip
 
-1. Benefits (3 cards)
-2. Main Tour Types (2 cards)
-3. Feature (birdwatching positioning)
-4. Experience Grid (3 cards)
-5. Planning Section (3 cards)
-6. Value Section (3 cards)
-7. CTA Strip
+FOCUS:
+- Broad SEO capture
+- Family-friendly tone
+- Introduce birdwatching naturally
+- Encourage booking without forcing it too early
 
-Informational Preset
+LAYOUT NOTES:
+- Benefits cards must align perfectly
+- Main Tour Type cards must be equal height with CTA baseline alignment
+- Feature section must include support content if the body is shorter than the paired media
+- Experience grid must remain dense and balanced
+- No dead zones in the hero left column or feature block
+
+2. INFORMATIONAL PRESET
 
 SECTION ORDER:
+1. Hero (with right column system)
+2. Intro expansion
+3. Category sections (repeatable)
+4. Image grids
+5. Educational sections
+6. Internal links
+7. CTA strip
 
-1. Intro expansion
-2. Category sections (repeatable)
-3. Image grids
-4. Educational sections
-5. Internal links
-6. CTA
+FOCUS:
+- Informational SEO capture
+- Education first, funnel second
+- Clear internal linking to conversion pages
 
-Production Preset
+LAYOUT NOTES:
+- Category sections should use image-first cards where useful
+- Educational sections should stay visually dense
+- Add supporting micro-blocks if a split section creates empty space
+- CTA strip should be softer than conversion pages but still visually consistent
 
-Hero
-Gallery
-Details
-Inclusions
-Who it's for
-CTA
+3. PRODUCT PRESET
+
+SECTION ORDER:
+1. Hero (with right column system if appropriate for density, otherwise hero + gallery)
+2. Gallery
+3. Details
+4. Inclusions
+5. Who it is for
+6. CTA strip
+
+FOCUS:
+- High-intent search capture
+- Clarity, conversion, trust
+- Simple path to booking or inquiry
+
+LAYOUT NOTES:
+- Product pages should feel denser than blog-like
+- Use image-rich sections
+- Inclusions and who-it-is-for sections should not leave empty panels
+- CTA should remain visible and strong
+
+4. UTILITY-CONVERSION PRESET
+
+SECTION ORDER:
+1. Hero (with right column system)
+2. Quick reassurance section
+3. Contact or booking help blocks
+4. CTA strip
+
+FOCUS:
+- Minimal friction
+- Fast completion of booking/contact task
+- Clear reassurance and next step
+
+LAYOUT NOTES:
+- Keep the page shorter
+- Still obey all alignment and empty-space rules
+- Use support blocks to avoid dead space in hero or help sections
 
 REQUIRED INPUT BLOCK
 
@@ -39,21 +95,21 @@ LANGUAGE:
 EN or ES
 
 PRESET:
-conversion / informational / product
+conversion / informational / product / utility-conversion
 
 PRIMARY SEO KEYWORD:
 
 SECONDARY KEYWORDS:
-(list 5–10)
+(list 5-10)
 
 SEARCH INTENT:
-(informational / commercial / hybrid)
+(informational / commercial / hybrid / transactional)
 
 AUDIENCE:
 (tourists, families, birders, etc.)
 
 PAGE GOAL:
-(booking / education / funnel)
+(booking / education / funnel / support)
 
 MAIN SECTIONS CONTENT:
 (short bullets per section)
