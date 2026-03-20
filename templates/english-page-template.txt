@@ -1,15 +1,94 @@
-STRUCTURE
+ENGLISH PAGE TEMPLATE
 
-Hero (split)
-Section (split)
-  media
-  body
-    copy
-    support block (required if space)
-    CTA
+HEAD
+- title
+- meta description
+- robots
+- author
+- keywords
+- canonical
+- hreflang (en / es / x-default)
+- OG tags
+- Twitter tags
+- favicon set
+- theme-color
+- JSON-LD
+- stylesheet links
+- head.js
 
-Grids:
-- equal cards
-- CTA bottom
+BODY
+- .container
+- #siteHeader
 
-CTA strip
+MAIN
+- .page.card
+
+HERO
+- .hero
+  - .heroLeft
+    - h1
+    - 2-3 intro paragraphs
+    - .ctaStack
+      - .ctaRow
+        - primary button
+        - secondary button
+      - .ghostRow
+        - ghost links
+    - OPTIONAL support micro-block if needed to balance height
+  - .heroRight
+    - carousel
+    - trust panel
+    - support card
+
+SECTION MODULES
+
+1. GRID SECTION
+- .section
+- .sectionHead
+- .grid2 or .grid3
+- all cards equal height
+- CTA pinned bottom
+
+CARD STRUCTURE
+- .benefitCard / .tourCard / .infoCard
+  - .cardMedia
+  - .cardBody
+    - h3
+    - paragraph(s)
+    - OPTIONAL support note
+    - .cardActions
+
+2. SPLIT FEATURE SECTION
+- .section
+- .featureCard or .sectionSplit
+  - .featureMedia or .sectionSplitMedia
+  - .featureBody or .sectionSplitBody
+    - .sectionCopy
+    - .sectionSupport (REQUIRED if there is any risk of empty space)
+    - .featureActions or .sectionActions
+
+3. CTA STRIP
+- .section
+- .ctaStrip
+  - paragraph
+  - .actions
+    - primary
+    - secondary
+    - optional ghost
+
+MANDATORY STRUCTURAL RULES
+- No empty desktop space
+- Every split section body must be dense enough to visually match its paired media
+- If body is too short, add .sectionSupport before CTA
+- No floating CTAs
+- Buttons must align across rows where possible
+- Equal-height cards are mandatory
+- Major sections must feel visually complete, never half-empty
+
+FOOTER
+- #siteFooter
+
+SCRIPTS
+- includes.js
+- site.js
+- carousel logic if needed
