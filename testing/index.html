@@ -1,183 +1,953 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Mindo Tours | Birdwatching, Waterfalls, Chocolate & Adventure</title>
-<meta name="description" content="Explore the best Mindo tours including birdwatching, waterfalls, chocolate tours, canopy, and family-friendly cloud forest experiences near Quito.">
+  <title>Mindo Tours | Birdwatching, Waterfalls, Chocolate and Family-Friendly Activities</title>
+  <meta name="description" content="Explore the best Mindo tours near Quito, including birdwatching, waterfalls, chocolate tours, canopy, cloud forest walks, and family-friendly nature experiences in Mindo, Ecuador.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="author" content="Mindo Tours">
+  <meta name="keywords" content="Mindo tours, tours in Mindo Ecuador, Mindo activities, birdwatching Mindo, Mindo waterfalls, Mindo chocolate tour, family tours Mindo, cloud forest tours Ecuador, things to do in Mindo">
 
-<link rel="canonical" href="https://mindotours.com/tours/">
-<link rel="alternate" hreflang="en" href="https://mindotours.com/tours/">
-<link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/">
-<link rel="alternate" hreflang="x-default" href="https://mindotours.com/tours/">
+  <link rel="canonical" href="https://mindotours.com/tours/">
+  <link rel="alternate" hreflang="en" href="https://mindotours.com/tours/">
+  <link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/">
+  <link rel="alternate" hreflang="x-default" href="https://mindotours.com/tours/">
 
-<meta property="og:title" content="Mindo Tours | Explore the Best Experiences in Ecuador">
-<meta property="og:description" content="Discover birdwatching, waterfalls, chocolate tours, and adventure activities in Mindo, Ecuador.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://mindotours.com/tours/">
-<meta property="og:image" content="https://mindotours.com/assets/logo/mindo_tours_og_01.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mindo Tours">
+  <meta property="og:title" content="Mindo Tours | Birdwatching, Waterfalls, Chocolate and Family-Friendly Activities">
+  <meta property="og:description" content="Discover birdwatching, waterfalls, chocolate tours, cloud forest walks, and family-friendly experiences in Mindo, Ecuador.">
+  <meta property="og:url" content="https://mindotours.com/tours/">
+  <meta property="og:image" content="https://mindotours.com/assets/logo/mindo_tours_og_01.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mindo Tours in Ecuador">
 
-<link rel="stylesheet" href="/assets/css/site.css">
-<link rel="stylesheet" href="/assets/css/header.css">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mindo Tours | Birdwatching, Waterfalls, Chocolate and Family-Friendly Activities">
+  <meta name="twitter:description" content="Plan your trip with the best tours in Mindo, Ecuador, from birdwatching and waterfalls to chocolate tours and family-friendly cloud forest adventures.">
+  <meta name="twitter:image" content="https://mindotours.com/assets/logo/mindo_tours_og_01.jpg">
 
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0D5925">
+
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <script src="/assets/js/head.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Mindo Tours",
+    "url": "https://mindotours.com/tours/",
+    "description": "A guide to the best tours in Mindo, Ecuador, including birdwatching, waterfalls, chocolate, canopy, and family-friendly nature experiences.",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Mindo Tours",
+      "url": "https://mindotours.com/"
+    },
+    "about": {
+      "@type": "Place",
+      "name": "Mindo, Ecuador"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://mindotours.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tours",
+        "item": "https://mindotours.com/tours/"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    body.tours-page .page{
+      margin-top:18px;
+      padding:26px;
+    }
+    body.tours-page .page.card{
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      box-shadow: var(--shadow);
+    }
+
+    body.tours-page .hero{
+      display:grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 16px;
+      align-items:start;
+    }
+    body.tours-page .hero h1{
+      margin:0 0 8px;
+      letter-spacing:-0.02em;
+      line-height:1.08;
+    }
+    body.tours-page .hero p{
+      margin:0;
+      max-width:92ch;
+      color:var(--ink);
+      line-height:1.7;
+    }
+    body.tours-page .heroCopy{
+      min-width:0;
+    }
+    body.tours-page .heroCtas{
+      margin-top:14px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    body.tours-page .ctaPrimary,
+    body.tours-page .ctaSecondary{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    body.tours-page .checks{
+      margin:14px 0 0;
+      display:grid;
+      gap:10px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    body.tours-page .check{
+      padding:14px;
+      border:1px solid var(--line);
+      border-radius:var(--r);
+      background:rgba(255,255,255,.66);
+      box-shadow:var(--shadow);
+    }
+    body.tours-page .check strong{
+      display:block;
+      margin-bottom:6px;
+      font-weight:900;
+      color:var(--ink);
+    }
+    body.tours-page .check p{ margin:0; }
+
+    body.tours-page .heroRight{
+      display:grid;
+      gap:12px;
+      align-content:start;
+    }
+    body.tours-page .heroCard{
+      border:1px solid var(--line);
+      border-radius:var(--r);
+      background:rgba(255,255,255,.66);
+      box-shadow:var(--shadow);
+      padding:14px;
+    }
+    body.tours-page .heroCard h2{
+      margin:0 0 10px;
+      font-family:var(--font-head);
+      color:var(--forest);
+      letter-spacing:-0.02em;
+      font-size:18px;
+    }
+    body.tours-page .heroList{
+      margin:0;
+      padding-left:18px;
+      color:var(--ink);
+      line-height:1.6;
+    }
+
+    body.tours-page .socialProof{
+      background:rgba(255,255,255,.70);
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      padding:14px 14px 12px;
+    }
+    body.tours-page .spHead{
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-weight:900;
+      color:#1f5b3a;
+      margin:0 0 8px;
+    }
+    body.tours-page .spRating{
+      display:flex;
+      align-items:baseline;
+      gap:10px;
+      flex-wrap:wrap;
+      margin:0 0 10px;
+    }
+    body.tours-page .spStars{
+      font-weight:900;
+      letter-spacing:.10em;
+      color:#fbbc05;
+    }
+    body.tours-page .spScore{ font-weight:900; }
+    body.tours-page .spCount{
+      color:var(--ink);
+      font-weight:900;
+      border-bottom:1px dotted rgba(0,0,0,.25);
+      text-decoration:none;
+    }
+    body.tours-page .spPills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:10px 0 12px;
+    }
+    body.tours-page .spPill{
+      display:inline-flex;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid rgba(25,85,54,.18);
+      background:rgba(215,244,216,.55);
+      font-weight:900;
+      color:#1f5b3a;
+      font-size:13px;
+      line-height:1;
+      white-space:nowrap;
+    }
+    body.tours-page .spQuote{
+      margin:0;
+      padding-top:10px;
+      border-top:1px dashed rgba(0,0,0,.15);
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.45;
+    }
+    body.tours-page .spQuote strong{ color:var(--ink); }
+
+    body.tours-page .carousel{
+      border:1px solid var(--line);
+      border-radius:var(--r);
+      background:rgba(255,255,255,.66);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    body.tours-page .carouselViewport{
+      position:relative;
+      width:100%;
+      height:240px;
+      background:rgba(255,255,255,.55);
+      overflow:hidden;
+    }
+    body.tours-page .carouselTrack{
+      display:flex;
+      width:100%;
+      height:100%;
+      transform:translateX(0);
+      transition:transform 420ms ease;
+      will-change:transform;
+    }
+    body.tours-page .carouselSlide{
+      flex:0 0 100%;
+      width:100%;
+      height:100%;
+    }
+    body.tours-page .carouselSlide img{
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:cover;
+    }
+    body.tours-page .carouselBtns{
+      position:absolute;
+      inset:0;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      pointer-events:none;
+      padding:10px;
+    }
+    body.tours-page .cBtn{
+      pointer-events:auto;
+      width:44px;
+      height:44px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.88);
+      box-shadow:var(--shadow);
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+      user-select:none;
+    }
+    body.tours-page .cBtn svg{
+      width:20px;
+      height:20px;
+    }
+    body.tours-page .carouselDots{
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:10px;
+      display:flex;
+      gap:6px;
+      justify-content:center;
+      pointer-events:none;
+    }
+    body.tours-page .dot{
+      width:8px;
+      height:8px;
+      border-radius:999px;
+      border:1px solid rgba(0,0,0,.18);
+      background:rgba(255,255,255,.75);
+      box-shadow:var(--shadow);
+      opacity:.75;
+    }
+    body.tours-page .dot.is-active{
+      opacity:1;
+      background:rgba(13,89,37,.18);
+      border-color:rgba(13,89,37,.35);
+    }
+    body.tours-page .carouselCap{
+      padding:10px 12px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.4;
+      background:rgba(255,255,255,.55);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    body.tours-page .carouselCap strong{ color:var(--ink); }
+
+    body.tours-page .section{
+      margin-top:18px;
+      padding-top:14px;
+      border-top:1px solid var(--line);
+    }
+    body.tours-page .sectionHead{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-bottom:10px;
+    }
+    body.tours-page .sectionHead h2{
+      margin:0;
+      font-family:var(--font-head);
+      color:var(--forest);
+      letter-spacing:-0.02em;
+      font-size:20px;
+    }
+    body.tours-page .sectionHead p{
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.55;
+      max-width:84ch;
+    }
+
+    body.tours-page .cards{
+      margin-top:16px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+      align-items:start;
+    }
+    body.tours-page .tourCard{
+      background:rgba(255,255,255,.66);
+      border:1px solid var(--line);
+      border-radius:var(--r);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      height:100%;
+    }
+    body.tours-page .tourBody{
+      padding:14px 16px 16px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    body.tours-page .tourTitle{
+      margin:0 0 4px;
+      font-family:var(--font-head);
+      color:var(--forest);
+      letter-spacing:-0.02em;
+      font-size:20px;
+    }
+    body.tours-page .tourDesc{
+      margin:0;
+      color:var(--muted);
+      line-height:1.6;
+    }
+    body.tours-page .tourActions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:8px;
+    }
+    body.tours-page .miniLinks{
+      margin-top:2px;
+      padding:10px 12px;
+      border:1px solid rgba(11,59,28,.14);
+      border-radius:14px;
+      background:rgba(255,255,255,.55);
+    }
+    body.tours-page .miniLinksLabel{
+      font-weight:800;
+      font-size:12px;
+      letter-spacing:.02em;
+      text-transform:uppercase;
+      color:#0b3b1c;
+      margin-bottom:4px;
+    }
+    body.tours-page .miniLinks a{
+      color:#0b3b1c;
+      text-decoration:underline;
+      text-underline-offset:3px;
+      font-weight:700;
+    }
+
+    body.tours-page .activityCard{
+      margin-top:16px;
+      background:rgba(255,255,255,.66);
+      border:1px solid var(--line);
+      border-radius:var(--r);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns:1.08fr .92fr;
+      align-items:stretch;
+    }
+    body.tours-page .activityMedia{
+      min-height:320px;
+      background:rgba(255,255,255,.55);
+    }
+    body.tours-page .activityMedia img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    body.tours-page .activityBody{
+      padding:18px 18px 18px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      gap:12px;
+    }
+    body.tours-page .activityBody h2{
+      margin:0;
+      font-size:22px;
+    }
+    body.tours-page .activityBody p{
+      margin:0;
+      line-height:1.65;
+    }
+
+    body.tours-page .grid{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:12px;
+    }
+    body.tours-page .infoCard{
+      border:1px solid var(--line);
+      border-radius:var(--r);
+      background:rgba(255,255,255,.66);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
+    }
+    body.tours-page .infoMedia{
+      height:180px;
+      background:rgba(255,255,255,.55);
+      overflow:hidden;
+    }
+    body.tours-page .infoMedia img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    body.tours-page .infoBody{
+      padding:14px 14px 16px;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      flex:1 1 auto;
+    }
+    body.tours-page .infoBody h3{
+      margin:0;
+      font-size:17px;
+      line-height:1.25;
+    }
+    body.tours-page .infoBody p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.55;
+    }
+    body.tours-page .infoBody .btn{
+      margin-top:auto;
+      width:fit-content;
+    }
+
+    body.tours-page .ctaStrip{
+      margin-top:14px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      justify-content:space-between;
+      border:1px solid var(--line);
+      border-radius:var(--r);
+      background:rgba(255,255,255,.66);
+      box-shadow:var(--shadow);
+      padding:14px;
+    }
+    body.tours-page .ctaStrip p{
+      margin:0;
+      color:var(--ink);
+      line-height:1.6;
+      max-width:75ch;
+    }
+    body.tours-page .ctaStrip .actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    @media (max-width: 980px){
+      body.tours-page .grid{ grid-template-columns:repeat(2,1fr); }
+    }
+    @media (max-width: 900px){
+      body.tours-page .hero{ grid-template-columns:1fr; }
+      body.tours-page .cards{ grid-template-columns:1fr; }
+      body.tours-page .activityCard{ grid-template-columns:1fr; }
+      body.tours-page .activityMedia{ min-height:220px; }
+      body.tours-page .checks{ grid-template-columns:1fr; }
+      body.tours-page .grid{ grid-template-columns:repeat(2,1fr); }
+      body.tours-page .carouselViewport{ height:220px; }
+    }
+    @media (max-width: 560px){
+      body.tours-page .grid{ grid-template-columns:1fr; }
+      body.tours-page .page{ padding:20px; }
+    }
+    @media (prefers-reduced-motion: reduce){
+      body.tours-page .carouselTrack{ transition:none; }
+    }
+  </style>
 </head>
+<body class="tours-page">
+  <div class="container">
+    <div id="siteHeader"></div>
 
-<body>
-<div class="container">
-<div id="siteHeader"></div>
+    <main class="page card" aria-label="Mindo tours">
+      <section class="hero" aria-label="Tours intro">
+        <div class="heroCopy">
+          <h1>Mindo Tours</h1>
+          <p>Mindo is one of the easiest places in Ecuador to combine nature, wildlife, soft adventure, and local flavor in a single trip. Visitors come for waterfalls, cloud forest trails, chocolate experiences, canopy, hummingbirds, and guided birdwatching, then build an itinerary that fits their pace, family, and available time.</p>
+          <p style="margin-top:10px;">This page is designed for travelers who want a broader view of what Mindo offers before choosing the right next step. Some people arrive looking for waterfalls or chocolate and discover birdwatching once they are here. Others come for birds first and then add family-friendly activities around the forest. Both travel styles work well in Mindo.</p>
+          <p style="margin-top:10px;">Explore the main tour options below and use this page as your starting point for planning a balanced Mindo itinerary.</p>
 
-<main class="page card">
+          <div class="heroCtas" aria-label="Primary actions">
+            <div class="ctaPrimary">
+              <a class="btn primary" href="https://mindobirdwatching.com/book-tour/" target="_blank" rel="noopener">Book a Tour</a>
+              <a class="btn secondary" href="https://wa.me/13054585402" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+            <div class="ctaSecondary">
+              <a class="btn secondary" href="/things-to-do-in-mindo/">Things to Do Guide</a>
+              <a class="btn ghost" href="/mindo-birdwatching-guide/">Birdwatching Guide</a>
+              <a class="btn ghost" href="/es/actividades/" hreflang="es" lang="es">Ver en espanol</a>
+            </div>
+          </div>
 
-<section class="section">
-<h1>Mindo Tours</h1>
+          <div class="checks" aria-label="Key benefits">
+            <div class="check">
+              <strong>Broad trip planning</strong>
+              <p>Use this page to compare birdwatching, waterfalls, chocolate, and family-friendly nature activities in one place.</p>
+            </div>
+            <div class="check">
+              <strong>Flexible pacing</strong>
+              <p>Good options for one-day trips from Quito, relaxed overnights, or travelers combining several experiences.</p>
+            </div>
+            <div class="check">
+              <strong>Easy booking paths</strong>
+              <p>Start here, then continue into deeper MBW booking pages for guided tours, timing, and direct contact.</p>
+            </div>
+          </div>
+        </div>
 
-<p>
-Mindo is one of the best places in Ecuador to experience nature, wildlife, and adventure in a single destination.
-From birdwatching and waterfalls to chocolate tours and canopy, you can build a complete experience whether you are visiting for a day or staying longer.
-</p>
+        <div class="heroRight" aria-label="Hero right column">
+          <div class="carousel" aria-label="Mindo tours highlights carousel" data-carousel>
+            <div class="carouselViewport">
+              <div class="carouselTrack">
+                <div class="carouselSlide">
+                  <img src="/assets/images/pages/placeholders/placeholder-hero.jpg" alt="Cloud forest tours in Mindo, Ecuador" loading="lazy">
+                </div>
+                <div class="carouselSlide">
+                  <img src="/assets/images/pages/placeholders/placeholder-tour.jpg" alt="Family-friendly nature tour in Mindo" loading="lazy">
+                </div>
+                <div class="carouselSlide">
+                  <img src="/assets/images/pages/placeholders/placeholder-gallery.jpg" alt="Waterfalls and trails in Mindo" loading="lazy">
+                </div>
+                <div class="carouselSlide">
+                  <img src="/assets/images/pages/placeholders/placeholder-clouds.jpg" alt="Adventure activities in Mindo, Ecuador" loading="lazy">
+                </div>
+                <div class="carouselSlide">
+                  <img src="/assets/images/pages/placeholders/placeholder-hero.jpg" alt="Birdwatching and cloud forest experiences in Mindo" loading="lazy">
+                </div>
+              </div>
 
-<p>
-This page helps you explore the main tour options in Mindo and decide what fits your travel style, while also guiding you toward the best next steps for booking and planning.
-</p>
+              <div class="carouselBtns" aria-hidden="false">
+                <button class="cBtn" type="button" data-prev aria-label="Previous image">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <button class="cBtn" type="button" data-next aria-label="Next image">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+              </div>
 
-<div class="heroCtas">
-<a class="btn primary" href="https://mindobirdwatching.com/book-tour/" target="_blank">Book a Tour</a>
-<a class="btn secondary" href="https://wa.me/13054585402" target="_blank">WhatsApp</a>
-<a class="btn ghost" href="/things-to-do-in-mindo/">Things to do guide</a>
-</div>
+              <div class="carouselDots" aria-hidden="true">
+                <span class="dot is-active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="carouselCap">
+              <span><strong>Mindo Tours</strong> Highlights from the cloud forest</span>
+              <span style="white-space:nowrap;" data-count>1 / 5</span>
+            </div>
+          </div>
 
-</section>
+          <aside class="socialProof" aria-label="Social proof">
+            <div class="spHead">Traveler trust</div>
+            <div class="spRating">
+              <div class="spStars" aria-label="5 out of 5 stars">★★★★★</div>
+              <div class="spScore">4.9</div>
+              <div class="spCount">84 reviews</div>
+            </div>
+            <div class="spPills" aria-label="Key benefits">
+              <span class="spPill">Local guides</span>
+              <span class="spPill">Family friendly</span>
+              <span class="spPill">Flexible planning</span>
+              <span class="spPill">Cloud forest magic</span>
+            </div>
+            <p class="spQuote">Many visitors arrive interested in one activity and end up building a fuller itinerary once they see how easy it is to combine waterfalls, birds, and local experiences in the same destination. <strong>Mindo works especially well for that.</strong></p>
+          </aside>
 
-<section class="section">
-<h2>Top Mindo Tour Experiences</h2>
+          <aside class="heroCard">
+            <h2>How this page works</h2>
+            <ul class="heroList">
+              <li>Start with the main tour categories below.</li>
+              <li>Use this page for broad trip planning before moving into more specific MBW booking pages.</li>
+              <li>Birdwatching is presented as a natural add-on, not only as a specialist activity.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
 
-<div class="tiles">
+      <section class="section" aria-label="Main tour types">
+        <div class="sectionHead">
+          <h2>Start with the main tour styles</h2>
+          <p>This section leads with the broadest booking paths so travelers can choose based on time, interest, and travel style before narrowing into specific activities.</p>
+        </div>
 
-<div class="tile">
-<h3>Birdwatching Tours</h3>
-<p>
-Mindo is world-famous for its bird diversity. Guided tours allow you to see toucans, hummingbirds, and many rare species even in a short visit.
-</p>
-<a href="https://mindobirdwatching.com/tours/" target="_blank">View Birdwatching Tours</a>
-</div>
+        <div class="cards" aria-label="Tour options">
+          <article class="tourCard" aria-label="Full day tours">
+            <div class="carousel" data-carousel aria-label="Full-day tour carousel">
+              <div class="carouselViewport">
+                <div class="carouselTrack">
+                  <div class="carouselSlide"><img src="/assets/images/pages/placeholders/placeholder-tour.jpg" alt="Full-day Mindo tour image 1"></div>
+                  <div class="carouselSlide"><img src="/assets/images/pages/placeholders/placeholder-gallery.jpg" alt="Full-day Mindo tour image 2"></div>
+                  <div class="carouselSlide"><img src="/assets/images/pages/placeholders/placeholder-clouds.jpg" alt="Full-day Mindo tour image 3"></div>
+                  <div class="carouselSlide"><img src="/assets/images/pages/placeholders/placeholder-hero.jpg" alt="Full-day Mindo tour image 4"></div>
+                  <div class="carouselSlide"><img src="/assets/images/pages/placeholders/placeholder-tour.jpg" alt="Full-day Mindo tour image 5"></div>
+                </div>
+                <div class="carouselBtns">
+                  <button class="cBtn" type="button" data-prev aria-label="Previous image">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                  <button class="cBtn" type="button" data-next aria-label="Next image">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                </div>
+                <div class="carouselDots" aria-hidden="true">
+                  <span class="dot is-active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+              </div>
+              <div class="carouselCap">
+                <span><strong>Full-day tours</strong> More range, more stops, more flexibility</span>
+                <span style="white-space:nowrap;" data-count>1 / 5</span>
+              </div>
+            </div>
 
-<div class="tile">
-<h3>Waterfalls & Nature</h3>
-<p>
-Explore multiple waterfalls, forest trails, and scenic viewpoints. Perfect for travelers looking for classic Mindo experiences.
-</p>
-<a href="https://mindobirdwatching.com/activities/" target="_blank">Explore Activities</a>
-</div>
+            <div class="tourBody">
+              <h3 class="tourTitle">Full-Day Mindo Tours</h3>
+              <p class="tourDesc">Best for travelers who want to experience more of Mindo in a single day. A full-day format works especially well if you want to combine wildlife, waterfalls, cloud forest scenery, and a more complete route without rushing from one stop to another.</p>
+              <div class="miniLinks" aria-label="Full-day spotlight">
+                <div class="miniLinksLabel">Good fit for:</div>
+                couples, families, photographers, and visitors who want a balanced Mindo day with more room for variety.
+              </div>
+              <div class="tourActions">
+                <a class="btn primary" href="https://mindobirdwatching.com/tours/full-day/" target="_blank" rel="noopener">View Full-Day Tours</a>
+                <a class="btn secondary" href="https://mindobirdwatching.com/book-tour/" target="_blank" rel="noopener">Reserve Now</a>
+              </div>
+            </div>
+          </article>
 
-<div class="tile">
-<h3>Chocolate & Local Tours</h3>
-<p>
-Learn how Ecuadorian chocolate is made and enjoy tastings while supporting local producers in Mindo.
-</p>
-<a href="https://mindobirdwatching.com/activities/" target="_blank">View Chocolate Tours</a>
-</div>
+          <article class="tourCard" aria-label="Half day tours">
+            <div class="carousel" data-carousel aria-label="Half-day tour carousel">
+              <div class="carouselViewport">
+                <div class="carouselTrack">
+                  <div class="carouselSlide"><img src="/assets/images/pages/placeholders/placeholder-gallery.jpg" alt="Half-day Mindo tour image 1"></div>
+                  <div class="carouselSlide"><img src="/assets/images/pages/placeholders/placeholder-clouds.jpg" alt="Half-day Mindo tour image 2"></div>
+                  <div class="carouselSlide"><img src="/assets/images/pages/placeholders/placeholder-tour.jpg" alt="Half-day Mindo tour image 3"></div>
+                  <div class="carouselSlide"><img src="/assets/images/pages/placeholders/placeholder-hero.jpg" alt="Half-day Mindo tour image 4"></div>
+                  <div class="carouselSlide"><img src="/assets/images/pages/placeholders/placeholder-gallery.jpg" alt="Half-day Mindo tour image 5"></div>
+                </div>
+                <div class="carouselBtns">
+                  <button class="cBtn" type="button" data-prev aria-label="Previous image">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                  <button class="cBtn" type="button" data-next aria-label="Next image">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                </div>
+                <div class="carouselDots" aria-hidden="true">
+                  <span class="dot is-active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+              </div>
+              <div class="carouselCap">
+                <span><strong>Half-day tours</strong> Strong experiences in a shorter time window</span>
+                <span style="white-space:nowrap;" data-count>1 / 5</span>
+              </div>
+            </div>
 
-</div>
+            <div class="tourBody">
+              <h3 class="tourTitle">Half-Day Mindo Tours</h3>
+              <p class="tourDesc">Ideal for shorter visits, flexible itineraries, and travelers who want a more focused outing. Half-day routes are a strong option if you are combining Mindo with Quito or if you want to leave room for waterfalls, chocolate, or another family-friendly activity later in the day.</p>
+              <div class="miniLinks" aria-label="Half-day spotlight">
+                <div class="miniLinksLabel">Good fit for:</div>
+                day trippers, travelers with limited time, and guests who want to mix birdwatching with general activities.
+              </div>
+              <div class="tourActions">
+                <a class="btn primary" href="https://mindobirdwatching.com/tours-half-day/" target="_blank" rel="noopener">View Half-Day Tours</a>
+                <a class="btn secondary" href="https://mindobirdwatching.com/book-tour/" target="_blank" rel="noopener">Reserve Now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
 
-</section>
+      <section class="activityCard" aria-label="Birdwatching as part of a broader trip">
+        <div class="activityMedia">
+          <img src="/assets/images/pages/placeholders/placeholder-gallery.jpg" alt="Birdwatching as part of a family-friendly Mindo itinerary">
+        </div>
+        <div class="activityBody">
+          <h2>Birdwatching that feels accessible, fun, and family friendly</h2>
+          <p>One of the main goals of this site is to help more travelers discover that birdwatching in Mindo does not need to feel technical or intimidating. Many guests start with waterfalls, chocolate, or general sightseeing, then realize that hummingbirds, toucans, and easy forest stops fit naturally into the same trip.</p>
+          <p>That makes Mindo especially valuable for families, mixed-interest groups, and travelers who want a memorable nature experience without building their entire trip around specialist birding from the start.</p>
+          <div class="tourActions">
+            <a class="btn primary" href="/mindo-birdwatching-guide/">Read the Birdwatching Guide</a>
+            <a class="btn secondary" href="https://mindobirdwatching.com/tours/" target="_blank" rel="noopener">Explore Bird Tours</a>
+          </div>
+        </div>
+      </section>
 
-<section class="section">
-<h2>Tour Options</h2>
+      <section class="section" aria-label="Popular experiences">
+        <div class="sectionHead">
+          <h2>Popular Mindo experiences to combine with tours</h2>
+          <p>These are the types of experiences that help broaden your audience and naturally introduce birdwatching into a more complete trip.</p>
+        </div>
 
-<div class="tiles">
+        <div class="grid" aria-label="Popular experiences cards">
+          <article class="infoCard">
+            <div class="infoMedia">
+              <img src="/assets/images/pages/placeholders/placeholder-gallery.jpg" alt="Birdwatching in Mindo, Ecuador">
+            </div>
+            <div class="infoBody">
+              <h3>Birdwatching</h3>
+              <p>Mindo is internationally known for hummingbirds, toucans, tanagers, and cloud forest diversity. Even first-time birdwatchers often enjoy it when it is introduced as part of a relaxed nature outing.</p>
+              <a class="btn primary" href="https://mindobirdwatching.com/tours/" target="_blank" rel="noopener">View Birdwatching Tours</a>
+            </div>
+          </article>
 
-<div class="tile">
-<h3>Full Day Tours</h3>
-<p>
-Best for travelers who want a complete Mindo experience in one day. Includes multiple stops, wildlife, and guided exploration.
-</p>
-<a href="https://mindobirdwatching.com/tours/full-day/" target="_blank">View Full Day Tours</a>
-</div>
+          <article class="infoCard">
+            <div class="infoMedia">
+              <img src="/assets/images/pages/placeholders/placeholder-tour.jpg" alt="Waterfall tours in Mindo, Ecuador">
+            </div>
+            <div class="infoBody">
+              <h3>Waterfalls and forest walks</h3>
+              <p>Classic Mindo experiences include waterfall routes, scenic viewpoints, and easier cloud forest walks that work well for first-time visitors and families.</p>
+              <a class="btn secondary" href="https://mindobirdwatching.com/activities/" target="_blank" rel="noopener">Explore Activities</a>
+            </div>
+          </article>
 
-<div class="tile">
-<h3>Half Day Tours</h3>
-<p>
-Ideal for shorter visits or flexible itineraries. Focused experiences with strong chances of wildlife sightings.
-</p>
-<a href="https://mindobirdwatching.com/tours-half-day/" target="_blank">View Half Day Tours</a>
-</div>
+          <article class="infoCard">
+            <div class="infoMedia">
+              <img src="/assets/images/pages/placeholders/placeholder-clouds.jpg" alt="Chocolate tour in Mindo, Ecuador">
+            </div>
+            <div class="infoBody">
+              <h3>Chocolate and local flavor</h3>
+              <p>Chocolate tours are an easy way to add something cultural and family friendly to a Mindo itinerary, especially for day trips that need a relaxed stop between nature activities.</p>
+              <a class="btn secondary" href="https://mindobirdwatching.com/activities/" target="_blank" rel="noopener">See Local Activities</a>
+            </div>
+          </article>
+        </div>
+      </section>
 
-<div class="tile">
-<h3>Custom Tours</h3>
-<p>
-Build your own itinerary combining birdwatching, waterfalls, and activities based on your schedule and interests.
-</p>
-<a href="https://mindobirdwatching.com/contact/" target="_blank">Plan Your Tour</a>
-</div>
+      <section class="section" aria-label="Planning help">
+        <div class="sectionHead">
+          <h2>How travelers usually build a Mindo itinerary</h2>
+          <p>The strongest itineraries usually mix one nature highlight, one local or family-friendly activity, and one flexible slot for scenery, wildlife, or adventure.</p>
+        </div>
 
-</div>
+        <div class="grid" aria-label="Planning cards">
+          <article class="infoCard">
+            <div class="infoBody">
+              <h3>One day in Mindo</h3>
+              <p>A common structure is one guided outing in the morning, then waterfalls, chocolate, or a lighter cloud forest activity later in the day. This works well for Quito-based visitors and travelers on a tighter schedule.</p>
+            </div>
+          </article>
 
-</section>
+          <article class="infoCard">
+            <div class="infoBody">
+              <h3>Two days or more</h3>
+              <p>With more time, Mindo becomes more rewarding. You can keep birdwatching early when activity is strongest, then add relaxed local experiences without feeling rushed.</p>
+            </div>
+          </article>
 
-<section class="section">
-<h2>Why Choose Mindo Tours</h2>
+          <article class="infoCard">
+            <div class="infoBody">
+              <h3>Families and mixed-interest groups</h3>
+              <p>Mindo works especially well when some people want wildlife and others want softer adventure or food experiences. That is one of the reasons this destination performs so well as a funnel site.</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-<div class="tiles">
+      <section class="section" aria-label="Why book through this flow">
+        <div class="sectionHead">
+          <h2>Why start here before booking</h2>
+          <p>This page is built to capture broader Mindo travel intent, then guide people toward the booking path that makes the most sense for them.</p>
+        </div>
 
-<div class="tile">
-<h3>Local Expertise</h3>
-<p>
-Work with experienced local guides who understand the forest, wildlife behavior, and the best timing for each activity.
-</p>
-</div>
+        <div class="grid" aria-label="Value cards">
+          <article class="infoCard">
+            <div class="infoBody">
+              <h3>Broader SEO entry</h3>
+              <p>Travelers searching for Mindo tours, family activities, waterfalls, chocolate, and nature experiences all have a clear entry point here before being routed to more specific pages.</p>
+            </div>
+          </article>
 
-<div class="tile">
-<h3>Flexible Planning</h3>
-<p>
-Mix and match activities like waterfalls, chocolate, and birdwatching into a single smooth itinerary.
-</p>
-</div>
+          <article class="infoCard">
+            <div class="infoBody">
+              <h3>Smoother conversion path</h3>
+              <p>Instead of forcing birdwatching too early, this page introduces it naturally inside a broader Mindo itinerary, which makes it easier to increase interest and bookings.</p>
+            </div>
+          </article>
 
-<div class="tile">
-<h3>Easy Booking</h3>
-<p>
-Simple reservations, fast responses, and WhatsApp support make planning your trip easy.
-</p>
-</div>
+          <article class="infoCard">
+            <div class="infoBody">
+              <h3>Better travel context</h3>
+              <p>People book more confidently when they understand how each activity fits into a real day in Mindo. That is the role of this page in the funnel.</p>
+            </div>
+          </article>
+        </div>
 
-</div>
+        <div class="ctaStrip">
+          <p>Start with general Mindo planning, then move into the booking path that fits best: half-day, full-day, or a broader activity-led itinerary with birdwatching added naturally.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://mindobirdwatching.com/book-tour/" target="_blank" rel="noopener">Book Now</a>
+            <a class="btn secondary" href="https://mindobirdwatching.com/contact/" target="_blank" rel="noopener">Contact MBW</a>
+            <a class="btn ghost" href="/things-to-do-in-mindo/">Travel Guide</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-</section>
+    <div id="siteFooter"></div>
+  </div>
 
-<section class="section">
-<h2>Build Your Mindo Experience</h2>
+  <script src="/assets/js/includes.js" defer></script>
+  <script src="/assets/js/site.js" defer></script>
+  <script>
+    (function(){
+      function initCarousel(root){
+        var track = root.querySelector('.carouselTrack');
+        var slides = Array.prototype.slice.call(root.querySelectorAll('.carouselSlide'));
+        var dots = Array.prototype.slice.call(root.querySelectorAll('.dot'));
+        var prev = root.querySelector('[data-prev]');
+        var next = root.querySelector('[data-next]');
+        var count = root.querySelector('[data-count]');
+        if(!track || !slides.length){ return; }
 
-<p>
-Many travelers start with waterfalls or general activities and then add birdwatching once they arrive.
-Mindo makes it easy to combine both, creating a balanced itinerary that includes adventure and wildlife.
-</p>
+        var index = 0;
+        var total = slides.length;
+        var timer = null;
+        var autoplay = root.hasAttribute('data-carousel');
 
-<div class="heroCtas">
-<a class="btn primary" href="https://mindobirdwatching.com/tours/" target="_blank">Explore Birdwatching</a>
-<a class="btn secondary" href="https://mindobirdwatching.com/activities/" target="_blank">View Activities</a>
-</div>
+        function render(){
+          track.style.transform = 'translateX(-' + (index * 100) + '%)';
+          dots.forEach(function(dot, i){
+            if(i === index){ dot.classList.add('is-active'); }
+            else { dot.classList.remove('is-active'); }
+          });
+          if(count){ count.textContent = (index + 1) + ' / ' + total; }
+        }
 
-</section>
+        function go(step){
+          index = (index + step + total) % total;
+          render();
+        }
 
-<section class="section">
-<div class="ctaBand">
-<p>
-Start with the best tours in Mindo and build your perfect experience in Ecuador's cloud forest.
-</p>
+        function start(){
+          if(!autoplay){ return; }
+          stop();
+          timer = setInterval(function(){ go(1); }, 3200);
+        }
 
-<div class="heroCtas">
-<a class="btn primary" href="https://mindobirdwatching.com/book-tour/" target="_blank">Book Now</a>
-<a class="btn secondary" href="https://mindobirdwatching.com/contact/" target="_blank">Contact</a>
-<a class="btn ghost" href="/things-to-do-in-mindo/">Travel Guide</a>
-</div>
+        function stop(){
+          if(timer){ clearInterval(timer); timer = null; }
+        }
 
-</div>
-</section>
+        if(prev){ prev.addEventListener('click', function(){ go(-1); start(); }); }
+        if(next){ next.addEventListener('click', function(){ go(1); start(); }); }
 
-</main>
+        root.addEventListener('mouseenter', stop);
+        root.addEventListener('mouseleave', start);
+        root.addEventListener('focusin', stop);
+        root.addEventListener('focusout', start);
 
-<div id="siteFooter"></div>
-</div>
+        render();
+        start();
+      }
+
+      document.querySelectorAll('[data-carousel]').forEach(initCarousel);
+    })();
+  </script>
 </body>
 </html>
