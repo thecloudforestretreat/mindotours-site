@@ -1,31 +1,15 @@
-HEAD (SEO, OG, JSON-LD, hreflang)
+STRUCTURE
 
-BODY
-  #siteHeader
+Hero (split)
+Section (split)
+  media
+  body
+    copy
+    support block (required if space)
+    CTA
 
-  MAIN (.page.card)
+Grids:
+- equal cards
+- CTA bottom
 
-    HERO
-      LEFT:
-        h1
-        intro paragraphs
-        CTA block
-
-      RIGHT:
-        carousel
-        trust panel
-        support card
-
-    SECTION 1 (depends on preset)
-
-    SECTION 2
-
-    SECTION 3
-
-    ...
-
-    CTA STRIP
-
-  #siteFooter
-
-SCRIPTS
+CTA strip
