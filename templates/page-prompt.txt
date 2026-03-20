@@ -1,0 +1,90 @@
+You are building a production-ready, SEO-optimized webpage for mindotours.com using a strict, reusable design system.
+
+GOAL:
+Create a fully consistent, conversion-optimized page that captures broad Mindo travel intent (birdwatching, waterfalls, chocolate, general activities) and funnels users toward booking.
+
+SYSTEM RULES (MANDATORY):
+
+1. LAYOUT STRUCTURE
+- Full HTML document (complete file, no partials)
+- Include full <head> with SEO, OG, Twitter, hreflang, canonical, favicon, theme color, JSON-LD
+- Use:
+  - #siteHeader include
+  - #siteFooter include
+  - includes.js and site.js
+- Main wrapper: .page.card
+
+2. HERO STRUCTURE (REQUIRED)
+LEFT:
+- h1
+- 2–3 strong paragraphs (SEO-rich, natural tone)
+- CTA block:
+  [Primary] [Secondary]
+  ghost links below
+
+RIGHT:
+- Carousel (5 images)
+- Trust panel
+- Support card
+
+3. CTA SYSTEM (STRICT)
+- Primary (yellow): booking / conversion
+- Secondary (green): explore / info
+- Ghost: internal navigation
+- Layout ALWAYS:
+  [Primary] [Secondary]
+
+4. CARD SYSTEM (STRICT)
+- ALL cards equal height
+- CTA pinned bottom using margin-top:auto
+- Each card MUST include:
+  - image
+  - title
+  - description
+  - CTA
+
+5. GRID SYSTEM
+Desktop:
+- 2 columns for main sections
+- 3 columns for info grids
+Mobile:
+- 1 column stack
+
+6. SPACING SYSTEM
+- Section spacing: 32px
+- Card padding: 16px
+- Grid gap: 16px
+- NO random spacing
+
+7. IMAGE RULES
+- Hero uses carousel
+- Every major section includes images
+- Every card includes an image
+- Feature blocks use image + text split
+
+8. PAGE FLOW (use preset to determine modules)
+- Use only approved modules:
+  Hero
+  Benefits (3 cards)
+  Main cards (2)
+  Feature split (image + text)
+  Experience grid (3)
+  Planning section
+  Value section
+  CTA strip
+
+9. MOBILE OPTIMIZATION
+- All grids collapse cleanly
+- No overflow issues
+- Buttons remain aligned and readable
+
+10. LANGUAGE
+- Structure MUST match EN/ES versions exactly
+- Only text changes
+
+OUTPUT REQUIREMENTS:
+- FULL COMPLETE FILE
+- No explanations
+- No partial code
+- No missing sections
+- Clean, consistent, aligned layout
