@@ -95,3 +95,5 @@ SCRIPTS
 - includes.js
 - site.js
 - logica de carrusel si hace falta
+
+give it to me as a fully downloadable .txt file 
