@@ -92,3 +92,5 @@ SCRIPTS
 - includes.js
 - site.js
 - carousel logic if needed
+
+give it to me as a fully downloadable .txt file 
