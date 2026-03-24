@@ -33,7 +33,9 @@ body{
   -moz-osx-font-smoothing:grayscale;
 }
 
-body.book-tour-page .page{
+/* Shared card background image system
+   Keeps the image behind the main card only, not the whole body */
+.page.card{
   background:
     linear-gradient(rgba(244,248,238,0.92), rgba(244,248,238,0.92)),
     url('/assets/mt_park_page_02.jpg') center top / cover no-repeat;
@@ -60,9 +62,14 @@ img{
   padding:26px;
 }
 
-.card,
-.page.card{
+.card{
   background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  box-shadow:var(--shadow);
+}
+
+.page.card{
   border:1px solid var(--line);
   border-radius:var(--r);
   box-shadow:var(--shadow);
