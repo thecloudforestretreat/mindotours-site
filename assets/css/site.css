@@ -25,7 +25,12 @@ html,body{height:100%}
 
 body{
   margin:0;
-  background:var(--bg);
+
+  /* GLOBAL BACKGROUND IMAGE + SOFT WASH */
+  background:
+    linear-gradient(rgba(244,248,238,0.88), rgba(244,248,238,0.92)),
+    url('/assets/mt_park_page_02.jpg') center top / cover no-repeat fixed;
+
   color:var(--ink);
   font-family:var(--font-body);
   line-height:1.6;
