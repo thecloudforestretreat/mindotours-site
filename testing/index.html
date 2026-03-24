@@ -143,6 +143,7 @@
       display:grid;
       grid-template-columns:repeat(2,minmax(0,1fr));
       gap:10px;
+      align-items:stretch;
     }
     body.book-tour-page .miniCard,
     body.book-tour-page .trustPanel,
@@ -173,6 +174,11 @@
       color:var(--muted);
       font-size:13px;
       line-height:1.55;
+    }
+    body.book-tour-page .heroMiniGrid .miniCard{
+      display:flex;
+      flex-direction:column;
+      justify-content:flex-start;
     }
     body.book-tour-page .miniCard ul{padding-left:17px}
     body.book-tour-page .miniCard li{margin:0 0 5px}
@@ -305,6 +311,7 @@
       flex-wrap:wrap;
       gap:8px;
       margin:10px 0 12px;
+      align-items:center;
     }
     body.book-tour-page .pill{
       display:inline-flex;
@@ -368,10 +375,7 @@
 
     body.book-tour-page .formCard{padding:14px}
     body.book-tour-page .formTop{
-      display:grid;
-      grid-template-columns:minmax(0,1fr) auto;
-      gap:10px;
-      align-items:start;
+      display:block;
       margin-bottom:10px;
     }
     body.book-tour-page .tagRow{
@@ -379,6 +383,7 @@
       flex-wrap:wrap;
       gap:8px;
       margin-bottom:8px;
+      align-items:center;
     }
     body.book-tour-page .tag{
       display:inline-flex;
@@ -789,8 +794,7 @@
             <div class="pillRow">
               <span class="pill">No payment now</span>
               <span class="pill">Email or WhatsApp reply</span>
-              <span class="pill">Private options</span>
-              <span class="pill">Custom itineraries</span>
+              <span class="pill">Private + custom plans</span>
             </div>
             <p>The best booking pages reduce friction. This one is designed to help you explain your goals clearly, then get the right next response without making the first step feel complicated.</p>
           </aside>
@@ -809,7 +813,6 @@
       <section class="section" id="booking-form" aria-label="Tour request form">
         <div class="sectionHead">
           <h2>Request Your Tour</h2>
-          <p>This is the point of the page. Use the form on the left, and the quick help on the right only when you need it.</p>
         </div>
 
         <div class="bookingShell">
@@ -818,12 +821,11 @@
               <div>
                 <div class="tagRow">
                   <span class="tag">Mindo, Ecuador</span>
-                  <span class="tag">Birdwatching + nature + custom options</span>
+                  <span class="tag">Birdwatching + custom options</span>
                   <span class="tag">Email or WhatsApp reply</span>
                 </div>
                 <p class="formLead">Fields marked with * are required. This first step is a booking request, not a payment page.</p>
               </div>
-              <p class="smallNote">We reply with availability, timing, and the best next step for your travel goals.</p>
             </div>
 
             <form action="/api/book-tour" class="form" id="bookTourForm" method="post" novalidate>
@@ -975,7 +977,6 @@
       <section class="section" aria-label="Before you submit">
         <div class="sectionHead">
           <h2>Before you submit</h2>
-          <p>A few simple points help reduce hesitation without turning the page back into a large content layout.</p>
         </div>
 
         <div class="grid3">
@@ -1098,8 +1099,19 @@
         submitBtn.textContent = state ? "Sending Request..." : "Send Booking Request";
       }
 
+      function setMinDates() {
+        var now = new Date();
+        var yyyy = now.getFullYear();
+        var mm = String(now.getMonth() + 1).padStart(2, "0");
+        var dd = String(now.getDate()).padStart(2, "0");
+        var today = yyyy + "-" + mm + "-" + dd;
+        if (startDate) startDate.min = today;
+        if (endDate) endDate.min = today;
+      }
+
       if (startDate) startDate.addEventListener("change", syncDates);
       if (endDate) endDate.addEventListener("change", syncDates);
+      setMinDates();
 
       if (!form) return;
 
@@ -1157,7 +1169,7 @@
           }
         } catch (err) {
           if (errorEl) {
-            errorEl.textContent = err.message || "Something went wrong. Please try again, or use WhatsApp or email instead.";
+            errorEl.textContent = "We could not submit the request right now. Please use WhatsApp or email while the booking endpoint is checked.";
             errorEl.style.display = "block";
           }
           if (successEl) successEl.style.display = "none";
