@@ -138,6 +138,7 @@ function isAllowedTurnstileHostname(hostname, configuredHostnames) {
   const allowed = new Set([
     "mindotours.com",
     "www.mindotours.com",
+    "staging.mindotours.com",
     "codex-mindotours-staging.mindotours-site.pages.dev"
   ]);
 
