@@ -14,7 +14,11 @@
   align-items:stretch;
 }
 
-.hub-page .heroCopy{min-width:0}
+.hub-page .heroCopy{
+  display:flex;
+  min-width:0;
+  flex-direction:column;
+}
 
 .hub-page .eyebrow{
   margin:0 0 8px;
@@ -56,14 +60,9 @@
   align-items:center;
 }
 
-.hub-page .heroActions{margin-top:18px}
+.hub-page .heroActions{margin-top:auto;padding-top:22px}
 
 .hub-page .heroMedia{
-  display:flex;
-  flex-direction:column;
-  align-self:stretch;
-  min-height:0;
-  max-height:720px;
   margin:0;
   overflow:hidden;
   border:1px solid var(--line);
@@ -73,10 +72,8 @@
 }
 
 .hub-page .heroMedia img{
-  flex:1 1 auto;
   width:100%;
-  height:0;
-  min-height:0;
+  height:560px;
   object-fit:cover;
   object-position:center;
 }
@@ -276,7 +273,8 @@
   .hub-page .tourGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .hub-page .decisionGrid{grid-template-columns:1fr}
   .hub-page h1{max-width:none}
-  .hub-page .heroMedia{display:block;max-height:none}
+  .hub-page .heroCopy{display:block}
+  .hub-page .heroActions{margin-top:18px;padding-top:0}
   .hub-page .heroMedia img{height:400px}
 }
 
