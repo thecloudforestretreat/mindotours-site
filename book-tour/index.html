@@ -40,7 +40,8 @@
   <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="stylesheet" href="/assets/css/header.css">
   <script src="/assets/js/head.js" defer></script>
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/assets/js/turnstile.js"></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=mtTurnstileReady&amp;render=explicit" async defer></script>
 
   <script type="application/ld+json">
   {
@@ -369,7 +370,7 @@
               <input type="hidden" id="tourLang" name="page_language" value="en">
 
               <div class="cfWrap">
-                <div class="cf-turnstile" data-sitekey="0x4AAAAAACvEWBLDiF38SNlX" data-theme="light" data-action="book_tour"></div>
+                <div data-turnstile-widget data-theme="light" data-action="book_tour"></div>
               </div>
 
               <label class="honeypot" aria-hidden="true">Website<input name="website" type="text" autocomplete="off" tabindex="-1"></label>
@@ -377,12 +378,12 @@
               <div class="ctaActions">
                 <button class="btn primary" id="submitBtn" type="submit">Send Booking Request</button>
                 <a class="btn secondary" href="#" data-whatsapp-message-key="book_tour_en" data-cta-location="booking_form" target="_blank" rel="noopener noreferrer">Reserve via WhatsApp</a>
-                <a class="btn ghost" href="mailto:mindobirdwatching@gmail.com?subject=Book%20a%20Tour%20Request%20-%20Mindo%20Tours">Email Instead</a>
+                <a class="btn ghost" href="#" data-contact-email-link data-email-subject="Book a Tour Request - Mindo Tours">Email Instead</a>
               </div>
 
               <div class="success" id="formSuccessMsg">Your request has been sent. Watch your email for the next step.</div>
               <div class="errorMsg" id="formErrorMsg">We could not submit the request right now. Please try again, or use WhatsApp or email instead.</div>
-              <div class="toast" id="emailToast">Email address copied: mindobirdwatching@gmail.com</div>
+              <div class="toast" id="emailToast">Email address: <span data-contact-email-text></span></div>
             </form>
           </div>
 
@@ -593,7 +594,7 @@
           if (endDate) endDate.value = "";
           if (datesCombined) datesCombined.value = "";
           applyDateMins();
-          if (window.turnstile) { try { window.turnstile.reset(); } catch (err) {} }
+          if (window.MT_TURNSTILE) { try { window.MT_TURNSTILE.reset(); } catch (err) {} }
         } catch (err) {
           if (window.MT_ANALYTICS) {
             window.MT_ANALYTICS.formError(form, { error_type: "booking_submission" });

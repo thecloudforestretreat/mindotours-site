@@ -11,6 +11,12 @@
     sourceSite: "mindotours",
     sourceDomain: "mindotours.com",
     leadDestination: "Mindo Bird Watching",
+    analytics: {
+      ga4MeasurementId: "G-1ZYLW22XWP"
+    },
+    turnstile: {
+      siteKey: "0x4AAAAAACvEWBLDiF38SNlX"
+    },
     contact: {
       whatsappNumberDigits: whatsappNumberDigits,
       whatsappDisplayNumber: "+" + whatsappNumberDigits,
@@ -62,6 +68,20 @@
     });
   }
 
+  function updateContactDetails(root) {
+    var scope = root && root.querySelectorAll ? root : document;
+    var email = String(window.MT_SITE_CONFIG.contact.email || "").trim();
+
+    Array.prototype.forEach.call(scope.querySelectorAll("[data-contact-email-text]"), function (element) {
+      element.textContent = email;
+    });
+
+    Array.prototype.forEach.call(scope.querySelectorAll("[data-contact-email-link]"), function (link) {
+      var subject = String(link.getAttribute("data-email-subject") || "").trim();
+      link.href = email ? "mailto:" + email + (subject ? "?subject=" + encodeURIComponent(subject) : "") : "#";
+    });
+  }
+
   function observeIncludes() {
     if (!("MutationObserver" in window)) return;
     new MutationObserver(function (mutations) {
@@ -73,6 +93,7 @@
           } else if (node.querySelector) {
             updateWhatsAppLinks(node);
           }
+          updateContactDetails(node.parentNode || document);
         });
       });
     }).observe(document.documentElement, { childList: true, subtree: true });
@@ -80,14 +101,18 @@
 
   window.MT_SITE_CONFIG.buildWhatsAppUrl = buildWhatsAppUrl;
   window.MT_SITE_CONFIG.updateWhatsAppLinks = updateWhatsAppLinks;
+  window.MT_SITE_CONFIG.updateContactDetails = updateContactDetails;
+
+  function initializePublicConfig() {
+    updateWhatsAppLinks();
+    updateContactDetails();
+    observeIncludes();
+    window.dispatchEvent(new CustomEvent("mt:config-ready"));
+  }
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", function () {
-      updateWhatsAppLinks();
-      observeIncludes();
-    });
+    document.addEventListener("DOMContentLoaded", initializePublicConfig);
   } else {
-    updateWhatsAppLinks();
-    observeIncludes();
+    initializePublicConfig();
   }
 })();

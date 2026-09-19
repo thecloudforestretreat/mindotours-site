@@ -6,7 +6,10 @@
 
   if (window.MT_ANALYTICS) return;
 
-  var GA_ID = "G-1ZYLW22XWP";
+  var config = window.MT_SITE_CONFIG || {};
+  var GA_ID = config.analytics && config.analytics.ga4MeasurementId
+    ? String(config.analytics.ga4MeasurementId)
+    : "";
   var STORAGE_KEY = "mt_attribution_v1";
   var SESSION_TIMEOUT_MS = 30 * 60 * 1000;
   var MAX_AGE_MS = 180 * 24 * 60 * 60 * 1000;
@@ -14,7 +17,7 @@
     "utm_source", "utm_medium", "utm_campaign", "utm_id", "utm_source_platform",
     "utm_content", "utm_term", "gclid", "gbraid", "wbraid", "fbclid", "msclkid", "ttclid"
   ];
-  var SOURCE_SITE = "mindotours";
+  var SOURCE_SITE = config.sourceSite ? String(config.sourceSite) : "mindotours";
 
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
@@ -26,15 +29,17 @@
     wait_for_update: 500
   });
   window.gtag("js", new Date());
-  window.gtag("config", GA_ID, {
-    send_page_view: false,
-    linker: { domains: ["mindotours.com", "mindobirdwatching.com"] }
-  });
+  if (GA_ID) {
+    window.gtag("config", GA_ID, {
+      send_page_view: false,
+      linker: { domains: ["mindotours.com", "mindobirdwatching.com"] }
+    });
 
-  var gaScript = document.createElement("script");
-  gaScript.async = true;
-  gaScript.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
-  document.head.appendChild(gaScript);
+    var gaScript = document.createElement("script");
+    gaScript.async = true;
+    gaScript.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+    document.head.appendChild(gaScript);
+  }
 
   function clean(value, maxLength) {
     if (value === null || value === undefined) return "";

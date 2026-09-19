@@ -40,10 +40,12 @@ function configureLocalizedIncludes() {
   };
   const localizedHrefs = {
     en: {
+      home: "/",
       tours: "/tours/",
       book: "/book-tour/"
     },
     es: {
+      home: "/es/",
       tours: "/es/tours/",
       book: "https://mindobirdwatching.com/es/reservar-tour/"
     }
@@ -60,13 +62,24 @@ function configureLocalizedIncludes() {
     if (labels[lang][key]) element.textContent = labels[lang][key];
   });
 
+  document.querySelectorAll("[data-footer-legal]").forEach((element) => {
+    element.textContent = "© " + new Date().getFullYear() + " mindotours.com. " +
+      (lang === "es" ? "Todos los derechos reservados." : "All rights reserved.");
+  });
+
   const enAlternate = document.querySelector('link[rel="alternate"][hreflang="en"]');
   const esAlternate = document.querySelector('link[rel="alternate"][hreflang="es"]');
 
   function environmentAwareAlternate(alternate) {
     if (!alternate) return "";
     const target = new URL(alternate.href);
-    if (window.location.hostname.endsWith(".pages.dev") && target.hostname === "mindotours.com") {
+    const hostname = window.location.hostname.toLowerCase();
+    const isNonProductionHost =
+      hostname === "staging.mindotours.com" ||
+      hostname === "localhost" ||
+      hostname === "127.0.0.1" ||
+      hostname.endsWith(".pages.dev");
+    if (isNonProductionHost && target.hostname === "mindotours.com") {
       return window.location.origin + target.pathname + target.search + target.hash;
     }
     return target.href;
@@ -97,6 +110,7 @@ function initMenu() {
     const expanded = toggle.getAttribute("aria-expanded") === "true";
     toggle.setAttribute("aria-expanded", String(!expanded));
     mobileMenu.hidden = expanded;
+    mobileMenu.classList.toggle("is-open", !expanded);
     document.body.classList.toggle("menuOpen", !expanded);
   });
 }
