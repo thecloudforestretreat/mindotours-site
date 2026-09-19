@@ -63,6 +63,8 @@
 .hub-page .heroActions{margin-top:auto;padding-top:22px}
 
 .hub-page .heroMedia{
+  display:flex;
+  flex-direction:column;
   margin:0;
   overflow:hidden;
   border:1px solid var(--line);
@@ -72,16 +74,23 @@
 }
 
 .hub-page .heroMedia img{
+  flex:1 1 auto;
   width:100%;
   height:560px;
+  min-height:560px;
   object-fit:cover;
   object-position:center;
 }
 
 .hub-page .heroMedia figcaption{
-  padding:12px 14px;
+  flex:0 0 auto;
+  margin:0;
+  padding:8px 10px;
+  border-top:1px solid var(--line);
   color:var(--muted);
-  font-size:13px;
+  background:#fff;
+  font-size:11px;
+  line-height:1.35;
 }
 
 .hub-page .trustRow{
@@ -275,7 +284,8 @@
   .hub-page h1{max-width:none}
   .hub-page .heroCopy{display:block}
   .hub-page .heroActions{margin-top:18px;padding-top:0}
-  .hub-page .heroMedia img{height:400px}
+  .hub-page .heroMedia{display:block}
+  .hub-page .heroMedia img{height:400px;min-height:0}
 }
 
 @media (max-width:640px){

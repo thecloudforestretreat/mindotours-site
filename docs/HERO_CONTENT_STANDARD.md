@@ -15,6 +15,6 @@ If the useful introduction is below the minimum, add one concrete planning fact:
 
 ## Layout behavior
 
-- On desktop, the hero image remains 560px tall. The copy column stretches to the full image-and-caption card height, and the CTA/tag group is anchored to its lower edge so both columns close on the same baseline. The image is cropped with `object-fit: cover`; it is never distorted.
+- On desktop, the hero image has a 560px minimum and grows to absorb any remaining height needed to match the copy column. The caption remains a minimal MBW-style strip. The CTA/tag group is anchored to the lower edge so both columns close on the same baseline. The image is cropped with `object-fit: cover`; it is never distorted.
 - On tablet and mobile, the columns stack and use fixed 400px and 300px image crops respectively.
 - Trust tags remain on one row. Pages should use short enough labels to fit at normal desktop widths; smaller screens may scroll the row horizontally.
