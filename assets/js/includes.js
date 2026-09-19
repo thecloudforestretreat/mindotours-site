@@ -38,10 +38,21 @@ function configureLocalizedIncludes() {
       copy: "Descubre cascadas, senderos del bosque nublado, tours de chocolate y experiencias de naturaleza en Mindo, Ecuador."
     }
   };
+  const localizedHrefs = {
+    en: {
+      tours: "/tours/",
+      book: "/book-tour/"
+    },
+    es: {
+      tours: "/es/tours/",
+      book: "https://mindobirdwatching.com/es/reservar-tour/"
+    }
+  };
 
   document.querySelectorAll("[data-nav-key]").forEach((link) => {
     const key = link.getAttribute("data-nav-key");
     if (labels[lang][key]) link.textContent = labels[lang][key];
+    if (localizedHrefs[lang][key]) link.href = localizedHrefs[lang][key];
   });
 
   document.querySelectorAll("[data-footer-key]").forEach((element) => {
@@ -52,15 +63,24 @@ function configureLocalizedIncludes() {
   const enAlternate = document.querySelector('link[rel="alternate"][hreflang="en"]');
   const esAlternate = document.querySelector('link[rel="alternate"][hreflang="es"]');
 
+  function environmentAwareAlternate(alternate) {
+    if (!alternate) return "";
+    const target = new URL(alternate.href);
+    if (window.location.hostname.endsWith(".pages.dev") && target.hostname === "mindotours.com") {
+      return window.location.origin + target.pathname + target.search + target.hash;
+    }
+    return target.href;
+  }
+
   document.querySelectorAll('a[lang="en"]').forEach((link) => {
-    if (enAlternate) link.href = enAlternate.href;
+    if (enAlternate) link.href = environmentAwareAlternate(enAlternate);
     link.classList.toggle("is-active", lang === "en");
     if (lang === "en") link.setAttribute("aria-current", "page");
     else link.removeAttribute("aria-current");
   });
 
   document.querySelectorAll('a[lang="es"]').forEach((link) => {
-    if (esAlternate) link.href = esAlternate.href;
+    if (esAlternate) link.href = environmentAwareAlternate(esAlternate);
     link.classList.toggle("is-active", lang === "es");
     if (lang === "es") link.setAttribute("aria-current", "page");
     else link.removeAttribute("aria-current");
