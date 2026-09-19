@@ -18,9 +18,9 @@
     });
   }
 
-  loadScript("/assets/js/site-config.js")
+  loadScript("/assets/js/site-config.js?v=20260919-2")
     .then(function () {
-      return loadScript("/assets/js/analytics.js");
+      return loadScript("/assets/js/analytics.js?v=20260919-2");
     })
     .catch(function (error) {
       if (window.console && console.error) {

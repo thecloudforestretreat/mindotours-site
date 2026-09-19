@@ -108,6 +108,9 @@
         return;
       }
       if (!datesCombined.value) { showError(labels.dateError); return; }
+      if (window.MT_ANALYTICS && typeof window.MT_ANALYTICS.decorateForm === "function") {
+        window.MT_ANALYTICS.decorateForm(form);
+      }
       var formData = new FormData(form);
       if (!formData.get("cf-turnstile-response")) { showError(labels.securityError); return; }
       setSubmitting(true);

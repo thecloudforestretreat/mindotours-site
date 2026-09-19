@@ -210,31 +210,57 @@
   }
 
   function fieldValues() {
+    var status = state.last_touch && state.last_touch.source === "direct"
+      ? "direct"
+      : (state.last_touch && state.last_touch.source && state.last_touch.medium ? "captured" : "partial");
+    var current = state.last_touch || {};
     var values = {
       source_site: SOURCE_SITE,
       source_domain: window.location.hostname,
       page_language: language(),
       source_page: window.location.href,
-      attribution_visitor_id: state.visitor_id,
-      attribution_session_id: state.session_id,
-      attribution_first_source: state.first_touch.source,
-      attribution_first_medium: state.first_touch.medium,
-      attribution_first_campaign: state.first_touch.campaign || "",
-      attribution_first_landing_page: state.first_touch.landing_page || "",
-      attribution_last_source: state.last_touch.source,
-      attribution_last_medium: state.last_touch.medium,
-      attribution_last_campaign: state.last_touch.campaign || "",
-      attribution_last_content: state.last_touch.content || "",
-      attribution_last_term: state.last_touch.term || ""
+      website_visitor_id: state.visitor_id,
+      website_session_id: state.session_id,
+      attribution_status: status,
+      attribution_quality: status === "captured" ? "verified" : "partial",
+      first_touch_source: state.first_touch.source || "",
+      first_touch_medium: state.first_touch.medium || "",
+      first_touch_campaign: state.first_touch.campaign || "",
+      first_touch_content: state.first_touch.content || "",
+      first_touch_term: state.first_touch.term || "",
+      first_touch_landing_page: state.first_touch.landing_page || "",
+      first_touch_referrer: state.first_touch.referrer || "",
+      first_touch_date: state.first_touch.captured_at || "",
+      last_touch_source: current.source || "",
+      last_touch_medium: current.medium || "",
+      last_touch_campaign: current.campaign || "",
+      last_touch_content: current.content || "",
+      last_touch_term: current.term || "",
+      last_touch_landing_page: current.landing_page || "",
+      last_touch_referrer: current.referrer || "",
+      last_touch_date: current.captured_at || "",
+      utm_source: current.source === "direct" ? "" : (current.source || ""),
+      utm_medium: current.medium === "none" ? "" : (current.medium || ""),
+      utm_campaign: current.campaign || "",
+      utm_content: current.content || "",
+      utm_term: current.term || ""
     };
     Object.keys(state.click_ids || {}).forEach(function (key) {
-      values["attribution_" + key] = state.click_ids[key];
+      values[key] = state.click_ids[key];
     });
     return values;
   }
 
   function decorateForm(form) {
     var values = fieldValues();
+    var contactIntentField = form.querySelector('input[name="contact_intent_id"]');
+    if (!contactIntentField) {
+      contactIntentField = document.createElement("input");
+      contactIntentField.type = "hidden";
+      contactIntentField.name = "contact_intent_id";
+      form.appendChild(contactIntentField);
+    }
+    if (!contactIntentField.value) contactIntentField.value = makeId("ci");
     Object.keys(values).forEach(function (name) {
       var field = form.querySelector('input[name="' + name + '"]');
       if (!field) {
