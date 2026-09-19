@@ -1,54 +1,30 @@
-// Global Head Loader
-// Google Analytics + basic conversion tracking
-// Works for ALL pages and BOTH sites
-
+/* Mindo Tours global head bootstrap.
+ * Keep shared configuration and measurement in one place for every EN/ES page.
+ */
 (function () {
+  "use strict";
 
-  const GA_ID = "G-1ZYLW22XWP";
+  if (window.MT_HEAD_LOADED) return;
+  window.MT_HEAD_LOADED = true;
 
-  const gaScript = document.createElement("script");
-  gaScript.async = true;
-  gaScript.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
-  document.head.appendChild(gaScript);
-
-  const gaConfig = document.createElement("script");
-  gaConfig.innerHTML = `
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    window.gtag = gtag;
-    gtag('js', new Date());
-    gtag('config', '${GA_ID}');
-  `;
-  document.head.appendChild(gaConfig);
-
-  window.addEventListener("DOMContentLoaded", function () {
-
-    function trackClick(selector, eventName) {
-      document.querySelectorAll(selector).forEach(function (el) {
-        el.addEventListener("click", function () {
-          if (typeof gtag === "function") {
-            gtag("event", eventName, {
-              page_location: window.location.href
-            });
-          }
-        });
-      });
-    }
-
-    trackClick(".btn-book", "book_tour_click");
-    trackClick(".btn-tour", "view_tours_click");
-    trackClick(".btn-contact", "contact_click");
-
-    document.querySelectorAll("a[href*='mindobirdwatching.com']").forEach(function (link) {
-      link.addEventListener("click", function () {
-        if (typeof gtag === "function") {
-          gtag("event", "funnel_to_mbw", {
-            destination: link.href
-          });
-        }
-      });
+  function loadScript(src) {
+    return new Promise(function (resolve, reject) {
+      var script = document.createElement("script");
+      script.src = src;
+      script.async = false;
+      script.onload = resolve;
+      script.onerror = reject;
+      document.head.appendChild(script);
     });
+  }
 
-  });
-
+  loadScript("/assets/js/site-config.js")
+    .then(function () {
+      return loadScript("/assets/js/analytics.js");
+    })
+    .catch(function (error) {
+      if (window.console && console.error) {
+        console.error("Mindo Tours global scripts failed to load.", error);
+      }
+    });
 })();

@@ -231,7 +231,7 @@
           <div class="ctaStack">
             <div class="ctaRow">
               <a class="btn primary" href="#booking-form">Start Booking</a>
-              <a class="btn secondary" href="https://wa.me/13054585402" target="_blank" rel="noopener noreferrer">Ask on WhatsApp</a>
+              <a class="btn secondary" href="#" data-whatsapp-message-key="book_tour_en" data-cta-location="hero" target="_blank" rel="noopener noreferrer">Ask on WhatsApp</a>
             </div>
             <div class="ghostRow">
               <a class="btn ghost" href="/tours/">Tours</a>
@@ -362,7 +362,6 @@
 
               <p class="help">We will reply by email first. You can also reserve the conversation via WhatsApp if that is easier for your planning style.</p>
 
-              <input type="hidden" name="cf_secret" value="MBW_CF_GATE_2026_7f3b1c9a0c2e4d9bb8e2a1f3c9d4e7a1">
               <input type="hidden" id="sourcePage" name="source_page" value="https://mindotours.com/book-tour/">
               <input type="hidden" id="uaField" name="user_agent" value="">
               <input type="hidden" id="tsStart" name="ts_start" value="">
@@ -370,14 +369,14 @@
               <input type="hidden" id="tourLang" name="page_language" value="en">
 
               <div class="cfWrap">
-                <div class="cf-turnstile" data-sitekey="0x4AAAAAACvEWBLDiF38SNlX" data-theme="light"></div>
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAACvEWBLDiF38SNlX" data-theme="light" data-action="book_tour"></div>
               </div>
 
               <label class="honeypot" aria-hidden="true">Website<input name="website" type="text" autocomplete="off" tabindex="-1"></label>
 
               <div class="ctaActions">
                 <button class="btn primary" id="submitBtn" type="submit">Send Booking Request</button>
-                <a class="btn secondary" href="https://wa.me/13054585402" target="_blank" rel="noopener noreferrer">Reserve via WhatsApp</a>
+                <a class="btn secondary" href="#" data-whatsapp-message-key="book_tour_en" data-cta-location="booking_form" target="_blank" rel="noopener noreferrer">Reserve via WhatsApp</a>
                 <a class="btn ghost" href="mailto:mindobirdwatching@gmail.com?subject=Book%20a%20Tour%20Request%20-%20Mindo%20Tours">Email Instead</a>
               </div>
 
@@ -402,7 +401,7 @@
               <h3>Need a faster path?</h3>
               <p>If WhatsApp is the best channel for your schedule, you can start there and still keep the same booking intent clear.</p>
               <div class="sideActions">
-                <a class="btn secondary" href="https://wa.me/13054585402" target="_blank" rel="noopener noreferrer">Ask on WhatsApp</a>
+                <a class="btn secondary" href="#" data-whatsapp-message-key="book_tour_en" data-cta-location="booking_sidebar" target="_blank" rel="noopener noreferrer">Ask on WhatsApp</a>
                 <a class="btn ghost" href="/private-tours-mindo/">See private tours</a>
               </div>
             </div>
@@ -436,7 +435,7 @@
           <p>Book your Mindo experience through one page built for birdwatching, waterfalls, chocolate, private tours, and custom mixed planning. Start with the form, or go straight to WhatsApp if you already know what you want.</p>
           <div class="actions">
             <a class="btn primary" href="#booking-form">Start Booking</a>
-            <a class="btn secondary" href="https://wa.me/13054585402" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a class="btn secondary" href="#" data-whatsapp-message-key="book_tour_en" data-cta-location="bottom_cta" target="_blank" rel="noopener noreferrer">WhatsApp</a>
             <a class="btn ghost" href="/contact/">Contact</a>
           </div>
         </div>
@@ -585,6 +584,9 @@
 
           if (successEl) successEl.style.display = "block";
           if (errorEl) errorEl.style.display = "none";
+          if (window.MT_ANALYTICS) {
+            window.MT_ANALYTICS.formSuccess(form, { lead_type: "tour_request" });
+          }
 
           form.reset();
           if (startDate) startDate.value = "";
@@ -593,6 +595,9 @@
           applyDateMins();
           if (window.turnstile) { try { window.turnstile.reset(); } catch (err) {} }
         } catch (err) {
+          if (window.MT_ANALYTICS) {
+            window.MT_ANALYTICS.formError(form, { error_type: "booking_submission" });
+          }
           if (errorEl) {
             errorEl.textContent = err.message || "We could not submit the request right now. Please try again, or use WhatsApp or email instead.";
             errorEl.style.display = "block";

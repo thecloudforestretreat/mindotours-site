@@ -6,16 +6,9 @@ export async function onRequestPost(context) {
       return json({ ok: false, message: "Method not allowed." }, 405);
     }
 
-    if (!env.TURNSTILE_SECRET_KEY) {
-      return json({ ok: false, message: "Missing TURNSTILE_SECRET_KEY in environment." }, 500);
-    }
-
-    if (!env.BOOK_TOUR_APPS_SCRIPT_URL) {
-      return json({ ok: false, message: "Missing BOOK_TOUR_APPS_SCRIPT_URL in environment." }, 500);
-    }
-
-    if (!env.CF_SHARED_SECRET) {
-      return json({ ok: false, message: "Missing CF_SHARED_SECRET in environment." }, 500);
+    if (!env.TURNSTILE_SECRET_KEY || !env.BOOK_TOUR_APPS_SCRIPT_URL || !env.CF_SHARED_SECRET) {
+      console.error("Booking endpoint is missing one or more required environment variables.");
+      return json({ ok: false, message: "The booking service is temporarily unavailable." }, 503);
     }
 
     const contentType = request.headers.get("content-type") || "";
@@ -60,29 +53,28 @@ export async function onRequestPost(context) {
     try {
       verifyJson = await verifyRes.json();
     } catch (err) {
-      return json({
-        ok: false,
-        message: "Turnstile verification returned a non-JSON response.",
-        turnstile_status: verifyRes.status
-      }, 502);
+      console.error("Turnstile returned a non-JSON response.", verifyRes.status);
+      return json({ ok: false, message: "Security verification is temporarily unavailable." }, 502);
     }
 
     if (!verifyRes.ok) {
-      return json({
-        ok: false,
-        message: "Turnstile verification request failed.",
-        turnstile_status: verifyRes.status,
-        turnstile_response: verifyJson
-      }, 502);
+      console.error("Turnstile verification request failed.", verifyRes.status);
+      return json({ ok: false, message: "Security verification is temporarily unavailable." }, 502);
     }
 
     if (!verifyJson.success) {
-      return json({
-        ok: false,
-        message: "Turnstile verification failed.",
-        errors: verifyJson["error-codes"] || [],
-        turnstile_response: verifyJson
-      }, 403);
+      console.warn("Turnstile verification failed.", verifyJson["error-codes"] || []);
+      return json({ ok: false, message: "Security verification failed. Please try again." }, 403);
+    }
+
+    if (!isAllowedTurnstileHostname(verifyJson.hostname, env.TURNSTILE_ALLOWED_HOSTNAMES)) {
+      console.warn("Turnstile hostname was rejected.", verifyJson.hostname || "missing");
+      return json({ ok: false, message: "Security verification failed. Please try again." }, 403);
+    }
+
+    if (verifyJson.action && verifyJson.action !== "book_tour") {
+      console.warn("Turnstile action was rejected.", verifyJson.action);
+      return json({ ok: false, message: "Security verification failed. Please try again." }, 403);
     }
 
     formData.set("cf_secret", env.CF_SHARED_SECRET);
@@ -115,32 +107,18 @@ export async function onRequestPost(context) {
     try {
       upstreamJson = JSON.parse(text);
     } catch (err) {
-      return json({
-        ok: false,
-        message: "Apps Script returned a non-JSON response.",
-        upstream_status: upstreamRes.status,
-        raw: text
-      }, 502);
+      console.error("Booking destination returned a non-JSON response.", upstreamRes.status);
+      return json({ ok: false, message: "The booking service could not process your request." }, 502);
     }
 
     if (!upstreamRes.ok) {
-      return json({
-        ok: false,
-        message: upstreamJson.message || "Apps Script request failed.",
-        warning: upstreamJson.warning || "",
-        upstream_status: upstreamRes.status,
-        upstream_response: upstreamJson
-      }, 502);
+      console.error("Booking destination request failed.", upstreamRes.status);
+      return json({ ok: false, message: "The booking service could not process your request." }, 502);
     }
 
     if (upstreamJson.ok === false) {
-      return json({
-        ok: false,
-        message: upstreamJson.message || "Upstream booking handler failed.",
-        warning: upstreamJson.warning || "",
-        upstream_status: upstreamRes.status,
-        upstream_response: upstreamJson
-      }, 502);
+      console.error("Booking destination rejected the request.", upstreamRes.status);
+      return json({ ok: false, message: "The booking service could not process your request." }, 502);
     }
 
     return json({
@@ -148,13 +126,28 @@ export async function onRequestPost(context) {
       warning: upstreamJson.warning || ""
     });
   } catch (err) {
-    return json({
-      ok: false,
-      message: "Server error while processing booking request.",
-      error: err && err.message ? err.message : String(err),
-      stack: err && err.stack ? err.stack : ""
-    }, 500);
+    console.error("Server error while processing booking request.", err);
+    return json({ ok: false, message: "Server error while processing booking request." }, 500);
   }
+}
+
+function isAllowedTurnstileHostname(hostname, configuredHostnames) {
+  const normalized = String(hostname || "").trim().toLowerCase();
+  if (!normalized) return false;
+
+  const allowed = new Set([
+    "mindotours.com",
+    "www.mindotours.com",
+    "codex-mindotours-staging.mindotours-site.pages.dev"
+  ]);
+
+  String(configuredHostnames || "")
+    .split(",")
+    .map((value) => value.trim().toLowerCase())
+    .filter(Boolean)
+    .forEach((value) => allowed.add(value));
+
+  return allowed.has(normalized) || /^[a-f0-9]{8}\.mindotours-site\.pages\.dev$/.test(normalized);
 }
 
 function json(obj, status = 200) {
