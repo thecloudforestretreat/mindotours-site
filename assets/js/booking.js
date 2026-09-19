@@ -120,6 +120,9 @@
           if (window.location.hostname === "staging.mindotours.com" && Array.isArray(data.turnstile_error_codes) && data.turnstile_error_codes.length) {
             diagnostic = " [" + data.turnstile_error_codes.join(", ") + "]";
           }
+          if (window.location.hostname === "staging.mindotours.com" && data.booking_error_code) {
+            diagnostic = " [" + data.booking_error_code + (data.upstream_status ? ": " + data.upstream_status : "") + "]";
+          }
           throw new Error((data.message || labels.genericError) + diagnostic);
         }
         if (successEl) successEl.style.display = "block";

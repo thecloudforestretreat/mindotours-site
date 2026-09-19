@@ -97,10 +97,18 @@ export async function onRequestPost(context) {
     formData.delete("cf-turnstile-response");
     formData.delete("website");
 
-    const upstreamRes = await fetch(env.BOOK_TOUR_APPS_SCRIPT_URL, {
-      method: "POST",
-      body: formData
-    });
+    const upstreamBody = new URLSearchParams();
+    for (const [key, value] of formData.entries()) {
+      upstreamBody.append(key, String(value));
+    }
+
+    let upstreamRes;
+    try {
+      upstreamRes = await fetchAppsScriptWithRedirects(env.BOOK_TOUR_APPS_SCRIPT_URL, upstreamBody);
+    } catch (err) {
+      console.error("Booking destination could not be reached.", err);
+      return bookingFailure(request, "upstream-unreachable", 502);
+    }
 
     const text = await upstreamRes.text();
 
@@ -109,17 +117,17 @@ export async function onRequestPost(context) {
       upstreamJson = JSON.parse(text);
     } catch (err) {
       console.error("Booking destination returned a non-JSON response.", upstreamRes.status);
-      return json({ ok: false, message: "The booking service could not process your request." }, 502);
+      return bookingFailure(request, "upstream-non-json", 502, upstreamRes.status);
     }
 
     if (!upstreamRes.ok) {
       console.error("Booking destination request failed.", upstreamRes.status);
-      return json({ ok: false, message: "The booking service could not process your request." }, 502);
+      return bookingFailure(request, "upstream-http-error", 502, upstreamRes.status);
     }
 
     if (upstreamJson.ok === false) {
       console.error("Booking destination rejected the request.", upstreamRes.status);
-      return json({ ok: false, message: "The booking service could not process your request." }, 502);
+      return bookingFailure(request, "upstream-rejected", 502, upstreamRes.status);
     }
 
     return json({
@@ -130,6 +138,53 @@ export async function onRequestPost(context) {
     console.error("Server error while processing booking request.", err);
     return json({ ok: false, message: "Server error while processing booking request." }, 500);
   }
+}
+
+async function fetchAppsScriptWithRedirects(url, body) {
+  let currentUrl = url;
+
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    const response = await fetch(currentUrl, {
+      method: "POST",
+      redirect: "manual",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+      },
+      body: body.toString()
+    });
+
+    if (response.status >= 200 && response.status < 300) return response;
+
+    if ([301, 302, 303, 307, 308].includes(response.status)) {
+      const location = response.headers.get("Location");
+      if (!location) return response;
+
+      if ([301, 302, 303].includes(response.status)) {
+        return fetch(location, { method: "GET", redirect: "follow" });
+      }
+
+      currentUrl = location;
+      continue;
+    }
+
+    return response;
+  }
+
+  return new Response("Too many redirects", { status: 508 });
+}
+
+function bookingFailure(request, code, status = 502, upstreamStatus = 0) {
+  const hostname = new URL(request.url).hostname.toLowerCase();
+  const isStaging = hostname === "staging.mindotours.com" || hostname.endsWith(".mindotours-site.pages.dev");
+
+  return json({
+    ok: false,
+    message: "The booking service could not process your request.",
+    ...(isStaging ? {
+      booking_error_code: code,
+      upstream_status: Number(upstreamStatus) || undefined
+    } : {})
+  }, status);
 }
 
 function normalizeErrorCodes(value) {
