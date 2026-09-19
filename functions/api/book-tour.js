@@ -63,8 +63,9 @@ export async function onRequestPost(context) {
     }
 
     if (!verifyJson.success) {
-      console.warn("Turnstile verification failed.", verifyJson["error-codes"] || []);
-      return json({ ok: false, message: "Security verification failed. Please try again." }, 403);
+      const errorCodes = normalizeErrorCodes(verifyJson["error-codes"]);
+      console.warn("Turnstile verification failed.", errorCodes);
+      return turnstileFailure(request, errorCodes);
     }
 
     if (!isAllowedTurnstileHostname(verifyJson.hostname, env.TURNSTILE_ALLOWED_HOSTNAMES)) {
@@ -129,6 +130,21 @@ export async function onRequestPost(context) {
     console.error("Server error while processing booking request.", err);
     return json({ ok: false, message: "Server error while processing booking request." }, 500);
   }
+}
+
+function normalizeErrorCodes(value) {
+  return Array.isArray(value) ? value.map((code) => String(code)) : [];
+}
+
+function turnstileFailure(request, errorCodes) {
+  const hostname = new URL(request.url).hostname.toLowerCase();
+  const isStaging = hostname === "staging.mindotours.com" || hostname.endsWith(".mindotours-site.pages.dev");
+
+  return json({
+    ok: false,
+    message: "Security verification failed. Please try again.",
+    ...(isStaging ? { turnstile_error_codes: errorCodes } : {})
+  }, 403);
 }
 
 function isAllowedTurnstileHostname(hostname, configuredHostnames) {

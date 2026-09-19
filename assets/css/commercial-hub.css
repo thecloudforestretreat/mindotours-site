@@ -11,8 +11,10 @@
   display:grid;
   grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);
   gap:24px;
-  align-items:start;
+  align-items:stretch;
 }
+
+.hub-page .heroCopy{min-width:0}
 
 .hub-page .eyebrow{
   margin:0 0 8px;
@@ -57,6 +59,11 @@
 .hub-page .heroActions{margin-top:18px}
 
 .hub-page .heroMedia{
+  display:flex;
+  flex-direction:column;
+  align-self:stretch;
+  min-height:0;
+  max-height:720px;
   margin:0;
   overflow:hidden;
   border:1px solid var(--line);
@@ -66,8 +73,10 @@
 }
 
 .hub-page .heroMedia img{
+  flex:1 1 auto;
   width:100%;
-  height:560px;
+  height:0;
+  min-height:0;
   object-fit:cover;
   object-position:center;
 }
@@ -80,19 +89,24 @@
 
 .hub-page .trustRow{
   display:flex;
-  flex-wrap:wrap;
-  gap:10px;
+  flex-wrap:nowrap;
+  gap:8px;
   margin-top:18px;
+  overflow-x:auto;
+  padding-bottom:3px;
+  scrollbar-width:thin;
 }
 
 .hub-page .trustItem{
-  padding:9px 12px;
+  flex:0 0 auto;
+  padding:7px 9px;
   border:1px solid rgba(13,89,37,.25);
   border-radius:999px;
   background:rgba(255,255,255,.72);
   color:#174c2a;
-  font-size:13px;
+  font-size:12px;
   font-weight:800;
+  white-space:nowrap;
 }
 
 .hub-page .hubSection{
@@ -262,6 +276,7 @@
   .hub-page .tourGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .hub-page .decisionGrid{grid-template-columns:1fr}
   .hub-page h1{max-width:none}
+  .hub-page .heroMedia{display:block;max-height:none}
   .hub-page .heroMedia img{height:400px}
 }
 
