@@ -11,7 +11,7 @@
   display:grid;
   grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);
   gap:24px;
-  align-items:center;
+  align-items:start;
 }
 
 .hub-page .eyebrow{
@@ -33,16 +33,16 @@
 .hub-page h1{
   margin:0;
   max-width:15ch;
-  font-size:clamp(42px,6vw,68px);
+  font-size:clamp(40px,5.4vw,62px);
   line-height:1.02;
 }
 
 .hub-page .heroIntro{
   max-width:68ch;
-  margin:18px 0 0;
+  margin:16px 0 0;
   color:var(--ink);
-  font-size:18px;
-  line-height:1.75;
+  font-size:17px;
+  line-height:1.68;
 }
 
 .hub-page .heroActions,
@@ -54,7 +54,7 @@
   align-items:center;
 }
 
-.hub-page .heroActions{margin-top:22px}
+.hub-page .heroActions{margin-top:18px}
 
 .hub-page .heroMedia{
   margin:0;
@@ -67,8 +67,9 @@
 
 .hub-page .heroMedia img{
   width:100%;
-  aspect-ratio:4/3;
+  height:560px;
   object-fit:cover;
+  object-position:center;
 }
 
 .hub-page .heroMedia figcaption{
@@ -81,7 +82,7 @@
   display:flex;
   flex-wrap:wrap;
   gap:10px;
-  margin-top:22px;
+  margin-top:18px;
 }
 
 .hub-page .trustItem{
@@ -261,11 +262,13 @@
   .hub-page .tourGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .hub-page .decisionGrid{grid-template-columns:1fr}
   .hub-page h1{max-width:none}
+  .hub-page .heroMedia img{height:400px}
 }
 
 @media (max-width:640px){
   .hub-page .tourGrid,
   .hub-page .faqList{grid-template-columns:1fr}
   .hub-page .tourCard img{height:210px}
+  .hub-page .heroMedia img{height:300px}
   .hub-page .btn{width:100%}
 }
