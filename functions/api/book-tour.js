@@ -6,9 +6,25 @@ export async function onRequestPost(context) {
       return json({ ok: false, message: "Method not allowed." }, 405);
     }
 
-    if (!env.TURNSTILE_SECRET_KEY || !env.BOOK_TOUR_APPS_SCRIPT_URL || !env.CF_SHARED_SECRET) {
-      console.error("Booking endpoint is missing one or more required environment variables.");
-      return json({ ok: false, message: "The booking service is temporarily unavailable." }, 503);
+    const requiredBindings = [
+      "TURNSTILE_SECRET_KEY",
+      "BOOK_TOUR_APPS_SCRIPT_URL",
+      "CF_SHARED_SECRET"
+    ];
+    const missingBindings = requiredBindings.filter((name) => !env[name]);
+
+    if (missingBindings.length) {
+      console.error("Booking endpoint is missing required environment variables.", missingBindings);
+      const hostname = new URL(request.url).hostname.toLowerCase();
+      const isPreviewHostname =
+        hostname === "staging.mindotours.com" ||
+        hostname.endsWith(".mindotours-site.pages.dev");
+
+      return json({
+        ok: false,
+        message: "The booking service is temporarily unavailable.",
+        ...(isPreviewHostname ? { missingBindings } : {})
+      }, 503);
     }
 
     const contentType = request.headers.get("content-type") || "";
