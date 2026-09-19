@@ -1,0 +1,8 @@
+.activity-page .quickAnswer{margin-top:24px;padding:20px 22px;border-left:5px solid var(--forest);border-radius:0 var(--r) var(--r) 0;background:rgba(255,255,255,.72)}
+.activity-page .quickAnswer strong{display:block;margin-bottom:6px;color:var(--forest);font-size:14px;letter-spacing:.04em;text-transform:uppercase}
+.activity-page .quickAnswer p{margin:0;color:var(--ink);font-size:17px;line-height:1.75}
+.activity-page .activityNotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.activity-page .activityNote{padding:20px;border:1px solid var(--line);border-radius:var(--r);background:rgba(255,255,255,.7)}
+.activity-page .activityNote h3{margin:0 0 8px;color:var(--forest);font-size:20px}
+.activity-page .activityNote p{margin:0;color:var(--muted);line-height:1.7}
+@media (max-width:760px){.activity-page .activityNotes{grid-template-columns:1fr}}
