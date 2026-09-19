@@ -51,7 +51,7 @@ function configureLocalizedIncludes() {
       home: "/es/",
       tours: "/es/tours/",
       activities: "/es/actividades/",
-      book: "https://mindobirdwatching.com/es/reservar-tour/"
+      book: "/es/reservar-tour/"
     }
   };
 
