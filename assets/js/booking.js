@@ -115,7 +115,13 @@
         var response = await fetch("/api/book-tour", { method: "POST", body: formData });
         var data;
         try { data = await response.json(); } catch (jsonError) { data = {}; }
-        if (!response.ok || !data.ok) throw new Error(data.message || labels.genericError);
+        if (!response.ok || !data.ok) {
+          var diagnostic = "";
+          if (window.location.hostname === "staging.mindotours.com" && Array.isArray(data.turnstile_error_codes) && data.turnstile_error_codes.length) {
+            diagnostic = " [" + data.turnstile_error_codes.join(", ") + "]";
+          }
+          throw new Error((data.message || labels.genericError) + diagnostic);
+        }
         if (successEl) successEl.style.display = "block";
         if (window.MT_ANALYTICS) window.MT_ANALYTICS.formSuccess(form, { lead_type: "tour_request", page_language: form.dataset.language || "en" });
         form.reset();

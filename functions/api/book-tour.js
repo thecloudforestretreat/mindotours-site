@@ -70,12 +70,12 @@ export async function onRequestPost(context) {
 
     if (!isAllowedTurnstileHostname(verifyJson.hostname, env.TURNSTILE_ALLOWED_HOSTNAMES)) {
       console.warn("Turnstile hostname was rejected.", verifyJson.hostname || "missing");
-      return json({ ok: false, message: "Security verification failed. Please try again." }, 403);
+      return turnstileFailure(request, ["hostname-mismatch"]);
     }
 
     if (verifyJson.action && verifyJson.action !== "book_tour") {
       console.warn("Turnstile action was rejected.", verifyJson.action);
-      return json({ ok: false, message: "Security verification failed. Please try again." }, 403);
+      return turnstileFailure(request, ["action-mismatch"]);
     }
 
     formData.set("cf_secret", env.CF_SHARED_SECRET);
