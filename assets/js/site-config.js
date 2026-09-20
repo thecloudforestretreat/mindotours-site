@@ -12,8 +12,8 @@
     sourceDomain: "mindotours.com",
     leadDestination: "Mindo Bird Watching",
     analytics: {
-      ga4MeasurementId: "G-1ZYLW22XWP",
-      gtmContainerId: "GTM-PQV9F24V"
+      ga4MeasurementId: "G-VFVV662X46",
+      gtmContainerId: "GTM-PNG39P7F"
     },
     turnstile: {
       siteKey: "0x4AAAAAACvEWBLDiF38SNlX"
