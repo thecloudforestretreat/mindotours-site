@@ -65,7 +65,9 @@
       family_en: "Hi Mindo Tours, I am planning a family visit to Mindo. Can you help me compare activities and confirm which options fit our group, pace, transport, and dates?\n\nPage: {url}",
       family_es: "Hola Mindo Tours, estoy planificando una visita familiar a Mindo. ¿Pueden ayudarme a comparar actividades y confirmar cuáles se adaptan a nuestro grupo, ritmo, transporte y fechas?\n\nPágina: {url}",
       tarabita_en: "Hi Mindo Tours, I am planning to visit the Mindo tarabita and waterfall trails. Can you confirm current access, timing, transport, trail conditions, and the best guided option for my group?\n\nPage: {url}",
-      tarabita_es: "Hola Mindo Tours, estoy planificando visitar la tarabita y los senderos de cascadas de Mindo. ¿Pueden confirmar acceso, horario, transporte, condiciones y la mejor opción guiada para mi grupo?\n\nPágina: {url}"
+      tarabita_es: "Hola Mindo Tours, estoy planificando visitar la tarabita y los senderos de cascadas de Mindo. ¿Pueden confirmar acceso, horario, transporte, condiciones y la mejor opción guiada para mi grupo?\n\nPágina: {url}",
+      insect_macro_en: "Hi Mindo Tours, I am interested in a private insect and macro wildlife search. Can you review my target species, dates, photography goals, transport, and current field conditions?\n\nPage: {url}",
+      insect_macro_es: "Hola Mindo Tours, me interesa una búsqueda privada de insectos y macrofauna. ¿Pueden revisar mis especies objetivo, fechas, metas de fotografía, transporte y condiciones actuales?\n\nPágina: {url}"
     }
   };
 

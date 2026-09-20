@@ -1,0 +1,17 @@
+.wildlife-activity .page.card{
+  background:linear-gradient(rgba(244,249,241,.94),rgba(244,249,241,.94)),url("/assets/mt_park_page_02.jpg") center top/cover fixed;
+}
+
+.wildlife-activity .attractionHeroMedia img{object-position:center}
+
+.wildlife-activity .attractionAnswer{border-left-color:#3b7044}
+
+.wildlife-activity .wildlifeBoundary{
+  padding:20px;
+  border:1px solid rgba(13,89,37,.22);
+  border-radius:18px;
+  background:rgba(231,241,225,.82);
+}
+
+.wildlife-activity .wildlifeBoundary h2{margin:0 0 8px}
+.wildlife-activity .wildlifeBoundary p{margin:0;color:var(--muted);line-height:1.7}
