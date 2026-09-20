@@ -7,6 +7,17 @@
   background:linear-gradient(rgba(247,250,243,.94),rgba(247,250,243,.94)),url("/assets/mt_park_page_02.jpg") center top/cover fixed;
 }
 
+.hub-page .breadcrumbs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin:0 0 18px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.hub-page .breadcrumbs a{color:var(--forest);font-weight:800}
+
 .hub-page .hubHero{
   display:grid;
   grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);
@@ -50,6 +61,25 @@
   font-size:17px;
   line-height:1.68;
 }
+
+.hub-page .quickAnswer{
+  margin-top:18px;
+  padding:16px 18px;
+  border-left:4px solid var(--forest);
+  border-radius:0 16px 16px 0;
+  background:rgba(255,255,255,.72);
+}
+
+.hub-page .quickAnswer strong{
+  display:block;
+  margin-bottom:7px;
+  color:var(--forest);
+  font-size:12px;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.hub-page .quickAnswer p{margin:0;line-height:1.62}
 
 .hub-page .heroActions,
 .hub-page .cardActions,

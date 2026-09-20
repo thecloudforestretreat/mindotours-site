@@ -29,8 +29,8 @@
       book_tour_es: "Hola Mindo Tours, quisiera solicitar un tour en Mindo. ¿Pueden ayudarme con disponibilidad y los próximos pasos?\n\nPágina: {url}",
       day_trips_en: "Hi Mindo Tours, I am interested in a Mindo day trip. Can you help me compare activities, timing, transport, and availability?\n\nPage: {url}",
       day_trips_es: "Hola Mindo Tours, me interesa una excursión de un día a Mindo. ¿Pueden ayudarme a comparar actividades, horarios, transporte y disponibilidad?\n\nPágina: {url}",
-      private_tours_en: "Hi Mindo Tours, I am interested in a private custom tour in Mindo. Can you help me plan the route, timing, and price?\n\nPage: {url}",
-      private_tours_es: "Hola Mindo Tours, me interesa un tour privado personalizado en Mindo. ¿Pueden ayudarme a planificar la ruta, el horario y el precio?\n\nPágina: {url}",
+      private_tours_en: "Hi Mindo Tours, I am interested in a private custom tour in Mindo. Can you help me plan the route, timing, and availability?\n\nPage: {url}",
+      private_tours_es: "Hola Mindo Tours, me interesa un tour privado personalizado en Mindo. ¿Pueden ayudarme a planificar la ruta, el horario y la disponibilidad?\n\nPágina: {url}",
       contact_page_en: "Hi Mindo Tours, I am planning a visit to Mindo and would like help with activities, tours, or transport. Can you help me choose the right next step?\n\nPage: {url}",
       contact_page_es: "Hola Mindo Tours, estoy planificando una visita a Mindo y quisiera ayuda con actividades, tours o transporte. ¿Pueden ayudarme a elegir el siguiente paso?\n\nPágina: {url}",
       birdwatching_en: "Hi Mindo Tours, I am interested in birdwatching in Mindo. Can your Mindo Bird Watching team help me choose the right tour?\n\nPage: {url}",
@@ -38,7 +38,9 @@
       chocolate_tour_en: "Hi Mindo Tours, I am interested in a chocolate tour in Mindo. Can you confirm availability and help me fit it into my itinerary?\n\nPage: {url}",
       chocolate_tour_es: "Hola Mindo Tours, me interesa un tour de chocolate en Mindo. ¿Pueden confirmar disponibilidad y ayudarme a integrarlo en mi itinerario?\n\nPágina: {url}",
       waterfall_hike_en: "Hi Mindo Tours, I am interested in a guided waterfall hike in Mindo. Can you confirm availability and help me choose a route for my group?\n\nPage: {url}",
-      waterfall_hike_es: "Hola Mindo Tours, me interesa un tour guiado de cascadas en Mindo. ¿Pueden confirmar disponibilidad y ayudarme a elegir una ruta para mi grupo?\n\nPágina: {url}"
+      waterfall_hike_es: "Hola Mindo Tours, me interesa un tour guiado de cascadas en Mindo. ¿Pueden confirmar disponibilidad y ayudarme a elegir una ruta para mi grupo?\n\nPágina: {url}",
+      travel_guide_hub_en: "Hi Mindo Tours, I am planning a visit to Mindo. Can you help me organize the timing, transport, activities, and availability for my dates?\n\nPage: {url}",
+      travel_guide_hub_es: "Hola Mindo Tours, estoy planificando una visita a Mindo. ¿Pueden ayudarme a organizar horarios, transporte, actividades y disponibilidad para mis fechas?\n\nPágina: {url}"
     }
   };
 
