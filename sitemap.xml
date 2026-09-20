@@ -182,4 +182,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-travel-guide/"/>
   </url>
 
+  <url>
+    <loc>https://mindotours.com/activities/ziplining-mindo/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/ziplining-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/canopy-en-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/ziplining-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/actividades/canopy-en-mindo/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/ziplining-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/canopy-en-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/ziplining-mindo/"/>
+  </url>
+
 </urlset>

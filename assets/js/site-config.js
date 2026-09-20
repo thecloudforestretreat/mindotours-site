@@ -40,7 +40,9 @@
       waterfall_hike_en: "Hi Mindo Tours, I am interested in a guided waterfall hike in Mindo. Can you confirm availability and help me choose a route for my group?\n\nPage: {url}",
       waterfall_hike_es: "Hola Mindo Tours, me interesa un tour guiado de cascadas en Mindo. ¿Pueden confirmar disponibilidad y ayudarme a elegir una ruta para mi grupo?\n\nPágina: {url}",
       travel_guide_hub_en: "Hi Mindo Tours, I am planning a visit to Mindo. Can you help me organize the timing, transport, activities, and availability for my dates?\n\nPage: {url}",
-      travel_guide_hub_es: "Hola Mindo Tours, estoy planificando una visita a Mindo. ¿Pueden ayudarme a organizar horarios, transporte, actividades y disponibilidad para mis fechas?\n\nPágina: {url}"
+      travel_guide_hub_es: "Hola Mindo Tours, estoy planificando una visita a Mindo. ¿Pueden ayudarme a organizar horarios, transporte, actividades y disponibilidad para mis fechas?\n\nPágina: {url}",
+      ziplining_en: "Hi Mindo Tours, I am interested in ziplining in Mindo. Can you confirm the current option, requirements, timing, and availability for my group?\n\nPage: {url}",
+      ziplining_es: "Hola Mindo Tours, me interesa hacer canopy en Mindo. ¿Pueden confirmar la opción actual, requisitos, horario y disponibilidad para mi grupo?\n\nPágina: {url}"
     }
   };
 
