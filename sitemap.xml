@@ -342,4 +342,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-wildlife-nature-tours/"/>
   </url>
 
+  <url>
+    <loc>https://mindotours.com/mindo-itinerary-one-day/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-itinerary-one-day/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/itinerario-mindo-un-dia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-itinerary-one-day/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/itinerario-mindo-un-dia/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-itinerary-one-day/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/itinerario-mindo-un-dia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-itinerary-one-day/"/>
+  </url>
+
 </urlset>

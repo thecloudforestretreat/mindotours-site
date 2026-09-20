@@ -57,7 +57,9 @@
       adventure_en: "Hi Mindo Tours, I want to compare adventure activities in Mindo. Can you help me choose between ziplining, tubing, canyoning, mountain biking, and other options for my group?\n\nPage: {url}",
       adventure_es: "Hola Mindo Tours, quiero comparar actividades de aventura en Mindo. ¿Pueden ayudarme a elegir entre canopy, tubing, canyoning, ciclismo de montaña y otras opciones para mi grupo?\n\nPágina: {url}",
       wildlife_en: "Hi Mindo Tours, I want to compare wildlife and nature experiences in Mindo. Can you help me choose an option and confirm timing, transport, conditions, and availability?\n\nPage: {url}",
-      wildlife_es: "Hola Mindo Tours, quiero comparar experiencias de naturaleza y fauna en Mindo. ¿Pueden ayudarme a elegir una opción y confirmar horario, transporte, condiciones y disponibilidad?\n\nPágina: {url}"
+      wildlife_es: "Hola Mindo Tours, quiero comparar experiencias de naturaleza y fauna en Mindo. ¿Pueden ayudarme a elegir una opción y confirmar horario, transporte, condiciones y disponibilidad?\n\nPágina: {url}",
+      itinerary_one_day_en: "Hi Mindo Tours, I am planning one day in Mindo. Can you help me build a realistic itinerary around my priorities, transport, timing, and availability?\n\nPage: {url}",
+      itinerary_one_day_es: "Hola Mindo Tours, estoy planificando un día en Mindo. ¿Pueden ayudarme a crear un itinerario realista según mis prioridades, transporte, horarios y disponibilidad?\n\nPágina: {url}"
     }
   };
 

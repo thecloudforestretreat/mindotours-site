@@ -1,0 +1,294 @@
+.itinerary-page .page{
+  margin-top:18px;
+  padding:clamp(20px,4vw,40px);
+}
+
+.itinerary-page .page.card{
+  background:linear-gradient(rgba(247,250,243,.94),rgba(247,250,243,.94)),url("/assets/mt_park_page_02.jpg") center top/cover fixed;
+}
+
+.itinerary-page .breadcrumbs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin:0 0 18px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.itinerary-page .breadcrumbs a{color:var(--forest);font-weight:800}
+
+.itinerary-page h1,
+.itinerary-page h2{
+  font-family:var(--font-head);
+  color:var(--forest);
+  letter-spacing:-.02em;
+}
+
+.itineraryHero{
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);
+  gap:24px;
+  align-items:stretch;
+}
+
+.itineraryHeroCopy{
+  display:flex;
+  min-width:0;
+  flex-direction:column;
+}
+
+.itinerary-page .eyebrow{
+  margin:0 0 8px;
+  color:var(--forest);
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.itinerary-page h1{
+  max-width:15ch;
+  margin:0;
+  font-size:clamp(40px,5.4vw,62px);
+  line-height:1.02;
+}
+
+.itineraryIntro{
+  max-width:68ch;
+  margin:16px 0 0;
+  font-size:17px;
+  line-height:1.68;
+}
+
+.itineraryAnswer{
+  margin-top:18px;
+  padding:16px 18px;
+  border-left:4px solid var(--forest);
+  border-radius:0 16px 16px 0;
+  background:rgba(255,255,255,.72);
+}
+
+.itineraryAnswer strong{
+  display:block;
+  margin-bottom:7px;
+  color:var(--forest);
+  font-size:12px;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.itineraryAnswer p{margin:0;line-height:1.62}
+
+.itineraryActions,
+.moduleActions,
+.itineraryFinalActions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  align-items:center;
+}
+
+.itineraryActions{margin-top:auto;padding-top:22px}
+
+.itineraryTags{
+  display:flex;
+  flex-wrap:nowrap;
+  gap:8px;
+  margin-top:18px;
+  overflow-x:auto;
+  padding-bottom:3px;
+  scrollbar-width:thin;
+}
+
+.itineraryTag{
+  flex:0 0 auto;
+  padding:7px 9px;
+  border:1px solid rgba(13,89,37,.25);
+  border-radius:999px;
+  background:rgba(255,255,255,.72);
+  color:#174c2a;
+  font-size:12px;
+  font-weight:800;
+  white-space:nowrap;
+}
+
+.itineraryHeroMedia{
+  display:flex;
+  height:820px;
+  min-height:820px;
+  flex-direction:column;
+  margin:0;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+
+.daySequence{
+  display:grid;
+  min-height:0;
+  flex:1 1 auto;
+  grid-template-rows:1.2fr 1fr 1fr;
+  gap:4px;
+  padding:4px;
+  background:rgba(13,89,37,.08);
+}
+
+.sequenceFrame{position:relative;min-height:0;overflow:hidden}
+.sequenceFrame img{width:100%;height:100%;object-fit:cover;display:block}
+.sequenceFrame span{
+  position:absolute;
+  left:10px;
+  bottom:10px;
+  padding:6px 9px;
+  border-radius:999px;
+  background:rgba(7,35,18,.82);
+  color:#fff;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+}
+
+.itineraryHeroMedia figcaption{
+  padding:8px 10px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  background:#fff;
+  font-size:11px;
+  line-height:1.35;
+}
+
+.itinerarySection{
+  margin-top:40px;
+  padding-top:34px;
+  border-top:1px solid var(--line);
+}
+
+.itinerarySectionIntro{
+  display:grid;
+  grid-template-columns:minmax(220px,.75fr) minmax(0,1.25fr);
+  gap:24px;
+  margin-bottom:20px;
+}
+
+.itinerarySectionIntro h2{
+  margin:0;
+  font-size:clamp(28px,4vw,40px);
+  line-height:1.12;
+}
+
+.itinerarySectionIntro p{
+  margin:0;
+  color:var(--muted);
+  font-size:16px;
+  line-height:1.72;
+}
+
+.dayFlow{display:grid;gap:14px}
+
+.timeBlock{
+  display:grid;
+  grid-template-columns:120px minmax(0,1fr);
+  gap:18px;
+  padding:20px;
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  background:rgba(255,255,255,.74);
+  box-shadow:var(--shadow);
+}
+
+.timeLabel{
+  color:var(--forest);
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+.timeBlock h3{margin:0 0 8px;font-size:21px;line-height:1.25}
+.timeBlock p{margin:0;color:var(--muted);line-height:1.65}
+.timeBlock p + p{margin-top:8px}
+
+.moduleGrid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+
+.moduleCard{
+  display:flex;
+  min-height:100%;
+  flex-direction:column;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  background:rgba(255,255,255,.78);
+  box-shadow:var(--shadow);
+}
+
+.moduleCard img{width:100%;height:190px;object-fit:cover}
+.moduleBody{display:flex;flex:1;flex-direction:column;gap:10px;padding:18px}
+.moduleLabel{color:var(--forest);font-size:12px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+.moduleCard h3{margin:0;font-size:20px;line-height:1.25}
+.moduleCard p{margin:0;color:var(--muted);line-height:1.65}
+.moduleActions{margin-top:auto;padding-top:6px}
+
+.realityGrid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+
+.realityCard{
+  padding:20px;
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  background:rgba(255,255,255,.7);
+}
+
+.realityCard strong{display:block;margin-bottom:8px;color:var(--forest);font-size:16px}
+.realityCard p{margin:0;color:var(--muted);line-height:1.62}
+
+.specialistPanel,
+.itineraryFinal{
+  display:grid;
+  grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr);
+  gap:24px;
+  align-items:center;
+  padding:24px;
+  border:1px solid rgba(13,89,37,.24);
+  border-radius:var(--r);
+  background:linear-gradient(135deg,rgba(255,255,255,.8),rgba(219,238,211,.8));
+  box-shadow:var(--shadow);
+}
+
+.specialistPanel h2,
+.itineraryFinal h2{margin:0 0 9px;font-size:clamp(26px,3.5vw,36px);line-height:1.12}
+.specialistPanel p,
+.itineraryFinal p{margin:0;color:var(--muted);line-height:1.68}
+
+.faqList{display:grid;gap:12px}
+.faqList details{padding:17px 18px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.72)}
+.faqList summary{cursor:pointer;color:var(--ink);font-weight:900}
+.faqList details p{margin:12px 0 0;color:var(--muted);line-height:1.65}
+
+@media (max-width:900px){
+  .itineraryHero,
+  .itinerarySectionIntro,
+  .specialistPanel,
+  .itineraryFinal{grid-template-columns:1fr}
+  .itineraryHeroMedia{height:680px;min-height:680px}
+  .moduleGrid,
+  .realityGrid{grid-template-columns:1fr}
+}
+
+@media (max-width:640px){
+  .itinerary-page .page{padding:20px}
+  .itinerary-page h1{font-size:clamp(38px,12vw,50px)}
+  .itineraryHeroMedia{height:600px;min-height:600px}
+  .itinerarySection{margin-top:28px;padding-top:26px}
+  .timeBlock{grid-template-columns:1fr;gap:8px}
+}
