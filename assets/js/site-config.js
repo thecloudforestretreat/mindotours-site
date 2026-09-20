@@ -63,7 +63,9 @@
       itinerary_two_day_en: "Hi Mindo Tours, I am planning two days in Mindo. Can you help me balance activities, rest, transport, and current availability around my priorities?\n\nPage: {url}",
       itinerary_two_day_es: "Hola Mindo Tours, estoy planificando dos días en Mindo. ¿Pueden ayudarme a equilibrar actividades, descanso, transporte y disponibilidad según mis prioridades?\n\nPágina: {url}",
       family_en: "Hi Mindo Tours, I am planning a family visit to Mindo. Can you help me compare activities and confirm which options fit our group, pace, transport, and dates?\n\nPage: {url}",
-      family_es: "Hola Mindo Tours, estoy planificando una visita familiar a Mindo. ¿Pueden ayudarme a comparar actividades y confirmar cuáles se adaptan a nuestro grupo, ritmo, transporte y fechas?\n\nPágina: {url}"
+      family_es: "Hola Mindo Tours, estoy planificando una visita familiar a Mindo. ¿Pueden ayudarme a comparar actividades y confirmar cuáles se adaptan a nuestro grupo, ritmo, transporte y fechas?\n\nPágina: {url}",
+      tarabita_en: "Hi Mindo Tours, I am planning to visit the Mindo tarabita and waterfall trails. Can you confirm current access, timing, transport, trail conditions, and the best guided option for my group?\n\nPage: {url}",
+      tarabita_es: "Hola Mindo Tours, estoy planificando visitar la tarabita y los senderos de cascadas de Mindo. ¿Pueden confirmar acceso, horario, transporte, condiciones y la mejor opción guiada para mi grupo?\n\nPágina: {url}"
     }
   };
 

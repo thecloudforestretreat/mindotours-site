@@ -1,0 +1,251 @@
+.attraction-page .page{
+  margin-top:18px;
+  padding:clamp(20px,4vw,40px);
+}
+
+.attraction-page .page.card{
+  background:linear-gradient(rgba(247,250,243,.94),rgba(247,250,243,.94)),url("/assets/mt_park_page_02.jpg") center top/cover fixed;
+}
+
+.attraction-page .breadcrumbs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin:0 0 18px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.attraction-page .breadcrumbs a{color:var(--forest);font-weight:800}
+
+.attractionHero{
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);
+  gap:24px;
+  align-items:stretch;
+}
+
+.attractionHeroCopy{
+  display:flex;
+  min-width:0;
+  height:820px;
+  flex-direction:column;
+}
+
+.attraction-page .eyebrow,
+.attractionLabel{
+  color:var(--forest);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.attraction-page .eyebrow{margin:0 0 8px}
+
+.attraction-page h1,
+.attraction-page h2{
+  font-family:var(--font-head);
+  color:var(--forest);
+  letter-spacing:-.02em;
+}
+
+.attraction-page h1{
+  max-width:14ch;
+  margin:0;
+  font-size:clamp(40px,5.4vw,62px);
+  line-height:1.02;
+}
+
+.attractionIntro{
+  max-width:68ch;
+  margin:16px 0 0;
+  color:var(--ink);
+  font-size:17px;
+  line-height:1.68;
+}
+
+.attractionAnswer{
+  margin-top:18px;
+  padding:16px 18px;
+  border-left:4px solid var(--forest);
+  border-radius:0 16px 16px 0;
+  background:rgba(255,255,255,.74);
+}
+
+.attractionAnswer strong{
+  display:block;
+  margin-bottom:7px;
+  color:var(--forest);
+  font-size:12px;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.attractionAnswer p{margin:0;line-height:1.62}
+
+.attractionActions,
+.attractionCardActions,
+.attractionFinalActions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  align-items:center;
+}
+
+.attractionActions{margin-top:auto;padding-top:20px}
+
+.attractionTags{
+  display:flex;
+  flex-wrap:nowrap;
+  gap:8px;
+  margin-top:18px;
+  overflow-x:auto;
+  padding-bottom:3px;
+  scrollbar-width:thin;
+}
+
+.attractionTag{
+  flex:0 0 auto;
+  padding:7px 9px;
+  border:1px solid rgba(13,89,37,.25);
+  border-radius:999px;
+  background:rgba(255,255,255,.74);
+  color:#174c2a;
+  font-size:12px;
+  font-weight:800;
+  white-space:nowrap;
+}
+
+.attractionHeroMedia{
+  display:flex;
+  height:820px;
+  min-height:820px;
+  flex-direction:column;
+  margin:0;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+
+.attractionHeroMedia img{
+  flex:1 1 auto;
+  width:100%;
+  min-height:0;
+  object-fit:cover;
+  object-position:center;
+}
+
+.attractionHeroMedia figcaption{
+  margin:0;
+  padding:8px 10px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  background:#fff;
+  font-size:11px;
+  line-height:1.35;
+}
+
+.attractionSection{
+  margin-top:40px;
+  padding-top:34px;
+  border-top:1px solid var(--line);
+}
+
+.attractionSectionIntro{
+  display:grid;
+  grid-template-columns:minmax(220px,.75fr) minmax(0,1.25fr);
+  gap:24px;
+  align-items:start;
+  margin-bottom:20px;
+}
+
+.attractionSectionIntro h2{margin:0;font-size:clamp(28px,4vw,40px);line-height:1.12}
+.attractionSectionIntro p{margin:0;color:var(--muted);font-size:16px;line-height:1.75}
+
+.attractionGrid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+
+.attractionCard,
+.attractionRelatedCard{
+  display:flex;
+  min-height:100%;
+  flex-direction:column;
+  padding:20px;
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  background:rgba(255,255,255,.76);
+  box-shadow:var(--shadow);
+}
+
+.attractionCard h3,
+.attractionRelatedCard h3{margin:9px 0 7px;color:var(--ink);font-size:21px;line-height:1.25}
+.attractionCard p,
+.attractionRelatedCard p{margin:0;color:var(--muted);line-height:1.65}
+.attractionCardActions{margin-top:auto;padding-top:16px}
+
+.confirmGrid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+
+.confirmCard{
+  padding:20px;
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  background:rgba(255,255,255,.7);
+}
+
+.confirmCard strong{display:block;margin-bottom:8px;color:var(--forest);font-size:18px}
+.confirmCard p{margin:0;color:var(--muted);line-height:1.68}
+
+.attractionNotice,
+.attractionFinal{
+  display:grid;
+  grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr);
+  gap:22px;
+  align-items:center;
+  padding:24px;
+  border:1px solid rgba(13,89,37,.28);
+  border-radius:var(--r);
+  background:rgba(223,239,219,.78);
+}
+
+.attractionNotice h2,
+.attractionFinal h2{margin:0 0 10px;font-size:30px}
+.attractionNotice p,
+.attractionFinal p{margin:0;color:var(--ink);line-height:1.7}
+
+.attractionFaq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.attractionFaq details{padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.74)}
+.attractionFaq summary{cursor:pointer;color:var(--ink);font-weight:900}
+.attractionFaq details p{margin:10px 0 0;color:var(--muted);line-height:1.65}
+
+.attraction-page a:focus-visible,
+.attraction-page summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+@media (max-width:900px){
+  .attractionHero,
+  .attractionSectionIntro,
+  .attractionNotice,
+  .attractionFinal{grid-template-columns:1fr}
+  .attractionHeroCopy{height:auto}
+  .attractionHeroMedia{height:680px;min-height:680px}
+  .attractionGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .confirmGrid{grid-template-columns:1fr}
+  .attraction-page h1{max-width:none}
+  .attractionActions{margin-top:18px;padding-top:0}
+}
+
+@media (max-width:640px){
+  .attractionHeroMedia{height:600px;min-height:600px}
+  .attractionGrid,
+  .attractionFaq{grid-template-columns:1fr}
+  .attraction-page .btn{width:100%}
+}

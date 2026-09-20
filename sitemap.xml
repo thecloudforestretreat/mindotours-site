@@ -163,6 +163,26 @@
   </url>
 
   <url>
+    <loc>https://mindotours.com/activities/mindo-tarabita-cable-car/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/mindo-tarabita-cable-car/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tarabita-de-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/mindo-tarabita-cable-car/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/actividades/tarabita-de-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/mindo-tarabita-cable-car/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tarabita-de-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/mindo-tarabita-cable-car/"/>
+  </url>
+
+  <url>
     <loc>https://mindotours.com/mindo-travel-guide/</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
