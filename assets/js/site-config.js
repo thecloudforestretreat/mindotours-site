@@ -31,6 +31,8 @@
       day_trips_es: "Hola Mindo Tours, me interesa una excursión de un día a Mindo. ¿Pueden ayudarme a comparar actividades, horarios, transporte y disponibilidad?\n\nPágina: {url}",
       private_tours_en: "Hi Mindo Tours, I am interested in a private custom tour in Mindo. Can you help me plan the route, timing, and price?\n\nPage: {url}",
       private_tours_es: "Hola Mindo Tours, me interesa un tour privado personalizado en Mindo. ¿Pueden ayudarme a planificar la ruta, el horario y el precio?\n\nPágina: {url}",
+      contact_page_en: "Hi Mindo Tours, I am planning a visit to Mindo and would like help with activities, tours, or transport. Can you help me choose the right next step?\n\nPage: {url}",
+      contact_page_es: "Hola Mindo Tours, estoy planificando una visita a Mindo y quisiera ayuda con actividades, tours o transporte. ¿Pueden ayudarme a elegir el siguiente paso?\n\nPágina: {url}",
       birdwatching_en: "Hi Mindo Tours, I am interested in birdwatching in Mindo. Can your Mindo Bird Watching team help me choose the right tour?\n\nPage: {url}",
       birdwatching_es: "Hola Mindo Tours, me interesa el avistamiento de aves en Mindo. ¿Su equipo de Mindo Bird Watching puede ayudarme a elegir el tour adecuado?\n\nPágina: {url}"
     }

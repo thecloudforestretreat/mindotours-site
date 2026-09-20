@@ -82,4 +82,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/book-tour/"/>
   </url>
 
+  <url>
+    <loc>https://mindotours.com/contact/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/contact/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/contacto/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/contact/"/>
+  </url>
+
 </urlset>

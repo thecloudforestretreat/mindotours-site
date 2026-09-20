@@ -45,12 +45,14 @@ function configureLocalizedIncludes() {
       home: "/",
       tours: "/tours/",
       activities: "/activities/",
+      contact: "/contact/",
       book: "/book-tour/"
     },
     es: {
       home: "/es/",
       tours: "/es/tours/",
       activities: "/es/actividades/",
+      contact: "/es/contacto/",
       book: "/es/reservar-tour/"
     }
   };

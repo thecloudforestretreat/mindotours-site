@@ -18,7 +18,7 @@
     });
   }
 
-  loadScript("/assets/js/site-config.js?v=20260919-2")
+  loadScript("/assets/js/site-config.js?v=20260919-3")
     .then(function () {
       return loadScript("/assets/js/analytics.js?v=20260919-2");
     })
