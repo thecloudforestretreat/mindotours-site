@@ -192,6 +192,9 @@
       source_domain: window.location.hostname,
       page_language: language(),
       page_type: pageType(),
+      product_family: document.body && document.body.dataset.productFamily
+        ? clean(document.body.dataset.productFamily, 80)
+        : "",
       page_path: window.location.pathname,
       visitor_id: state.visitor_id,
       session_id: state.session_id,

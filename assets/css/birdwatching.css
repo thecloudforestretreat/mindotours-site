@@ -1,0 +1,262 @@
+.birding-funnel .page{
+  margin-top:18px;
+  padding:clamp(20px,4vw,40px);
+}
+
+.birding-funnel .page.card{
+  background:linear-gradient(rgba(247,250,243,.94),rgba(247,250,243,.94)),url("/assets/mt_park_page_02.jpg") center top/cover fixed;
+}
+
+.birding-funnel .breadcrumbs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin:0 0 18px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.birding-funnel .breadcrumbs a{color:var(--forest);font-weight:800}
+
+.birding-funnel .birdHero{
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);
+  gap:24px;
+  align-items:stretch;
+}
+
+.birding-funnel .heroCopy{
+  display:flex;
+  min-width:0;
+  flex-direction:column;
+}
+
+.birding-funnel .eyebrow,
+.birding-funnel .cardLabel{
+  color:var(--forest);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.birding-funnel .eyebrow{margin:0 0 8px}
+
+.birding-funnel h1,
+.birding-funnel h2{
+  font-family:var(--font-head);
+  color:var(--forest);
+  letter-spacing:-.02em;
+}
+
+.birding-funnel h1{
+  max-width:14ch;
+  margin:0;
+  font-size:clamp(40px,5.4vw,62px);
+  line-height:1.02;
+}
+
+.birding-funnel .heroIntro{
+  max-width:68ch;
+  margin:16px 0 0;
+  color:var(--ink);
+  font-size:17px;
+  line-height:1.68;
+}
+
+.birding-funnel .quickAnswer{
+  margin-top:18px;
+  padding:16px 18px;
+  border-left:4px solid var(--forest);
+  border-radius:0 16px 16px 0;
+  background:rgba(255,255,255,.72);
+}
+
+.birding-funnel .quickAnswer strong{
+  display:block;
+  margin-bottom:7px;
+  color:var(--forest);
+  font-size:12px;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.birding-funnel .quickAnswer p{margin:0;line-height:1.62}
+
+.birding-funnel .heroActions,
+.birding-funnel .cardActions,
+.birding-funnel .finalActions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  align-items:center;
+}
+
+.birding-funnel .heroActions{margin-top:auto;padding-top:22px}
+
+.birding-funnel .trustRow{
+  display:flex;
+  flex-wrap:nowrap;
+  gap:8px;
+  margin-top:18px;
+  overflow-x:auto;
+  padding-bottom:3px;
+}
+
+.birding-funnel .trustItem{
+  flex:0 0 auto;
+  padding:7px 9px;
+  border:1px solid rgba(13,89,37,.25);
+  border-radius:999px;
+  background:rgba(255,255,255,.72);
+  color:#174c2a;
+  font-size:12px;
+  font-weight:800;
+  white-space:nowrap;
+}
+
+.birding-funnel .heroMedia{
+  display:flex;
+  flex-direction:column;
+  margin:0;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  background:var(--card-strong);
+  box-shadow:var(--shadow);
+}
+
+.birding-funnel .heroMedia img{
+  flex:1 1 auto;
+  width:100%;
+  height:560px;
+  min-height:560px;
+  object-fit:cover;
+  object-position:center;
+}
+
+.birding-funnel .heroMedia figcaption{
+  flex:0 0 auto;
+  padding:8px 10px;
+  border-top:1px solid var(--line);
+  background:#fff;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.35;
+}
+
+.birding-funnel .birdSection{
+  margin-top:40px;
+  padding-top:34px;
+  border-top:1px solid var(--line);
+}
+
+.birding-funnel .sectionIntro{
+  display:grid;
+  grid-template-columns:minmax(220px,.75fr) minmax(0,1.25fr);
+  gap:24px;
+  align-items:start;
+  margin-bottom:20px;
+}
+
+.birding-funnel .sectionIntro h2{margin:0;font-size:clamp(28px,4vw,40px);line-height:1.12}
+.birding-funnel .sectionIntro p{margin:0;color:var(--muted);font-size:16px;line-height:1.75}
+
+.birding-funnel .optionGrid,
+.birding-funnel .planningGrid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+}
+
+.birding-funnel .optionCard,
+.birding-funnel .planningCard{
+  display:flex;
+  min-height:100%;
+  flex-direction:column;
+  padding:20px;
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  background:rgba(255,255,255,.74);
+  box-shadow:var(--shadow);
+}
+
+.birding-funnel .optionCard h3,
+.birding-funnel .planningCard h3{margin:9px 0 7px;color:var(--ink);font-size:21px;line-height:1.25}
+.birding-funnel .optionCard p,
+.birding-funnel .planningCard p{margin:0;color:var(--muted);line-height:1.65}
+.birding-funnel .optionMeta{margin-top:12px;color:var(--ink);font-size:13px;font-weight:800}
+.birding-funnel .cardActions{margin-top:auto;padding-top:16px}
+
+.birding-funnel .planningGrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.birding-funnel .planningNumber{
+  display:inline-flex;
+  width:36px;
+  height:36px;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:rgba(13,89,37,.14);
+  color:var(--forest);
+  font-weight:900;
+}
+
+.birding-funnel .handoffBox,
+.birding-funnel .finalCta{
+  display:grid;
+  grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr);
+  gap:22px;
+  align-items:center;
+  padding:24px;
+  border:1px solid rgba(13,89,37,.28);
+  border-radius:var(--r);
+  background:rgba(223,239,219,.78);
+}
+
+.birding-funnel .handoffBox h2,
+.birding-funnel .finalCta h2{margin:0 0 10px;font-size:30px}
+.birding-funnel .handoffBox p,
+.birding-funnel .finalCta p{margin:0;color:var(--ink);line-height:1.7}
+.birding-funnel .finalActions{justify-content:flex-start}
+
+.birding-funnel .faqList{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+
+.birding-funnel details{
+  padding:16px 18px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:rgba(255,255,255,.72);
+}
+
+.birding-funnel summary{cursor:pointer;color:var(--ink);font-weight:900}
+.birding-funnel details p{margin:10px 0 0;color:var(--muted);line-height:1.6}
+
+.birding-funnel a:focus-visible,
+.birding-funnel summary:focus-visible{
+  outline:3px solid var(--gold);
+  outline-offset:3px;
+}
+
+@media(max-width:900px){
+  .birding-funnel .birdHero,
+  .birding-funnel .sectionIntro,
+  .birding-funnel .handoffBox,
+  .birding-funnel .finalCta{grid-template-columns:1fr}
+  .birding-funnel .planningGrid{grid-template-columns:1fr}
+  .birding-funnel h1{max-width:none}
+  .birding-funnel .heroCopy{display:block}
+  .birding-funnel .heroActions{margin-top:18px;padding-top:0}
+  .birding-funnel .heroMedia{display:block}
+  .birding-funnel .heroMedia img{height:400px;min-height:0}
+}
+
+@media(max-width:640px){
+  .birding-funnel .optionGrid,
+  .birding-funnel .faqList{grid-template-columns:1fr}
+  .birding-funnel .heroMedia img{height:300px}
+  .birding-funnel .btn{width:100%}
+}
