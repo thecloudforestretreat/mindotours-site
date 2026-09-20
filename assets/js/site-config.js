@@ -44,7 +44,9 @@
       ziplining_en: "Hi Mindo Tours, I am interested in ziplining in Mindo. Can you confirm the current option, requirements, timing, and availability for my group?\n\nPage: {url}",
       ziplining_es: "Hola Mindo Tours, me interesa hacer canopy en Mindo. ¿Pueden confirmar la opción actual, requisitos, horario y disponibilidad para mi grupo?\n\nPágina: {url}",
       tubing_en: "Hi Mindo Tours, I am interested in river tubing in Mindo. Can you confirm the current route, river conditions, requirements, timing, and availability for my group?\n\nPage: {url}",
-      tubing_es: "Hola Mindo Tours, me interesa hacer tubing en el río en Mindo. ¿Pueden confirmar la ruta actual, condiciones, requisitos, horario y disponibilidad para mi grupo?\n\nPágina: {url}"
+      tubing_es: "Hola Mindo Tours, me interesa hacer tubing en el río en Mindo. ¿Pueden confirmar la ruta actual, condiciones, requisitos, horario y disponibilidad para mi grupo?\n\nPágina: {url}",
+      canyoning_en: "Hi Mindo Tours, I am interested in canyoning near Mindo. Can you confirm the current route, requirements, timing, inclusions, and availability for my group?\n\nPage: {url}",
+      canyoning_es: "Hola Mindo Tours, me interesa hacer canyoning cerca de Mindo. ¿Pueden confirmar la ruta actual, requisitos, horario, inclusiones y disponibilidad para mi grupo?\n\nPágina: {url}"
     }
   };
 

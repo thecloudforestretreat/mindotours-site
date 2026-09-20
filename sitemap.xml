@@ -222,4 +222,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/tubing-mindo/"/>
   </url>
 
+  <url>
+    <loc>https://mindotours.com/activities/canyoning-mindo/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/canyoning-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/canyoning-en-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/canyoning-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/actividades/canyoning-en-mindo/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/canyoning-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/canyoning-en-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/canyoning-mindo/"/>
+  </url>
+
 </urlset>
