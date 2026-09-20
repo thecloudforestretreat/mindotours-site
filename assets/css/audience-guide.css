@@ -1,0 +1,268 @@
+.audience-page .page{
+  margin-top:18px;
+  padding:clamp(20px,4vw,40px);
+}
+
+.audience-page .page.card{
+  background:linear-gradient(rgba(247,250,243,.94),rgba(247,250,243,.94)),url("/assets/mt_park_page_02.jpg") center top/cover fixed;
+}
+
+.audience-page .breadcrumbs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin:0 0 18px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.audience-page .breadcrumbs a{color:var(--forest);font-weight:800}
+
+.audienceHero{
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);
+  gap:24px;
+  align-items:stretch;
+}
+
+.audienceHeroCopy{
+  display:flex;
+  min-width:0;
+  flex-direction:column;
+  height:820px;
+}
+
+.audience-page .eyebrow{
+  margin:0 0 8px;
+  color:var(--forest);
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.audience-page h1,
+.audience-page h2{
+  font-family:var(--font-head);
+  color:var(--forest);
+  letter-spacing:-.02em;
+}
+
+.audience-page h1{
+  margin:0;
+  max-width:15ch;
+  font-size:clamp(40px,5.4vw,62px);
+  line-height:1.02;
+}
+
+.audienceIntro{
+  max-width:68ch;
+  margin:16px 0 0;
+  color:var(--ink);
+  font-size:17px;
+  line-height:1.68;
+}
+
+.audienceAnswer{
+  margin-top:18px;
+  padding:16px 18px;
+  border-left:4px solid var(--forest);
+  border-radius:0 16px 16px 0;
+  background:rgba(255,255,255,.74);
+}
+
+.audienceAnswer strong{
+  display:block;
+  margin-bottom:7px;
+  color:var(--forest);
+  font-size:12px;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.audienceAnswer p{margin:0;line-height:1.62}
+
+.audienceActions,
+.audienceCardActions,
+.audienceFinalActions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  align-items:center;
+}
+
+.audienceActions{margin-top:auto;padding-top:20px}
+
+.audienceTags{
+  display:flex;
+  flex-wrap:nowrap;
+  gap:8px;
+  margin-top:18px;
+  overflow-x:auto;
+  padding-bottom:3px;
+  scrollbar-width:thin;
+}
+
+.audienceTag{
+  flex:0 0 auto;
+  padding:7px 9px;
+  border:1px solid rgba(13,89,37,.25);
+  border-radius:999px;
+  background:rgba(255,255,255,.74);
+  color:#174c2a;
+  font-size:12px;
+  font-weight:800;
+  white-space:nowrap;
+}
+
+.audienceHeroMedia{
+  display:flex;
+  height:820px;
+  min-height:820px;
+  flex-direction:column;
+  margin:0;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+
+.familyCollage{
+  display:grid;
+  flex:1 1 auto;
+  grid-template-rows:1.2fr .8fr .8fr;
+  gap:5px;
+  min-height:0;
+  padding:5px;
+  background:#fff;
+}
+
+.familyFrame{position:relative;min-height:0;overflow:hidden}
+.familyFrame img{width:100%;height:100%;object-fit:cover}
+.familyFrame span{
+  position:absolute;
+  bottom:10px;
+  left:10px;
+  padding:7px 10px;
+  border-radius:999px;
+  background:rgba(5,63,28,.9);
+  color:#fff;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+.audienceHeroMedia figcaption{
+  margin:0;
+  padding:8px 10px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  background:#fff;
+  font-size:11px;
+  line-height:1.35;
+}
+
+.audienceSection{
+  margin-top:40px;
+  padding-top:34px;
+  border-top:1px solid var(--line);
+}
+
+.audienceSectionIntro{
+  display:grid;
+  grid-template-columns:minmax(220px,.75fr) minmax(0,1.25fr);
+  gap:24px;
+  align-items:start;
+  margin-bottom:20px;
+}
+
+.audienceSectionIntro h2{margin:0;font-size:clamp(28px,4vw,40px);line-height:1.12}
+.audienceSectionIntro p{margin:0;color:var(--muted);font-size:16px;line-height:1.75}
+
+.audienceGrid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+
+.audienceCard{
+  display:flex;
+  min-height:100%;
+  flex-direction:column;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  background:rgba(255,255,255,.8);
+  box-shadow:var(--shadow);
+}
+
+.audienceCard img{width:100%;height:190px;object-fit:cover}
+.audienceCardBody{display:flex;flex:1;flex-direction:column;gap:10px;padding:18px}
+.audienceCard h3{margin:0;color:var(--ink);font-size:20px;line-height:1.25}
+.audienceCard p{margin:0;color:var(--muted);line-height:1.65}
+.audienceLabel{color:var(--forest);font-size:12px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+.audienceCardActions{margin-top:auto;padding-top:6px}
+
+.planningGrid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+
+.planningCard{
+  padding:20px;
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  background:rgba(255,255,255,.7);
+}
+
+.planningCard strong{display:block;margin-bottom:8px;color:var(--forest);font-size:18px}
+.planningCard p{margin:0;color:var(--muted);line-height:1.68}
+
+.audienceSpecialist,
+.audienceFinal{
+  display:grid;
+  grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr);
+  gap:22px;
+  align-items:center;
+  padding:24px;
+  border:1px solid rgba(13,89,37,.28);
+  border-radius:var(--r);
+  background:rgba(223,239,219,.78);
+}
+
+.audienceSpecialist h2,
+.audienceFinal h2{margin:0 0 10px;font-size:30px}
+.audienceSpecialist p,
+.audienceFinal p{margin:0;color:var(--ink);line-height:1.7}
+
+.audienceFaq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.audienceFaq details{padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.74)}
+.audienceFaq summary{cursor:pointer;color:var(--ink);font-weight:900}
+.audienceFaq details p{margin:10px 0 0;color:var(--muted);line-height:1.65}
+
+.audience-page a:focus-visible,
+.audience-page summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+@media (max-width:900px){
+  .audienceHero,
+  .audienceSectionIntro,
+  .audienceSpecialist,
+  .audienceFinal{grid-template-columns:1fr}
+  .audienceHeroCopy{height:auto}
+  .audienceHeroMedia{height:680px;min-height:680px}
+  .audienceGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .planningGrid{grid-template-columns:1fr}
+  .audience-page h1{max-width:none}
+  .audienceActions{margin-top:18px;padding-top:0}
+}
+
+@media (max-width:640px){
+  .audienceHeroMedia{height:600px;min-height:600px}
+  .audienceGrid,
+  .audienceFaq{grid-template-columns:1fr}
+  .audienceCard img{height:210px}
+  .audience-page .btn{width:100%}
+}

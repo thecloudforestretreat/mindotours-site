@@ -61,7 +61,9 @@
       itinerary_one_day_en: "Hi Mindo Tours, I am planning one day in Mindo. Can you help me build a realistic itinerary around my priorities, transport, timing, and availability?\n\nPage: {url}",
       itinerary_one_day_es: "Hola Mindo Tours, estoy planificando un día en Mindo. ¿Pueden ayudarme a crear un itinerario realista según mis prioridades, transporte, horarios y disponibilidad?\n\nPágina: {url}",
       itinerary_two_day_en: "Hi Mindo Tours, I am planning two days in Mindo. Can you help me balance activities, rest, transport, and current availability around my priorities?\n\nPage: {url}",
-      itinerary_two_day_es: "Hola Mindo Tours, estoy planificando dos días en Mindo. ¿Pueden ayudarme a equilibrar actividades, descanso, transporte y disponibilidad según mis prioridades?\n\nPágina: {url}"
+      itinerary_two_day_es: "Hola Mindo Tours, estoy planificando dos días en Mindo. ¿Pueden ayudarme a equilibrar actividades, descanso, transporte y disponibilidad según mis prioridades?\n\nPágina: {url}",
+      family_en: "Hi Mindo Tours, I am planning a family visit to Mindo. Can you help me compare activities and confirm which options fit our group, pace, transport, and dates?\n\nPage: {url}",
+      family_es: "Hola Mindo Tours, estoy planificando una visita familiar a Mindo. ¿Pueden ayudarme a comparar actividades y confirmar cuáles se adaptan a nuestro grupo, ritmo, transporte y fechas?\n\nPágina: {url}"
     }
   };
 

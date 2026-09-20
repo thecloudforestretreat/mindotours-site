@@ -382,4 +382,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-itinerary-two-days/"/>
   </url>
 
+  <url>
+    <loc>https://mindotours.com/family-things-to-do-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/family-things-to-do-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades-en-mindo-con-ninos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/family-things-to-do-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/actividades-en-mindo-con-ninos/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/family-things-to-do-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades-en-mindo-con-ninos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/family-things-to-do-mindo/"/>
+  </url>
+
 </urlset>
