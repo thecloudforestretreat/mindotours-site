@@ -55,7 +55,9 @@
       transport_en: "Hi Mindo Tours, I need private transport between Quito, Quito Airport and Mindo. Can you help confirm the route, vehicle, timing, and availability for my group?\n\nPage: {url}",
       transport_es: "Hola Mindo Tours, necesito transporte privado entre Quito, el Aeropuerto de Quito y Mindo. ¿Pueden ayudarme a confirmar la ruta, el vehículo, el horario y la disponibilidad para mi grupo?\n\nPágina: {url}",
       adventure_en: "Hi Mindo Tours, I want to compare adventure activities in Mindo. Can you help me choose between ziplining, tubing, canyoning, mountain biking, and other options for my group?\n\nPage: {url}",
-      adventure_es: "Hola Mindo Tours, quiero comparar actividades de aventura en Mindo. ¿Pueden ayudarme a elegir entre canopy, tubing, canyoning, ciclismo de montaña y otras opciones para mi grupo?\n\nPágina: {url}"
+      adventure_es: "Hola Mindo Tours, quiero comparar actividades de aventura en Mindo. ¿Pueden ayudarme a elegir entre canopy, tubing, canyoning, ciclismo de montaña y otras opciones para mi grupo?\n\nPágina: {url}",
+      wildlife_en: "Hi Mindo Tours, I want to compare wildlife and nature experiences in Mindo. Can you help me choose an option and confirm timing, transport, conditions, and availability?\n\nPage: {url}",
+      wildlife_es: "Hola Mindo Tours, quiero comparar experiencias de naturaleza y fauna en Mindo. ¿Pueden ayudarme a elegir una opción y confirmar horario, transporte, condiciones y disponibilidad?\n\nPágina: {url}"
     }
   };
 

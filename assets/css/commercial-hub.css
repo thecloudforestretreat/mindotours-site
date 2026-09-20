@@ -326,7 +326,7 @@
   .hub-page .btn{width:100%}
 }
 
-.adventure-hub .adventureCollage{
+.hub-page .adventureCollage{
   display:grid;
   flex:1 1 auto;
   grid-template-columns:repeat(2,minmax(0,1fr));
@@ -346,9 +346,9 @@
 }
 
 @media (max-width:900px){
-  .adventure-hub .adventureCollage{height:400px;min-height:0}
+  .hub-page .adventureCollage{height:400px;min-height:0}
 }
 
 @media (max-width:640px){
-  .adventure-hub .adventureCollage{height:300px}
+  .hub-page .adventureCollage{height:300px}
 }
