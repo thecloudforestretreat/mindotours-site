@@ -142,4 +142,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/chocolate-tour-mindo/"/>
   </url>
 
+  <url>
+    <loc>https://mindotours.com/activities/mindo-waterfall-hike/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/mindo-waterfall-hike/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/cascadas-de-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/mindo-waterfall-hike/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/actividades/cascadas-de-mindo/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/mindo-waterfall-hike/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/cascadas-de-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/mindo-waterfall-hike/"/>
+  </url>
+
 </urlset>

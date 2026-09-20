@@ -36,7 +36,9 @@
       birdwatching_en: "Hi Mindo Tours, I am interested in birdwatching in Mindo. Can your Mindo Bird Watching team help me choose the right tour?\n\nPage: {url}",
       birdwatching_es: "Hola Mindo Tours, me interesa el avistamiento de aves en Mindo. ¿Su equipo de Mindo Bird Watching puede ayudarme a elegir el tour adecuado?\n\nPágina: {url}",
       chocolate_tour_en: "Hi Mindo Tours, I am interested in a chocolate tour in Mindo. Can you confirm availability and help me fit it into my itinerary?\n\nPage: {url}",
-      chocolate_tour_es: "Hola Mindo Tours, me interesa un tour de chocolate en Mindo. ¿Pueden confirmar disponibilidad y ayudarme a integrarlo en mi itinerario?\n\nPágina: {url}"
+      chocolate_tour_es: "Hola Mindo Tours, me interesa un tour de chocolate en Mindo. ¿Pueden confirmar disponibilidad y ayudarme a integrarlo en mi itinerario?\n\nPágina: {url}",
+      waterfall_hike_en: "Hi Mindo Tours, I am interested in a guided waterfall hike in Mindo. Can you confirm availability and help me choose a route for my group?\n\nPage: {url}",
+      waterfall_hike_es: "Hola Mindo Tours, me interesa un tour guiado de cascadas en Mindo. ¿Pueden confirmar disponibilidad y ayudarme a elegir una ruta para mi grupo?\n\nPágina: {url}"
     }
   };
 
