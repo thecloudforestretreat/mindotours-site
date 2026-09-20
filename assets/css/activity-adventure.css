@@ -1,0 +1,16 @@
+.adventure-activity .page.card{
+  background:linear-gradient(rgba(248,249,241,.94),rgba(248,249,241,.94)),url("/assets/mt_park_page_02.jpg") center top/cover fixed;
+}
+
+.adventure-activity .attractionAnswer{border-left-color:#b87916}
+.adventure-activity .attractionTag{border-color:rgba(184,121,22,.34)}
+
+.adventure-activity .adventureBoundary{
+  padding:20px;
+  border:1px solid rgba(184,121,22,.28);
+  border-radius:18px;
+  background:rgba(255,246,214,.72);
+}
+
+.adventure-activity .adventureBoundary h2{margin:0 0 8px}
+.adventure-activity .adventureBoundary p{margin:0;color:var(--muted);line-height:1.7}

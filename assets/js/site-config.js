@@ -67,7 +67,9 @@
       tarabita_en: "Hi Mindo Tours, I am planning to visit the Mindo tarabita and waterfall trails. Can you confirm current access, timing, transport, trail conditions, and the best guided option for my group?\n\nPage: {url}",
       tarabita_es: "Hola Mindo Tours, estoy planificando visitar la tarabita y los senderos de cascadas de Mindo. ¿Pueden confirmar acceso, horario, transporte, condiciones y la mejor opción guiada para mi grupo?\n\nPágina: {url}",
       insect_macro_en: "Hi Mindo Tours, I am interested in a private insect and macro wildlife search. Can you review my target species, dates, photography goals, transport, and current field conditions?\n\nPage: {url}",
-      insect_macro_es: "Hola Mindo Tours, me interesa una búsqueda privada de insectos y macrofauna. ¿Pueden revisar mis especies objetivo, fechas, metas de fotografía, transporte y condiciones actuales?\n\nPágina: {url}"
+      insect_macro_es: "Hola Mindo Tours, me interesa una búsqueda privada de insectos y macrofauna. ¿Pueden revisar mis especies objetivo, fechas, metas de fotografía, transporte y condiciones actuales?\n\nPágina: {url}",
+      sky_bike_en: "Hi Mindo Tours, I am interested in the Sky Bike in Mindo. Can you confirm current operation, requirements, safety procedures, timing, location, and availability for my group?\n\nPage: {url}",
+      sky_bike_es: "Hola Mindo Tours, me interesa la Bicicleta Extrema en Mindo. ¿Pueden confirmar operación actual, requisitos, procedimientos de seguridad, horario, ubicación y disponibilidad para mi grupo?\n\nPágina: {url}"
     }
   };
 
