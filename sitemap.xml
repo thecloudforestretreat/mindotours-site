@@ -362,4 +362,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-itinerary-one-day/"/>
   </url>
 
+  <url>
+    <loc>https://mindotours.com/mindo-itinerary-two-days/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-itinerary-two-days/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/itinerario-mindo-dos-dias/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-itinerary-two-days/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/itinerario-mindo-dos-dias/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-itinerary-two-days/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/itinerario-mindo-dos-dias/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-itinerary-two-days/"/>
+  </url>
+
 </urlset>
