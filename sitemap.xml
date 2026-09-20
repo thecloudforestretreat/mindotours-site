@@ -262,4 +262,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/night-walk-mindo/"/>
   </url>
 
+  <url>
+    <loc>https://mindotours.com/spectacled-bear-tours-ecuador/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/spectacled-bear-tours-ecuador/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-oso-de-anteojos-ecuador/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/spectacled-bear-tours-ecuador/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/tours-de-oso-de-anteojos-ecuador/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/spectacled-bear-tours-ecuador/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-oso-de-anteojos-ecuador/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/spectacled-bear-tours-ecuador/"/>
+  </url>
+
 </urlset>
