@@ -12,7 +12,8 @@
     sourceDomain: "mindotours.com",
     leadDestination: "Mindo Bird Watching",
     analytics: {
-      ga4MeasurementId: "G-1ZYLW22XWP"
+      ga4MeasurementId: "G-1ZYLW22XWP",
+      gtmContainerId: "GTM-PQV9F24V"
     },
     turnstile: {
       siteKey: "0x4AAAAAACvEWBLDiF38SNlX"
@@ -52,7 +53,9 @@
       bear_tours_en: "Hi Mindo Tours, I am interested in a private spectacled bear tour in Ecuador. Can you share recent conditions and help me compare the extended half-day and full-day options?\n\nPage: {url}",
       bear_tours_es: "Hola Mindo Tours, me interesa un tour privado del oso de anteojos en Ecuador. ¿Pueden compartir las condiciones recientes y ayudarme a comparar el medio día extendido con el día completo?\n\nPágina: {url}",
       transport_en: "Hi Mindo Tours, I need private transport between Quito, Quito Airport and Mindo. Can you help confirm the route, vehicle, timing, and availability for my group?\n\nPage: {url}",
-      transport_es: "Hola Mindo Tours, necesito transporte privado entre Quito, el Aeropuerto de Quito y Mindo. ¿Pueden ayudarme a confirmar la ruta, el vehículo, el horario y la disponibilidad para mi grupo?\n\nPágina: {url}"
+      transport_es: "Hola Mindo Tours, necesito transporte privado entre Quito, el Aeropuerto de Quito y Mindo. ¿Pueden ayudarme a confirmar la ruta, el vehículo, el horario y la disponibilidad para mi grupo?\n\nPágina: {url}",
+      adventure_en: "Hi Mindo Tours, I want to compare adventure activities in Mindo. Can you help me choose between ziplining, tubing, canyoning, mountain biking, and other options for my group?\n\nPage: {url}",
+      adventure_es: "Hola Mindo Tours, quiero comparar actividades de aventura en Mindo. ¿Pueden ayudarme a elegir entre canopy, tubing, canyoning, ciclismo de montaña y otras opciones para mi grupo?\n\nPágina: {url}"
     }
   };
 

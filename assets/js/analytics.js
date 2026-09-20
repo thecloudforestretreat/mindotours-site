@@ -10,6 +10,13 @@
   var GA_ID = config.analytics && config.analytics.ga4MeasurementId
     ? String(config.analytics.ga4MeasurementId)
     : "";
+  var GTM_ID = config.analytics && config.analytics.gtmContainerId
+    ? String(config.analytics.gtmContainerId)
+    : "";
+  var DIRECT_GA4_FALLBACK_DELAY_MS = 2500;
+  var pendingDirectEvents = [];
+  var directFallbackTimer = null;
+  var directFallbackActive = false;
   var STORAGE_KEY = "mt_attribution_v1";
   var SESSION_TIMEOUT_MS = 30 * 60 * 1000;
   var MAX_AGE_MS = 180 * 24 * 60 * 60 * 1000;
@@ -28,18 +35,70 @@
     analytics_storage: "granted",
     wait_for_update: 500
   });
-  window.gtag("js", new Date());
-  if (GA_ID) {
-    window.gtag("config", GA_ID, {
-      send_page_view: false,
-      linker: { domains: ["mindotours.com", "mindobirdwatching.com"] }
-    });
 
-    var gaScript = document.createElement("script");
-    gaScript.async = true;
-    gaScript.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
-    document.head.appendChild(gaScript);
+  function loadGTM() {
+    if (!GTM_ID || document.querySelector('script[data-mt-gtm="true"]') ||
+        document.querySelector('script[src*="googletagmanager.com/gtm.js?id=' + GTM_ID + '"]')) return;
+    window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var script = document.createElement("script");
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtm.js?id=" + encodeURIComponent(GTM_ID);
+    script.setAttribute("data-mt-gtm", "true");
+    document.head.appendChild(script);
   }
+
+  function gtmOwnsGa4() {
+    return window.__mbwGtmOwnsGa4 === true;
+  }
+
+  function ensureDirectGa4() {
+    if (!GA_ID) return;
+    if (!document.querySelector('script[src*="googletagmanager.com/gtag/js?id=' + GA_ID + '"]')) {
+      var script = document.createElement("script");
+      script.async = true;
+      script.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+      document.head.appendChild(script);
+    }
+    if (!window.__mtGa4Configured) {
+      window.__mtGa4Configured = true;
+      window.gtag("js", new Date());
+      window.gtag("config", GA_ID, {
+        send_page_view: true,
+        page_title: document.title,
+        page_location: window.location.href,
+        page_path: window.location.pathname,
+        linker: { domains: ["mindotours.com", "mindobirdwatching.com"] }
+      });
+    }
+  }
+
+  function activateDirectFallback() {
+    directFallbackTimer = null;
+    if (gtmOwnsGa4()) {
+      pendingDirectEvents = [];
+      return;
+    }
+    directFallbackActive = true;
+    ensureDirectGa4();
+    pendingDirectEvents.forEach(function (queued) {
+      window.gtag("event", queued.name, queued.payload);
+    });
+    pendingDirectEvents = [];
+  }
+
+  function queueDirectFallbackEvent(name, payload) {
+    if (!GA_ID || gtmOwnsGa4()) return;
+    if (directFallbackActive) {
+      window.gtag("event", name, payload);
+      return;
+    }
+    pendingDirectEvents.push({ name: name, payload: payload });
+    if (directFallbackTimer === null) {
+      directFallbackTimer = window.setTimeout(activateDirectFallback, DIRECT_GA4_FALLBACK_DELAY_MS);
+    }
+  }
+
+  loadGTM();
 
   function clean(value, maxLength) {
     if (value === null || value === undefined) return "";
@@ -209,7 +268,11 @@
   }
 
   function track(eventName, parameters) {
-    window.gtag("event", eventName, context(parameters || {}));
+    var payload = context(parameters || {});
+    var gtmPayload = { event: "mbw_event", mbw_event_name: eventName };
+    Object.keys(payload).forEach(function (key) { gtmPayload[key] = payload[key]; });
+    window.dataLayer.push(gtmPayload);
+    queueDirectFallbackEvent(eventName, payload);
   }
 
   function fieldValues() {
@@ -334,7 +397,7 @@
     }
   };
 
-  track("page_view", {
+  track("page_view_enhanced", {
     page_title: document.title,
     page_location: window.location.href,
     page_referrer: document.referrer
