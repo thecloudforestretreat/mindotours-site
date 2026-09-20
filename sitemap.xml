@@ -282,4 +282,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/spectacled-bear-tours-ecuador/"/>
   </url>
 
+  <url>
+    <loc>https://mindotours.com/quito-to-mindo-transport/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/quito-to-mindo-transport/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/transporte-quito-a-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/quito-to-mindo-transport/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/transporte-quito-a-mindo/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/quito-to-mindo-transport/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/transporte-quito-a-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/quito-to-mindo-transport/"/>
+  </url>
+
 </urlset>

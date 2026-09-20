@@ -50,7 +50,9 @@
       night_walk_en: "Hi Mindo Tours, I am interested in a guided night walk in Mindo. Can you confirm the current route, timing, meeting details, and availability for my group?\n\nPage: {url}",
       night_walk_es: "Hola Mindo Tours, me interesa una caminata nocturna guiada en Mindo. ¿Pueden confirmar la ruta actual, horario, punto de encuentro y disponibilidad para mi grupo?\n\nPágina: {url}",
       bear_tours_en: "Hi Mindo Tours, I am interested in a private spectacled bear tour in Ecuador. Can you share recent conditions and help me compare the extended half-day and full-day options?\n\nPage: {url}",
-      bear_tours_es: "Hola Mindo Tours, me interesa un tour privado del oso de anteojos en Ecuador. ¿Pueden compartir las condiciones recientes y ayudarme a comparar el medio día extendido con el día completo?\n\nPágina: {url}"
+      bear_tours_es: "Hola Mindo Tours, me interesa un tour privado del oso de anteojos en Ecuador. ¿Pueden compartir las condiciones recientes y ayudarme a comparar el medio día extendido con el día completo?\n\nPágina: {url}",
+      transport_en: "Hi Mindo Tours, I need private transport between Quito, Quito Airport and Mindo. Can you help confirm the route, vehicle, timing, and availability for my group?\n\nPage: {url}",
+      transport_es: "Hola Mindo Tours, necesito transporte privado entre Quito, el Aeropuerto de Quito y Mindo. ¿Pueden ayudarme a confirmar la ruta, el vehículo, el horario y la disponibilidad para mi grupo?\n\nPágina: {url}"
     }
   };
 
