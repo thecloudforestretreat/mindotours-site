@@ -1,0 +1,253 @@
+.activity-detail .page{
+  margin-top:18px;
+  padding:clamp(20px,4vw,40px);
+}
+
+.activity-detail .breadcrumbs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin:0 0 18px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.activity-detail .breadcrumbs a{color:var(--forest);font-weight:800}
+
+.activity-detail .detailHero{
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);
+  gap:24px;
+  align-items:stretch;
+}
+
+.activity-detail .heroCopy{
+  display:flex;
+  min-width:0;
+  flex-direction:column;
+}
+
+.activity-detail .eyebrow,
+.activity-detail .cardLabel{
+  color:var(--forest);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.activity-detail .eyebrow{margin:0 0 8px}
+
+.activity-detail h1,
+.activity-detail h2{
+  font-family:var(--font-head);
+  color:var(--forest);
+  letter-spacing:-.02em;
+}
+
+.activity-detail h1{
+  max-width:14ch;
+  margin:0;
+  font-size:clamp(40px,5.4vw,62px);
+  line-height:1.02;
+}
+
+.activity-detail .heroIntro{
+  max-width:68ch;
+  margin:16px 0 0;
+  color:var(--ink);
+  font-size:17px;
+  line-height:1.68;
+}
+
+.activity-detail .quickAnswer{
+  margin-top:18px;
+  padding:16px 18px;
+  border-left:4px solid var(--forest);
+  border-radius:0 16px 16px 0;
+  background:rgba(255,255,255,.72);
+}
+
+.activity-detail .quickAnswer strong{
+  display:block;
+  margin-bottom:7px;
+  color:var(--forest);
+  font-size:12px;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.activity-detail .quickAnswer p{margin:0;line-height:1.62}
+
+.activity-detail .heroActions,
+.activity-detail .cardActions,
+.activity-detail .finalActions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  align-items:center;
+}
+
+.activity-detail .heroActions{margin-top:auto;padding-top:22px}
+
+.activity-detail .trustRow{
+  display:flex;
+  flex-wrap:nowrap;
+  gap:8px;
+  margin-top:18px;
+  overflow-x:auto;
+  padding-bottom:3px;
+}
+
+.activity-detail .trustItem{
+  flex:0 0 auto;
+  padding:7px 9px;
+  border:1px solid rgba(13,89,37,.25);
+  border-radius:999px;
+  background:rgba(255,255,255,.72);
+  color:#174c2a;
+  font-size:12px;
+  font-weight:800;
+  white-space:nowrap;
+}
+
+.activity-detail .heroMedia{
+  display:flex;
+  flex-direction:column;
+  margin:0;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  background:var(--card-strong);
+  box-shadow:var(--shadow);
+}
+
+.activity-detail .heroMedia img{
+  flex:1 1 auto;
+  width:100%;
+  height:560px;
+  min-height:560px;
+  object-fit:cover;
+  object-position:center;
+}
+
+.activity-detail .heroMedia figcaption{
+  flex:0 0 auto;
+  padding:8px 10px;
+  border-top:1px solid var(--line);
+  background:#fff;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.35;
+}
+
+.activity-detail .detailSection{
+  margin-top:40px;
+  padding-top:34px;
+  border-top:1px solid var(--line);
+}
+
+.activity-detail .sectionIntro{
+  display:grid;
+  grid-template-columns:minmax(220px,.75fr) minmax(0,1.25fr);
+  gap:24px;
+  align-items:start;
+  margin-bottom:20px;
+}
+
+.activity-detail .sectionIntro h2{margin:0;font-size:clamp(28px,4vw,40px);line-height:1.12}
+.activity-detail .sectionIntro p{margin:0;color:var(--muted);font-size:16px;line-height:1.75}
+
+.activity-detail .factGrid,
+.activity-detail .contentGrid,
+.activity-detail .relatedGrid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+
+.activity-detail .contentGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+
+.activity-detail .factCard,
+.activity-detail .contentCard,
+.activity-detail .relatedCard{
+  display:flex;
+  min-height:100%;
+  flex-direction:column;
+  padding:20px;
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  background:rgba(255,255,255,.74);
+  box-shadow:var(--shadow);
+}
+
+.activity-detail .factCard strong{display:block;margin:7px 0;color:var(--ink);font-size:20px}
+.activity-detail .factCard p,
+.activity-detail .contentCard p,
+.activity-detail .relatedCard p{margin:0;color:var(--muted);line-height:1.65}
+.activity-detail .contentCard h3,
+.activity-detail .relatedCard h3{margin:9px 0 7px;color:var(--ink);font-size:21px;line-height:1.25}
+.activity-detail .cardActions{margin-top:auto;padding-top:16px}
+
+.activity-detail .planningBox,
+.activity-detail .finalCta{
+  display:grid;
+  grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr);
+  gap:22px;
+  align-items:center;
+  padding:24px;
+  border:1px solid rgba(13,89,37,.28);
+  border-radius:var(--r);
+  background:rgba(223,239,219,.78);
+}
+
+.activity-detail .planningBox h2,
+.activity-detail .finalCta h2{margin:0 0 10px;font-size:30px}
+.activity-detail .planningBox p,
+.activity-detail .finalCta p{margin:0;color:var(--ink);line-height:1.7}
+
+.activity-detail .checkList{margin:0;padding-left:20px;color:var(--ink)}
+.activity-detail .checkList li+li{margin-top:8px}
+
+.activity-detail .faqList{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+
+.activity-detail details{
+  padding:16px 18px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:rgba(255,255,255,.72);
+}
+
+.activity-detail summary{cursor:pointer;color:var(--ink);font-weight:900}
+.activity-detail details p{margin:10px 0 0;color:var(--muted);line-height:1.6}
+
+.activity-detail a:focus-visible,
+.activity-detail summary:focus-visible{
+  outline:3px solid var(--gold);
+  outline-offset:3px;
+}
+
+@media(max-width:900px){
+  .activity-detail .detailHero,
+  .activity-detail .sectionIntro,
+  .activity-detail .planningBox,
+  .activity-detail .finalCta{grid-template-columns:1fr}
+  .activity-detail .factGrid,
+  .activity-detail .relatedGrid{grid-template-columns:1fr}
+  .activity-detail h1{max-width:none}
+  .activity-detail .heroCopy{display:block}
+  .activity-detail .heroActions{margin-top:18px;padding-top:0}
+  .activity-detail .heroMedia{display:block}
+  .activity-detail .heroMedia img{height:400px;min-height:0}
+}
+
+@media(max-width:640px){
+  .activity-detail .contentGrid,
+  .activity-detail .faqList{grid-template-columns:1fr}
+  .activity-detail .heroMedia img{height:300px}
+  .activity-detail .btn{width:100%}
+}

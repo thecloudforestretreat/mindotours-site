@@ -122,4 +122,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/bird-watching-tours-mindo/"/>
   </url>
 
+  <url>
+    <loc>https://mindotours.com/activities/chocolate-tour-mindo/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/chocolate-tour-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tour-de-chocolate-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/chocolate-tour-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/actividades/tour-de-chocolate-mindo/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/chocolate-tour-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tour-de-chocolate-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/chocolate-tour-mindo/"/>
+  </url>
+
 </urlset>
