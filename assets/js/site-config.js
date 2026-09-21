@@ -50,6 +50,8 @@
       tubing_es: "Hola Mindo Tours, me interesa hacer tubing en el río en Mindo. ¿Pueden confirmar la ruta actual, condiciones, requisitos, horario y disponibilidad para mi grupo?\n\nPágina: {url}",
       canyoning_en: "Hi Mindo Tours, I am interested in canyoning near Mindo. Can you confirm the current route, requirements, timing, inclusions, and availability for my group?\n\nPage: {url}",
       canyoning_es: "Hola Mindo Tours, me interesa hacer canyoning cerca de Mindo. ¿Pueden confirmar la ruta actual, requisitos, horario, inclusiones y disponibilidad para mi grupo?\n\nPágina: {url}",
+      quad_tour_en: "Hi Mindo Tours, I am interested in a quad tour in Mindo. Can you confirm the current route, rider and passenger requirements, timing, weather conditions, and availability for my group?\n\nPage: {url}",
+      quad_tour_es: "Hola Mindo Tours, me interesa un tour en cuadrones en Mindo. ¿Pueden confirmar la ruta actual, requisitos para conductores y pasajeros, horario, clima y disponibilidad para mi grupo?\n\nPágina: {url}",
       night_walk_en: "Hi Mindo Tours, I am interested in a guided night walk in Mindo. Can you confirm the current route, timing, meeting details, and availability for my group?\n\nPage: {url}",
       night_walk_es: "Hola Mindo Tours, me interesa una caminata nocturna guiada en Mindo. ¿Pueden confirmar la ruta actual, horario, punto de encuentro y disponibilidad para mi grupo?\n\nPágina: {url}",
       bear_tours_en: "Hi Mindo Tours, I am interested in a private spectacled bear tour in Ecuador. Can you share recent conditions and help me compare the extended half-day and full-day options?\n\nPage: {url}",
