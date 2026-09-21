@@ -102,15 +102,37 @@ export async function onRequestPost(context) {
       upstreamBody.append(key, String(value));
     }
 
-    let upstreamRes;
-    try {
-      upstreamRes = await fetchAppsScriptWithRedirects(env.BOOK_TOUR_APPS_SCRIPT_URL, upstreamBody);
-    } catch (err) {
-      console.error("Booking destination could not be reached.", err);
+    const upstreamPromise = fetchAppsScriptResult(env.BOOK_TOUR_APPS_SCRIPT_URL, upstreamBody);
+    const upstreamOutcome = await Promise.race([
+      upstreamPromise.then(
+        (result) => ({ settled: true, result }),
+        (error) => ({ settled: true, error })
+      ),
+      delay(7000).then(() => ({ settled: false }))
+    ]);
+
+    if (!upstreamOutcome.settled) {
+      const backgroundSubmission = upstreamPromise
+        .then((result) => logBackgroundSubmission(result))
+        .catch((err) => console.error("Queued booking destination request failed.", err));
+
+      if (typeof context.waitUntil === "function") {
+        context.waitUntil(backgroundSubmission);
+      }
+
+      return json({
+        ok: true,
+        accepted: true,
+        processing: true
+      }, 202);
+    }
+
+    if (upstreamOutcome.error) {
+      console.error("Booking destination could not be reached.", upstreamOutcome.error);
       return bookingFailure(request, "upstream-unreachable", 502);
     }
 
-    const text = await upstreamRes.text();
+    const { upstreamRes, text } = upstreamOutcome.result;
 
     let upstreamJson;
     try {
@@ -138,6 +160,32 @@ export async function onRequestPost(context) {
     console.error("Server error while processing booking request.", err);
     return json({ ok: false, message: "Server error while processing booking request." }, 500);
   }
+}
+
+async function fetchAppsScriptResult(url, body) {
+  const upstreamRes = await fetchAppsScriptWithRedirects(url, body);
+  const text = await upstreamRes.text();
+  return { upstreamRes, text };
+}
+
+function logBackgroundSubmission({ upstreamRes, text }) {
+  if (!upstreamRes.ok) {
+    console.error("Queued booking destination request failed.", upstreamRes.status);
+    return;
+  }
+
+  try {
+    const upstreamJson = JSON.parse(text);
+    if (upstreamJson.ok === false) {
+      console.error("Queued booking destination rejected the request.", upstreamRes.status);
+    }
+  } catch (err) {
+    console.error("Queued booking destination returned a non-JSON response.", upstreamRes.status);
+  }
+}
+
+function delay(milliseconds) {
+  return new Promise((resolve) => setTimeout(resolve, milliseconds));
 }
 
 async function fetchAppsScriptWithRedirects(url, body) {

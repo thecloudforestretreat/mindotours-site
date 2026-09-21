@@ -8,4 +8,6 @@
 .activity-page .activityNote{padding:20px;border:1px solid var(--line);border-radius:var(--r);background:rgba(255,255,255,.7)}
 .activity-page .activityNote h3{margin:0 0 8px;color:var(--forest);font-size:20px}
 .activity-page .activityNote p{margin:0;color:var(--muted);line-height:1.7}
+.activity-page .tourGrid .tourCard:last-child{grid-column:2}
+@media (max-width:980px){.activity-page .tourGrid .tourCard:last-child{grid-column:auto}}
 @media (max-width:760px){.activity-page .activityNotes{grid-template-columns:1fr}}
