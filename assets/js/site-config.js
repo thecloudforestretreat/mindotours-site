@@ -69,7 +69,9 @@
       insect_macro_en: "Hi Mindo Tours, I am interested in a private insect and macro wildlife search. Can you review my target species, dates, photography goals, transport, and current field conditions?\n\nPage: {url}",
       insect_macro_es: "Hola Mindo Tours, me interesa una búsqueda privada de insectos y macrofauna. ¿Pueden revisar mis especies objetivo, fechas, metas de fotografía, transporte y condiciones actuales?\n\nPágina: {url}",
       sky_bike_en: "Hi Mindo Tours, I am interested in the Sky Bike in Mindo. Can you confirm current operation, requirements, safety procedures, timing, location, and availability for my group?\n\nPage: {url}",
-      sky_bike_es: "Hola Mindo Tours, me interesa la Bicicleta Extrema en Mindo. ¿Pueden confirmar operación actual, requisitos, procedimientos de seguridad, horario, ubicación y disponibilidad para mi grupo?\n\nPágina: {url}"
+      sky_bike_es: "Hola Mindo Tours, me interesa la Bicicleta Extrema en Mindo. ¿Pueden confirmar operación actual, requisitos, procedimientos de seguridad, horario, ubicación y disponibilidad para mi grupo?\n\nPágina: {url}",
+      extreme_swing_en: "Hi Mindo Tours, I am interested in the Double Extreme Swing in Mindo. Can you confirm current operation, participant requirements, safety procedures, weather conditions, timing, and availability for my group?\n\nPage: {url}",
+      extreme_swing_es: "Hola Mindo Tours, me interesa el Columpio Doble Extremo en Mindo. ¿Pueden confirmar operación actual, requisitos, procedimientos de seguridad, clima, horario y disponibilidad para mi grupo?\n\nPágina: {url}"
     }
   };
 

@@ -5,6 +5,11 @@
 .adventure-activity .attractionAnswer{border-left-color:#b87916}
 .adventure-activity .attractionTag{border-color:rgba(184,121,22,.34)}
 
+.adventure-activity .attractionHeroMedia img.heroPortrait{
+  object-fit:contain;
+  background:#14251b;
+}
+
 .adventure-activity .adventureBoundary{
   padding:20px;
   border:1px solid rgba(184,121,22,.28);
