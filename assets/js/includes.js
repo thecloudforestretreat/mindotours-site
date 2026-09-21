@@ -45,6 +45,7 @@ function configureLocalizedIncludes() {
       home: "/",
       tours: "/tours/",
       activities: "/activities/",
+      about: "/about/",
       contact: "/contact/",
       book: "/book-tour/"
     },
@@ -52,6 +53,7 @@ function configureLocalizedIncludes() {
       home: "/es/",
       tours: "/es/tours/",
       activities: "/es/actividades/",
+      about: "/es/sobre-nosotros/",
       contact: "/es/contacto/",
       book: "/es/reservar-tour/"
     }

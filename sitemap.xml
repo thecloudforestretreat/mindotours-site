@@ -4,8 +4,8 @@
 
   <url>
     <loc>https://mindotours.com/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/"/>
@@ -13,39 +13,19 @@
   </url>
 
   <url>
-    <loc>https://mindotours.com/es/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/tours/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/tours/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/tours/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/es/tours/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/tours/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/tours/"/>
+    <loc>https://mindotours.com/about/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/sobre-nosotros/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/about/"/>
   </url>
 
   <url>
     <loc>https://mindotours.com/activities/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/"/>
@@ -53,78 +33,18 @@
   </url>
 
   <url>
-    <loc>https://mindotours.com/es/actividades/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/book-tour/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://mindotours.com/activities/canyoning-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/book-tour/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/reservar-tour/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/book-tour/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/es/reservar-tour/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/book-tour/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/reservar-tour/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/book-tour/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/contact/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/contact/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/contacto/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/contact/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/es/contacto/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/contact/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/contacto/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/contact/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/bird-watching-tours-mindo/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/bird-watching-tours-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-avistamiento-de-aves-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/bird-watching-tours-mindo/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/es/tours-de-avistamiento-de-aves-mindo/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/bird-watching-tours-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-avistamiento-de-aves-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/bird-watching-tours-mindo/"/>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/canyoning-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/canyoning-en-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/canyoning-mindo/"/>
   </url>
 
   <url>
     <loc>https://mindotours.com/activities/chocolate-tour-mindo/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/chocolate-tour-mindo/"/>
@@ -133,70 +53,60 @@
   </url>
 
   <url>
-    <loc>https://mindotours.com/es/actividades/tour-de-chocolate-mindo/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://mindotours.com/activities/coffee-tour-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/chocolate-tour-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tour-de-chocolate-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/chocolate-tour-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/coffee-tour-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tour-de-cafe-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/coffee-tour-mindo/"/>
   </url>
 
   <url>
-    <loc>https://mindotours.com/activities/mindo-waterfall-hike/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://mindotours.com/activities/extreme-swing-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/mindo-waterfall-hike/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/cascadas-de-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/mindo-waterfall-hike/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/es/actividades/cascadas-de-mindo/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/mindo-waterfall-hike/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/cascadas-de-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/mindo-waterfall-hike/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/extreme-swing-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/columpio-extremo-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/extreme-swing-mindo/"/>
   </url>
 
   <url>
     <loc>https://mindotours.com/activities/mindo-tarabita-cable-car/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/mindo-tarabita-cable-car/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tarabita-de-mindo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/mindo-tarabita-cable-car/"/>
   </url>
 
   <url>
-    <loc>https://mindotours.com/es/actividades/tarabita-de-mindo/</loc>
+    <loc>https://mindotours.com/activities/mindo-waterfall-hike/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/mindo-tarabita-cable-car/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tarabita-de-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/mindo-tarabita-cable-car/"/>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/mindo-waterfall-hike/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/cascadas-de-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/mindo-waterfall-hike/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/activities/night-walk-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/night-walk-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/caminata-nocturna-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/night-walk-mindo/"/>
   </url>
 
   <url>
     <loc>https://mindotours.com/activities/private-insect-macro-wildlife-search/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/private-insect-macro-wildlife-search/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/busqueda-privada-insectos-macrofauna/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/private-insect-macro-wildlife-search/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/es/actividades/busqueda-privada-insectos-macrofauna/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/private-insect-macro-wildlife-search/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/busqueda-privada-insectos-macrofauna/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/private-insect-macro-wildlife-search/"/>
@@ -206,115 +116,135 @@
     <loc>https://mindotours.com/activities/sky-bike-mindo/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/sky-bike-mindo/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/bicicleta-extrema-mindo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/sky-bike-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/activities/sky-ride-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/sky-ride-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/sky-ride-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/sky-ride-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/activities/tubing-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/tubing-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tubing-en-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/tubing-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/activities/ziplining-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/ziplining-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/canopy-en-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/ziplining-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/best-time-to-visit-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/best-time-to-visit-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/mejor-epoca-para-visitar-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/best-time-to-visit-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/bird-watching-tours-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/bird-watching-tours-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-avistamiento-de-aves-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/bird-watching-tours-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/book-tour/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/book-tour/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/reservar-tour/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/book-tour/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/contact/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/contact/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/actividades-en-mindo-con-ninos/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/family-things-to-do-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades-en-mindo-con-ninos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/family-things-to-do-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/actividades/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/"/>
   </url>
 
   <url>
     <loc>https://mindotours.com/es/actividades/bicicleta-extrema-mindo/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/sky-bike-mindo/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/bicicleta-extrema-mindo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/sky-bike-mindo/"/>
   </url>
 
   <url>
-    <loc>https://mindotours.com/mindo-travel-guide/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-travel-guide/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/guia-de-viaje-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-travel-guide/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/es/guia-de-viaje-mindo/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-travel-guide/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/guia-de-viaje-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-travel-guide/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/activities/ziplining-mindo/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://mindotours.com/es/actividades/busqueda-privada-insectos-macrofauna/</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/ziplining-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/canopy-en-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/ziplining-mindo/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/es/actividades/canopy-en-mindo/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/ziplining-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/canopy-en-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/ziplining-mindo/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/activities/tubing-mindo/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/tubing-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tubing-en-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/tubing-mindo/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/es/actividades/tubing-en-mindo/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/tubing-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tubing-en-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/tubing-mindo/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/activities/canyoning-mindo/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/canyoning-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/canyoning-en-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/canyoning-mindo/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/es/actividades/canyoning-en-mindo/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/canyoning-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/canyoning-en-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/canyoning-mindo/"/>
-  </url>
-
-  <url>
-    <loc>https://mindotours.com/activities/night-walk-mindo/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/night-walk-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/caminata-nocturna-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/night-walk-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/private-insect-macro-wildlife-search/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/busqueda-privada-insectos-macrofauna/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/private-insect-macro-wildlife-search/"/>
   </url>
 
   <url>
     <loc>https://mindotours.com/es/actividades/caminata-nocturna-mindo/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/night-walk-mindo/"/>
@@ -323,87 +253,167 @@
   </url>
 
   <url>
-    <loc>https://mindotours.com/spectacled-bear-tours-ecuador/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://mindotours.com/es/actividades/canopy-en-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/spectacled-bear-tours-ecuador/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-oso-de-anteojos-ecuador/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/spectacled-bear-tours-ecuador/"/>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/ziplining-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/canopy-en-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/ziplining-mindo/"/>
   </url>
 
   <url>
-    <loc>https://mindotours.com/es/tours-de-oso-de-anteojos-ecuador/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://mindotours.com/es/actividades/canyoning-en-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/spectacled-bear-tours-ecuador/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-oso-de-anteojos-ecuador/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/spectacled-bear-tours-ecuador/"/>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/canyoning-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/canyoning-en-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/canyoning-mindo/"/>
   </url>
 
   <url>
-    <loc>https://mindotours.com/quito-to-mindo-transport/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://mindotours.com/es/actividades/cascadas-de-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/quito-to-mindo-transport/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/transporte-quito-a-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/quito-to-mindo-transport/"/>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/mindo-waterfall-hike/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/cascadas-de-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/mindo-waterfall-hike/"/>
   </url>
 
   <url>
-    <loc>https://mindotours.com/es/transporte-quito-a-mindo/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://mindotours.com/es/actividades/columpio-extremo-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/quito-to-mindo-transport/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/transporte-quito-a-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/quito-to-mindo-transport/"/>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/extreme-swing-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/columpio-extremo-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/extreme-swing-mindo/"/>
   </url>
 
   <url>
-    <loc>https://mindotours.com/mindo-adventure-tours/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://mindotours.com/es/actividades/sky-ride-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-adventure-tours/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-aventura-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-adventure-tours/"/>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/sky-ride-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/sky-ride-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/sky-ride-mindo/"/>
   </url>
 
   <url>
-    <loc>https://mindotours.com/es/tours-de-aventura-mindo/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://mindotours.com/es/actividades/tarabita-de-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-adventure-tours/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-aventura-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-adventure-tours/"/>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/mindo-tarabita-cable-car/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tarabita-de-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/mindo-tarabita-cable-car/"/>
   </url>
 
   <url>
-    <loc>https://mindotours.com/mindo-wildlife-nature-tours/</loc>
+    <loc>https://mindotours.com/es/actividades/tour-de-cafe-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/coffee-tour-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tour-de-cafe-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/coffee-tour-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/actividades/tour-de-chocolate-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/chocolate-tour-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tour-de-chocolate-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/chocolate-tour-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/actividades/tubing-en-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/tubing-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tubing-en-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/tubing-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/bosque-nublado-de-mindo-guia/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-cloud-forest-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/bosque-nublado-de-mindo-guia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-cloud-forest-guide/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/como-llegar-a-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/how-to-get-to-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/como-llegar-a-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/how-to-get-to-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/contacto/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-wildlife-nature-tours/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-naturaleza-y-fauna-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-wildlife-nature-tours/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/contact/"/>
   </url>
 
   <url>
-    <loc>https://mindotours.com/es/tours-de-naturaleza-y-fauna-mindo/</loc>
+    <loc>https://mindotours.com/es/cosas-que-hacer-en-mindo/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-wildlife-nature-tours/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-naturaleza-y-fauna-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-wildlife-nature-tours/"/>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/things-to-do-in-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/cosas-que-hacer-en-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/things-to-do-in-mindo/"/>
   </url>
 
   <url>
-    <loc>https://mindotours.com/mindo-itinerary-one-day/</loc>
+    <loc>https://mindotours.com/es/excursiones-de-un-dia-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-day-trips/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/excursiones-de-un-dia-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-day-trips/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/guia-de-viaje-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-travel-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/guia-de-viaje-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-travel-guide/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/itinerario-mindo-dos-dias/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-itinerary-two-days/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/itinerario-mindo-dos-dias/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-itinerary-two-days/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/itinerario-mindo-un-dia/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -413,7 +423,157 @@
   </url>
 
   <url>
-    <loc>https://mindotours.com/es/itinerario-mindo-un-dia/</loc>
+    <loc>https://mindotours.com/es/mejor-epoca-para-visitar-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/best-time-to-visit-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/mejor-epoca-para-visitar-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/best-time-to-visit-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/reservar-tour/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/book-tour/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/reservar-tour/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/book-tour/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/sobre-nosotros/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/sobre-nosotros/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/about/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/tours-de-aventura-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-adventure-tours/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-aventura-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-adventure-tours/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/tours-de-avistamiento-de-aves-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/bird-watching-tours-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-avistamiento-de-aves-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/bird-watching-tours-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/tours-de-naturaleza-y-fauna-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-wildlife-nature-tours/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-naturaleza-y-fauna-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-wildlife-nature-tours/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/tours-de-oso-de-anteojos-ecuador/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/spectacled-bear-tours-ecuador/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-oso-de-anteojos-ecuador/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/spectacled-bear-tours-ecuador/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/tours-privados-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/private-tours-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-privados-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/private-tours-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/tours/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/tours/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/tours/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/transporte-quito-a-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/quito-to-mindo-transport/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/transporte-quito-a-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/quito-to-mindo-transport/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/family-things-to-do-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/family-things-to-do-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades-en-mindo-con-ninos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/family-things-to-do-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/how-to-get-to-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/how-to-get-to-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/como-llegar-a-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/how-to-get-to-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/mindo-adventure-tours/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-adventure-tours/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-aventura-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-adventure-tours/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/mindo-cloud-forest-guide/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-cloud-forest-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/bosque-nublado-de-mindo-guia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-cloud-forest-guide/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/mindo-day-trips/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-day-trips/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/excursiones-de-un-dia-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-day-trips/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/mindo-itinerary-one-day/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -433,33 +593,73 @@
   </url>
 
   <url>
-    <loc>https://mindotours.com/es/itinerario-mindo-dos-dias/</loc>
+    <loc>https://mindotours.com/mindo-travel-guide/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-itinerary-two-days/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/itinerario-mindo-dos-dias/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-itinerary-two-days/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-travel-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/guia-de-viaje-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-travel-guide/"/>
   </url>
 
   <url>
-    <loc>https://mindotours.com/family-things-to-do-mindo/</loc>
+    <loc>https://mindotours.com/mindo-wildlife-nature-tours/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/family-things-to-do-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades-en-mindo-con-ninos/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/family-things-to-do-mindo/"/>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/mindo-wildlife-nature-tours/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-naturaleza-y-fauna-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/mindo-wildlife-nature-tours/"/>
   </url>
 
   <url>
-    <loc>https://mindotours.com/es/actividades-en-mindo-con-ninos/</loc>
+    <loc>https://mindotours.com/private-tours-mindo/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/family-things-to-do-mindo/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades-en-mindo-con-ninos/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/family-things-to-do-mindo/"/>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/private-tours-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-privados-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/private-tours-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/quito-to-mindo-transport/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/quito-to-mindo-transport/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/transporte-quito-a-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/quito-to-mindo-transport/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/spectacled-bear-tours-ecuador/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/spectacled-bear-tours-ecuador/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours-de-oso-de-anteojos-ecuador/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/spectacled-bear-tours-ecuador/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/things-to-do-in-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/things-to-do-in-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/cosas-que-hacer-en-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/things-to-do-in-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/tours/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/tours/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/tours/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/tours/"/>
   </url>
 
 </urlset>
