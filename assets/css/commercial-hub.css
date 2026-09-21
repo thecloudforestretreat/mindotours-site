@@ -153,8 +153,8 @@
 
 .hub-page .sectionIntro{
   display:grid;
-  grid-template-columns:minmax(220px,.75fr) minmax(0,1.25fr);
-  gap:24px;
+  grid-template-columns:minmax(0,1fr);
+  gap:10px;
   align-items:start;
   margin-bottom:20px;
 }
@@ -166,6 +166,7 @@
 }
 
 .hub-page .sectionIntro p{
+  max-width:78ch;
   margin:0;
   color:var(--muted);
   font-size:16px;
