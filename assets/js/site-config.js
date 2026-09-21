@@ -71,7 +71,9 @@
       sky_bike_en: "Hi Mindo Tours, I am interested in the Sky Bike in Mindo. Can you confirm current operation, requirements, safety procedures, timing, location, and availability for my group?\n\nPage: {url}",
       sky_bike_es: "Hola Mindo Tours, me interesa la Bicicleta Extrema en Mindo. ¿Pueden confirmar operación actual, requisitos, procedimientos de seguridad, horario, ubicación y disponibilidad para mi grupo?\n\nPágina: {url}",
       extreme_swing_en: "Hi Mindo Tours, I am interested in the Double Extreme Swing in Mindo. Can you confirm current operation, participant requirements, safety procedures, weather conditions, timing, and availability for my group?\n\nPage: {url}",
-      extreme_swing_es: "Hola Mindo Tours, me interesa el Columpio Doble Extremo en Mindo. ¿Pueden confirmar operación actual, requisitos, procedimientos de seguridad, clima, horario y disponibilidad para mi grupo?\n\nPágina: {url}"
+      extreme_swing_es: "Hola Mindo Tours, me interesa el Columpio Doble Extremo en Mindo. ¿Pueden confirmar operación actual, requisitos, procedimientos de seguridad, clima, horario y disponibilidad para mi grupo?\n\nPágina: {url}",
+      sky_ride_en: "Hi Mindo Tours, I am interested in the Sky Ride in Mindo. Can you confirm its current format, operation, participant requirements, safety procedures, weather conditions, timing, and availability for my group?\n\nPage: {url}",
+      sky_ride_es: "Hola Mindo Tours, me interesa el Sky Ride en Mindo. ¿Pueden confirmar el formato actual, operación, requisitos, procedimientos de seguridad, clima, horario y disponibilidad para mi grupo?\n\nPágina: {url}"
     }
   };
 
