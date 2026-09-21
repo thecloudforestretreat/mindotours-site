@@ -83,6 +83,16 @@
   </url>
 
   <url>
+    <loc>https://mindotours.com/activities/flora-tour-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/flora-tour-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tour-de-flora-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/flora-tour-mindo/"/>
+  </url>
+
+  <url>
     <loc>https://mindotours.com/activities/frog-concert-mindo/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -440,6 +450,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/chocolate-tour-mindo/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tour-de-chocolate-mindo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/chocolate-tour-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/actividades/tour-de-flora-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/flora-tour-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/tour-de-flora-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/flora-tour-mindo/"/>
   </url>
 
   <url>
