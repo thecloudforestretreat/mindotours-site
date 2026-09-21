@@ -113,6 +113,16 @@
   </url>
 
   <url>
+    <loc>https://mindotours.com/activities/mountain-biking-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/mountain-biking-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/ciclismo-de-montana-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/mountain-biking-mindo/"/>
+  </url>
+
+  <url>
     <loc>https://mindotours.com/activities/night-walk-mindo/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -320,6 +330,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/mindo-waterfall-hike/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/cascadas-de-mindo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/mindo-waterfall-hike/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/actividades/ciclismo-de-montana-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/mountain-biking-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/ciclismo-de-montana-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/mountain-biking-mindo/"/>
   </url>
 
   <url>
