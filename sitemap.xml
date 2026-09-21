@@ -103,6 +103,16 @@
   </url>
 
   <url>
+    <loc>https://mindotours.com/activities/orchid-garden-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/orchid-garden-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/jardin-de-orquideas-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/orchid-garden-mindo/"/>
+  </url>
+
+  <url>
     <loc>https://mindotours.com/activities/private-insect-macro-wildlife-search/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -300,6 +310,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/extreme-swing-mindo/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/columpio-extremo-mindo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/extreme-swing-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/actividades/jardin-de-orquideas-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/orchid-garden-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/jardin-de-orquideas-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/orchid-garden-mindo/"/>
   </url>
 
   <url>
