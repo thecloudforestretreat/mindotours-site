@@ -83,6 +83,16 @@
   </url>
 
   <url>
+    <loc>https://mindotours.com/activities/horseback-riding-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/horseback-riding-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/paseo-a-caballo-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/horseback-riding-mindo/"/>
+  </url>
+
+  <url>
     <loc>https://mindotours.com/activities/mindo-tarabita-cable-car/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -340,6 +350,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/butterfly-garden-mindo/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/mariposario-mindo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/butterfly-garden-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/actividades/paseo-a-caballo-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/horseback-riding-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/paseo-a-caballo-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/horseback-riding-mindo/"/>
   </url>
 
   <url>

@@ -44,6 +44,8 @@
       orchid_garden_es: "Hola Mindo Tours, me interesa visitar un jardín de orquídeas en Mindo. ¿Pueden confirmar floración, acceso, horario, condiciones del jardín y disponibilidad para mi grupo?\n\nPágina: {url}",
       butterfly_garden_en: "Hi Mindo Tours, I am interested in a butterfly garden visit in Mindo. Can you confirm the current garden, access, timing, conditions, and availability for my group?\n\nPage: {url}",
       butterfly_garden_es: "Hola Mindo Tours, me interesa visitar un mariposario en Mindo. ¿Pueden confirmar el jardín disponible, acceso, horario, condiciones y disponibilidad para mi grupo?\n\nPágina: {url}",
+      horseback_riding_en: "Hi Mindo Tours, I am interested in horseback riding in Mindo. Can you confirm the current route, rider requirements, horse availability, trail conditions, timing, and availability for my group?\n\nPage: {url}",
+      horseback_riding_es: "Hola Mindo Tours, me interesa un paseo a caballo en Mindo. ¿Pueden confirmar la ruta actual, requisitos de los jinetes, caballos disponibles, condiciones, horario y disponibilidad para mi grupo?\n\nPágina: {url}",
       waterfall_hike_en: "Hi Mindo Tours, I am interested in a guided waterfall hike in Mindo. Can you confirm availability and help me choose a route for my group?\n\nPage: {url}",
       waterfall_hike_es: "Hola Mindo Tours, me interesa un tour guiado de cascadas en Mindo. ¿Pueden confirmar disponibilidad y ayudarme a elegir una ruta para mi grupo?\n\nPágina: {url}",
       travel_guide_hub_en: "Hi Mindo Tours, I am planning a visit to Mindo. Can you help me organize the timing, transport, activities, and availability for my dates?\n\nPage: {url}",
