@@ -163,6 +163,16 @@
   </url>
 
   <url>
+    <loc>https://mindotours.com/activities/paintball-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/paintball-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/paintball-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/paintball-mindo/"/>
+  </url>
+
+  <url>
     <loc>https://mindotours.com/activities/private-insect-macro-wildlife-search/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -400,6 +410,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/butterfly-garden-mindo/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/mariposario-mindo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/butterfly-garden-mindo/"/>
+  </url>
+
+  <url>
+    <loc>https://mindotours.com/es/actividades/paintball-mindo/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mindotours.com/activities/paintball-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mindotours.com/es/actividades/paintball-mindo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mindotours.com/activities/paintball-mindo/"/>
   </url>
 
   <url>

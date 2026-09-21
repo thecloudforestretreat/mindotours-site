@@ -50,6 +50,8 @@
       horseback_riding_es: "Hola Mindo Tours, me interesa un paseo a caballo en Mindo. ¿Pueden confirmar la ruta actual, requisitos de los jinetes, caballos disponibles, condiciones, horario y disponibilidad para mi grupo?\n\nPágina: {url}",
       mountain_biking_en: "Hi Mindo Tours, I am interested in mountain biking in Mindo. Can you confirm the current route, difficulty, bike and helmet availability, road conditions, timing, and availability for my group?\n\nPage: {url}",
       mountain_biking_es: "Hola Mindo Tours, me interesa hacer ciclismo de montaña en Mindo. ¿Pueden confirmar la ruta, dificultad, bicicletas y cascos, condiciones del camino, horario y disponibilidad para mi grupo?\n\nPágina: {url}",
+      paintball_en: "Hi Mindo Tours, I am interested in paintball in Mindo. Can you confirm current availability, minimum ages, equipment, session timing, field conditions, and group requirements?\n\nPage: {url}",
+      paintball_es: "Hola Mindo Tours, me interesa jugar paintball en Mindo. ¿Pueden confirmar disponibilidad, edades mínimas, equipo, duración, condiciones del campo y requisitos del grupo?\n\nPágina: {url}",
       waterfall_hike_en: "Hi Mindo Tours, I am interested in a guided waterfall hike in Mindo. Can you confirm availability and help me choose a route for my group?\n\nPage: {url}",
       waterfall_hike_es: "Hola Mindo Tours, me interesa un tour guiado de cascadas en Mindo. ¿Pueden confirmar disponibilidad y ayudarme a elegir una ruta para mi grupo?\n\nPágina: {url}",
       travel_guide_hub_en: "Hi Mindo Tours, I am planning a visit to Mindo. Can you help me organize the timing, transport, activities, and availability for my dates?\n\nPage: {url}",
