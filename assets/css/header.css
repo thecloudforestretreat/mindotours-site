@@ -196,3 +196,7 @@
     border-color:rgba(13,89,37,.35);
   }
 }
+
+/* Reserve the shared injected header before its markup arrives. */
+#siteHeader{min-height:58px;}
+@media(max-width:900px){#siteHeader{min-height:66px;}}
