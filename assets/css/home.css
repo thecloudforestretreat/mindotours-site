@@ -10,3 +10,5 @@
 .home-page .routeNote{margin-top:18px;padding:18px 20px;border:1px dashed rgba(13,89,37,.4);border-radius:var(--r);background:rgba(223,239,219,.62);color:var(--ink)}
 .home-page .routeNote p{margin:0;line-height:1.7}
 @media (max-width:760px){.home-page .planningGrid{grid-template-columns:1fr}}
+
+.home-page .heroMedia picture{display:contents;}
