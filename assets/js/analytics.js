@@ -37,6 +37,7 @@
   });
 
   function loadGTM() {
+    if (config.analytics && config.analytics.gtmEnabled === false) return;
     if (!GTM_ID || document.querySelector('script[data-mt-gtm="true"]') ||
         document.querySelector('script[src*="googletagmanager.com/gtm.js?id=' + GTM_ID + '"]')) return;
     window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });

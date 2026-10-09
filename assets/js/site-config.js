@@ -13,7 +13,10 @@
     leadDestination: "Mindo Bird Watching",
     analytics: {
       ga4MeasurementId: "G-VFVV662X46",
-      gtmContainerId: "GTM-PNG39P7F"
+      gtmContainerId: "GTM-PNG39P7F",
+      // Published container v1 has no tags. Direct GA4 already handles measurement.
+      // Enable this after publishing a GTM configuration and verifying ownership.
+      gtmEnabled: false
     },
     turnstile: {
       siteKey: "0x4AAAAAACvEWBLDiF38SNlX"
