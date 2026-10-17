@@ -45,6 +45,8 @@ function priority(url) {
   return "0.8";
 }
 
+const previousSitemap = await readFile(join(root, "sitemap.xml"), "utf8").catch(() => "");
+const previousDates = new Map([...previousSitemap.matchAll(/<url>\s*<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g)].map((m) => [m[1], m[2]]));
 const pages = [];
 for (const file of await findIndexFiles(root)) {
   const html = await readFile(file, "utf8");
@@ -72,7 +74,7 @@ const blocks = pages.map((page) => {
   return [
     "  <url>",
     `    <loc>${escapeXml(page.canonical)}</loc>`,
-    "    <lastmod>2026-09-20</lastmod>",
+    `    <lastmod>${previousDates.get(page.canonical) ?? new Date().toISOString().slice(0, 10)}</lastmod>`,
     "    <changefreq>monthly</changefreq>",
     `    <priority>${priority(page.canonical)}</priority>`,
     ...alternates.map(([language, href]) => `    <xhtml:link rel="alternate" hreflang="${language}" href="${escapeXml(href)}"/>`),

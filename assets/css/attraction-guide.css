@@ -249,3 +249,7 @@
   .attractionFaq{grid-template-columns:1fr}
   .attraction-page .btn{width:100%}
 }
+
+/* Match the shared hero crops on stacked layouts. */
+@media(max-width:900px){.attractionHeroMedia{height:auto;min-height:0}.attractionHeroMedia img{flex:none;height:400px;min-height:0;object-fit:cover}}
+@media(max-width:640px){.attractionHeroMedia img{height:300px}}

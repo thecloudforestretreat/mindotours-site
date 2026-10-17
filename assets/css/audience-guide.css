@@ -266,3 +266,7 @@
   .audienceCard img{height:210px}
   .audience-page .btn{width:100%}
 }
+
+/* Match the shared hero crops on stacked layouts. */
+@media(max-width:900px){.audienceHeroMedia{height:auto;min-height:0}.audienceHeroMedia img{flex:none;height:400px;min-height:0;object-fit:cover}}
+@media(max-width:640px){.audienceHeroMedia img{height:300px}}
