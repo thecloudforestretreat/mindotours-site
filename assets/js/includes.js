@@ -2,18 +2,23 @@ async function loadIncludes() {
   const header = document.getElementById("siteHeader");
   const footer = document.getElementById("siteFooter");
 
-  if (header) {
-    const res = await fetch("/assets/includes/header.html", { cache: "no-store" });
-    header.innerHTML = await res.text();
+  async function mountInclude(target, path, isHeader = false) {
+    if (!target) return;
+    try {
+      const res = await fetch(path, { cache: "no-store" });
+      if (!res.ok) throw new Error(`Include returned ${res.status}`);
+      target.innerHTML = await res.text();
+      configureLocalizedIncludes();
+      if (isHeader) initMenu();
+    } catch (error) {
+      console.error(`Unable to load ${path}`, error);
+    }
   }
 
-  if (footer) {
-    const res = await fetch("/assets/includes/footer.html", { cache: "no-store" });
-    footer.innerHTML = await res.text();
-  }
-
-  configureLocalizedIncludes();
-  initMenu();
+  await Promise.all([
+    mountInclude(header, "/assets/includes/header.html", true),
+    mountInclude(footer, "/assets/includes/footer.html")
+  ]);
 }
 
 function configureLocalizedIncludes() {
@@ -58,6 +63,12 @@ function configureLocalizedIncludes() {
       book: "/es/reservar-tour/"
     }
   };
+
+  const brand = document.querySelector(".brand");
+  if (brand) {
+    brand.href = localizedHrefs[lang].home;
+    brand.setAttribute("aria-label", lang === "es" ? "Mindo Tours — Inicio" : "Mindo Tours home");
+  }
 
   document.querySelectorAll("[data-nav-key]").forEach((link) => {
     const key = link.getAttribute("data-nav-key");
@@ -114,9 +125,15 @@ function initMenu() {
 
   if (!toggle || !mobileMenu) return;
 
+  const spanish = document.documentElement.lang.toLowerCase().startsWith("es");
+  toggle.setAttribute("aria-label", spanish ? "Abrir menú" : "Open menu");
+
   toggle.addEventListener("click", () => {
     const expanded = toggle.getAttribute("aria-expanded") === "true";
     toggle.setAttribute("aria-expanded", String(!expanded));
+    toggle.setAttribute("aria-label", spanish
+      ? (expanded ? "Abrir menú" : "Cerrar menú")
+      : (expanded ? "Open menu" : "Close menu"));
     mobileMenu.hidden = expanded;
     mobileMenu.classList.toggle("is-open", !expanded);
     document.body.classList.toggle("menuOpen", !expanded);
