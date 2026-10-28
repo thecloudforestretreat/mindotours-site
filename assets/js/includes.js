@@ -26,6 +26,7 @@ function configureLocalizedIncludes() {
   const labels = {
     en: {
       home: "Home",
+      explore: "Explore", planVisit: "Plan Your Visit", useful: "Useful Information", birdGuide: "Birdwatching guide", travelGuide: "Mindo travel guide", transport: "Transportation", oneDay: "One-day itinerary", twoDays: "Two-day itinerary",
       tours: "Tours",
       activities: "Activities",
       about: "About",
@@ -36,6 +37,7 @@ function configureLocalizedIncludes() {
     },
     es: {
       home: "Inicio",
+      explore: "Explora", planVisit: "Planifica tu visita", useful: "Información útil", birdGuide: "Guía de avistamiento de aves", travelGuide: "Guía de viaje de Mindo", transport: "Transporte", oneDay: "Itinerario de un día", twoDays: "Itinerario de dos días",
       tours: "Tours",
       activities: "Actividades",
       about: "Nosotros",
@@ -48,6 +50,7 @@ function configureLocalizedIncludes() {
   const localizedHrefs = {
     en: {
       home: "/",
+      birdGuide: "/bird-watching-tours-mindo/", travelGuide: "/mindo-travel-guide/", transport: "/quito-to-mindo-transport/", oneDay: "/mindo-itinerary-one-day/", twoDays: "/mindo-itinerary-two-days/",
       tours: "/tours/",
       activities: "/activities/",
       about: "/about/",
@@ -56,6 +59,7 @@ function configureLocalizedIncludes() {
     },
     es: {
       home: "/es/",
+      birdGuide: "/es/tours-de-avistamiento-de-aves-mindo/", travelGuide: "/es/guia-de-viaje-mindo/", transport: "/es/transporte-quito-a-mindo/", oneDay: "/es/itinerario-mindo-un-dia/", twoDays: "/es/itinerario-mindo-dos-dias/",
       tours: "/es/tours/",
       activities: "/es/actividades/",
       about: "/es/sobre-nosotros/",
@@ -64,6 +68,7 @@ function configureLocalizedIncludes() {
     }
   };
 
+  document.querySelectorAll("[data-footer-home]").forEach(link => { link.href = localizedHrefs[lang].home; });
   const brand = document.querySelector(".brand");
   if (brand) {
     brand.href = localizedHrefs[lang].home;
