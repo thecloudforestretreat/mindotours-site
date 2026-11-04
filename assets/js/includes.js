@@ -91,6 +91,8 @@ function configureLocalizedIncludes() {
       (lang === "es" ? "Todos los derechos reservados." : "All rights reserved.");
   });
 
+  document.querySelectorAll("[data-parent-label]").forEach(element => { element.textContent = lang === "es" ? "Parte de" : "Part of"; });
+
   const enAlternate = document.querySelector('link[rel="alternate"][hreflang="en"]');
   const esAlternate = document.querySelector('link[rel="alternate"][hreflang="es"]');
 
