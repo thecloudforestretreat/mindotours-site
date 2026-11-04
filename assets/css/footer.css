@@ -32,8 +32,8 @@
 .siteFooterGlobal .footerBrand{display:inline-flex;align-items:center;gap:9px;font-weight:700}
 .siteFooterGlobal .footerLegal{margin:0;text-align:left;font-size:11px}
 .siteFooterGlobal .footerEndorsement{margin:0;text-align:left}
-.siteFooterGlobal .footerParent{padding:4px 0 4px 22px;border-left:1px solid var(--line,rgba(0,0,0,.15));gap:9px}
+.siteFooterGlobal .footerParent{padding:4px 0;border-left:0;gap:9px}
 .siteFooterGlobal .footerParent img{width:34px;height:34px}
-.siteFooterGlobal .footerParentName{font-family:var(--font-body,Arial,sans-serif);font-size:15px;font-weight:600}
+.siteFooterGlobal .footerParentName{font-family:var(--font-body,Arial,sans-serif);font-size:15px;font-weight:600;color:#034EA2}
 .siteFooterGlobal .footerPartOf{font-size:11px}
 @media(max-width:600px){.siteFooterGlobal .footerColumns{grid-template-columns:1fr 1fr;gap:24px 16px}.siteFooterGlobal .footerColumn:last-child{grid-column:1/-1}.siteFooterGlobal .footerBottom{flex-direction:row;align-items:center}.siteFooterGlobal .footerParent{padding-left:0;border-left:0}.siteFooterGlobal .footerColumn a{min-height:40px}}
