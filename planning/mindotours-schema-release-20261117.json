@@ -1,0 +1,56 @@
+{
+  "status": "production_verified_google_validation_started",
+  "date": "2026-11-17",
+  "gsc_report_last_update": "2026-11-15",
+  "gsc_invalid_items": 12,
+  "gsc_error": "Either offers, review, or aggregateRating should be specified",
+  "source_pattern_pages": 38,
+  "bilingual_pairs": 19,
+  "proposed_change": "Product to Service; #product entity fragment to #service; sku to identifier where present. Preserve all visible content and other schema nodes. No prices, reviews, offers or provider claims added.",
+  "validation": {
+    "site": "82 public pages pass",
+    "bilingual": "41 reciprocal pairs pass",
+    "scope": "38 pages have byte-identical HTML outside JSON-LD; only expected first-node fields changed",
+    "whitespace": "pass (existing CSV CRLF honored)",
+    "staging": "38/38 HTTP 200, exact schema, noindex headers and matching visible HTML",
+    "production": "38/38 HTTP 200, exact schema and indexability verified. Content matches candidate after excluding only Cloudflare security-script injection for comparison. Initial failed strict comparison retained in production-readback-initial.json.",
+    "sitemap": "Exact 82-URL production sitemap matches source",
+    "visual": "Visible HTML outside JSON-LD unchanged; no new layout or real-device review claimed."
+  },
+  "publication": "Owner-approved PR 14 merged; all 38 production schema readbacks pass; no visible HTML changed. Google validation started, not passed.",
+  "indexing": "No additional URL indexing requests. Existing four-URL quota hold and earliest retry 2026-11-18T18:02:24Z retained.",
+  "sources": [
+    "https://developers.google.com/search/docs/appearance/structured-data/product-snippet",
+    "https://schema.org/Service"
+  ],
+  "owner_publication_approval": "2026-11-17: proceed",
+  "content_commit": "afae5d1",
+  "staging_commit": "13bb1e4",
+  "production_commit": "6fe487f79d64f7c5e213503d93ea42e2841a261b",
+  "production_deployment": "fddae089-e41d-4e83-b3a3-3a8bae709c4a",
+  "staging_deployment": "d5ed52bd-b57f-4969-ac68-049cd512cee5",
+  "pull_request": "https://github.com/thecloudforestretreat/mindotours-site/pull/14",
+  "rollback_commit": "09c468732e7869ca075e1ea41217db7055380b9d",
+  "rollback_deployment": "a41baacb-5212-490e-bfd2-d3ff1da0f7f6",
+  "google_validation": {
+    "status": "Validation started",
+    "started": "2026-11-17",
+    "native_readback": "Validation started Started: 11/17/26",
+    "not_yet_passed": true
+  },
+  "sheet": {
+    "tab": "mindotours_enriched",
+    "backup": "mindotours_schema_backup_20261117",
+    "changed_rows": 38,
+    "total_rows": 148,
+    "columns": 109,
+    "readback": "all 148x109 values match",
+    "tsv": "mindotours-schema-enriched-20261117.tsv"
+  },
+  "local_usage": {
+    "ollama_calls": 0,
+    "ollama_retries": 0,
+    "ollama_cache_hits": 0,
+    "cloud_costs": "not estimated"
+  }
+}
