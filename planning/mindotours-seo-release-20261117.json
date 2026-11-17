@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-17",
+  "branch": "codex/mindotours-staging",
+  "status": "released_verified_indexing_quota_hold",
+  "pair_ids": [
+    "MT036",
+    "MT037"
+  ],
+  "paths": [
+    "activities/mindo-tarabita-cable-car/index.html",
+    "es/actividades/tarabita-de-mindo/index.html",
+    "family-things-to-do-mindo/index.html",
+    "es/actividades-en-mindo-con-ninos/index.html",
+    "_redirects",
+    "planning/mindotours-sitemap-seo-master.csv",
+    "scripts/audit-site.mjs",
+    "scripts/audit-bilingual-parity.mjs"
+  ],
+  "sha256": {
+    "activities/mindo-tarabita-cable-car/index.html": "a6c0a128f56bb90100174743a9e243f24a3d072463bbeca0fc77deedb484fe54",
+    "es/actividades/tarabita-de-mindo/index.html": "c4fce3ee79284cbf778a0e27d429e8a8b4e74ba29bb5339a5376bef0c3d85d7b",
+    "family-things-to-do-mindo/index.html": "f774342b1acfcf4148a30d5030c0cf86fe61843e7720cc09fc8d1b9805244a24",
+    "es/actividades-en-mindo-con-ninos/index.html": "cc1d63d29195abf8dc095e0f3ecac4f607669fd3fcecae56c843d57d063489ee",
+    "_redirects": "b33e2163767541546ab62c8780159a0123c7e0721d24714c09c9237e119f1655",
+    "planning/mindotours-sitemap-seo-master.csv": "d7694b73b0259f31bde385e4f309640fedd269017b84ca18bcb4450efc19ef10",
+    "scripts/audit-site.mjs": "2d713db379b8531f503b74bd29d0bad24b1f3a9625b5f0e90fd7e18b681f2122",
+    "scripts/audit-bilingual-parity.mjs": "a22e852f4f765c1297966d2f9644d0e3544fdc16aa28d130156e91c3aaebc878"
+  },
+  "backup": "source-before/",
+  "ga4": {
+    "property": "555190853",
+    "event": "generate_lead",
+    "key_event_enabled": true,
+    "verification": "Native Chrome GA4 Admin > Events > Key events readback after reload; value 1; MindoTours Website stream. Only this event changed.",
+    "historical_data": "4 events / 3 users in baseline; no retroactive key-event or revenue claim."
+  },
+  "sheet": {
+    "tab": "mindotours_enriched",
+    "backup": "mindotours_backup_20261117",
+    "rows": 148,
+    "columns": 109,
+    "live": 82,
+    "historical_or_planned": 66,
+    "readback": "Final 148x109 values matched after release/indexing-status sync",
+    "tsv": "mindotours-enriched-20261117.tsv"
+  },
+  "visual_qa": {
+    "local_preview": "http://127.0.0.1:8766/",
+    "desktop": "Both pairs, hero and early-answer layout inspected",
+    "mobile": "390px viewport, all four page openings; ES family and tarabita CTA/tag rows inspected. Tags retain horizontal scrolling.",
+    "limitations": "Not a full independent language review, media licensing review, keyboard audit or real-device test."
+  },
+  "technical_qa": {
+    "site_audit": "82 HTML pages pass",
+    "bilingual_parity": "41 reciprocal pairs pass",
+    "javascript_syntax": "13 files pass",
+    "faq_visible_schema": "all four pages match exactly",
+    "local_http": "four paths 200, X-Robots-Tag noindex/nofollow",
+    "redirect_rules": "three exact 301 routes, existing targets; production behavior pending approved deployment",
+    "shared_systems": "No changes to analytics sender, GTM config, booking function, WhatsApp config, shared header/footer or middleware."
+  },
+  "release": {
+    "commit": "09c468732e7869ca075e1ea41217db7055380b9d",
+    "push": true,
+    "staging_deployed": true,
+    "production_deployed": true,
+    "public_sitemap_changed": true,
+    "indexing_requests_submitted": 0,
+    "reason": "Explicit owner approval received November 17. PR 13 merged after staging readback. Production full readback passed."
+  },
+  "next": [
+    "Owner approval for scoped commit, protected staging preview, production release and URL indexing requests",
+    "Verify protected staging noindex and redirects",
+    "Verify production readback of four URLs and three redirects",
+    "Refresh release status, public sitemap modification dates and TSV only after verified release",
+    "Request indexing for four updated URLs and record actual outcomes; stop on quota/CAPTCHA service errors"
+  ],
+  "owner_publication_approval": "2026-11-17: ok lets proceed with the updates",
+  "content_commit": "c41271c",
+  "staging_commit": "3315546",
+  "production_commit": "09c468732e7869ca075e1ea41217db7055380b9d",
+  "pull_request": "https://github.com/thecloudforestretreat/mindotours-site/pull/13",
+  "production_deployment": "a41baacb-5212-490e-bfd2-d3ff1da0f7f6",
+  "staging_deployment": "9879a31c-9eb9-4cb1-b30c-f877cee80ea2",
+  "production_verified_pages": 82,
+  "redirects_verified": 3,
+  "rollback_commit": "d3f8f65",
+  "rollback_deployment": "c6d5210a-70f4-4ffa-adb1-44235bedf670",
+  "indexing_requests_submitted": 0,
+  "indexing_queue": "indexing-queue.json",
+  "indexing_requests_accepted": 0,
+  "indexing_attempts": 1,
+  "indexing_pending_urls": [
+    "https://mindotours.com/activities/mindo-tarabita-cable-car/",
+    "https://mindotours.com/es/actividades/tarabita-de-mindo/",
+    "https://mindotours.com/family-things-to-do-mindo/",
+    "https://mindotours.com/es/actividades-en-mindo-con-ninos/"
+  ],
+  "earliest_indexing_retry": "2026-11-18T18:02:24Z",
+  "remaining_followup": [
+    "Retry only the four pending updated URLs after quota resets. No request accepted in this run.",
+    "Review GSC Product snippets report showing 12 invalid items in the overview; current causes and affected URLs not yet investigated. No new fix authorized by that observation."
+  ],
+  "source_metadata_record": "planning/mindotours-seo-release-20261117.json",
+  "local_usage": {
+    "ollama_calls": 0,
+    "ollama_retries": 0,
+    "ollama_cache_hits": 0,
+    "cloud_costs": "not estimated"
+  }
+}
